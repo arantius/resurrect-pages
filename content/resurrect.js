@@ -127,6 +127,9 @@ var resurrect={
 			gotoUrl=rawUrl.substring(0, 8)+
 				rawUrl.substring(8).replace(/\//, '.nyud.net:8080/');
 			break;
+		case 'google':
+			gotoUrl='http://www.google.com/search?q=cache:'+encUrl
+			break;
 		}
 		if (gotoUrl) {
 			opener.resurrect.originalDoc.location.assign(gotoUrl);
