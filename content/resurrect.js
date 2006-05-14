@@ -1,26 +1,11 @@
-/*
-Enumerating: document.location
-document.location.hash = #x
-document.location.host = www.google.com
-document.location.hostname = www.google.com
-document.location.href = http://www.google.com/search?q=foo&start=0&ie=utf-8&oe=utf-8&client=firefox-a&rls=org.mozilla:en-US:official#x
-document.location.pathname = /search
-document.location.port =
-document.location.protocol = http:
-document.location.search = ?q=foo&start=0&ie=utf-8&oe=utf-8&client=firefox-a&rls=org.mozilla:en-US:official
-document.location.replace = function replace() { [native code] }
-document.location.assign = function assign() { [native code] }
-document.location.reload = function reload() { [native code] }
-*/
-
 var resurrect={
 
 	mirrors:[
 		{name:'CoralCDN', id:'coralcdn'},
 		{name:'Google Cache', id:'google'},
-		{name:'The Internet Archive', id:'archive'}
+		{name:'The Internet Archive', id:'archive'},
 		{name:'MSN Cache', id:'msn'},
-		{name:'Yahoo! Cache', id:'yahoo'},
+		{name:'Yahoo! Cache', id:'yahoo'}
 	],
 
 	originalDoc:null,
@@ -51,43 +36,21 @@ var resurrect={
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
-	dumpProps:function(obj, withFuncs) {
-		dump('--------------------------------------------\n');
-		dump(obj+'\n\n');
-		var s='';
-		for (i in obj) {
-			try {
-				if (!withFuncs && 'function'==typeof obj[i]) continue;
-				s=i+': '+obj[i];
-				s=s.replace(/\n\s*./, 'n');
-				dump( s.substring(0, 79)+'\n' );
-			} catch (e) { }
-		}
-		dump('\n');
-	},
-
-	findTag:function(tagName) {
-		var el=document.popupNode;
-
-		try {
-			while (el && el.tagName && tagName!=el.tagName) {
-				el=el.parentNode;
-			}
-			return el;
-		} catch (e) { }
-		return null;
-	},
-
-// // // // // // // // // // // // // // // // // // // // // // // // // // //
-
 	page:function(event) {
 		var doc=getBrowser().contentWindow.document;
 		resurrect.showDialog(doc.location.href);
 	},
 
 	link:function(event) {
-		var a=resurrect.findTag('A');
-		resurrect.showDialog(a.href);
+		var el=document.popupNode;
+
+		try {
+			while (el && el.tagName && 'A'!=el.tagName) {
+				el=el.parentNode;
+			}
+			resurrect.showDialog(el.href);
+		} catch (e) { }
+		return null;
 	},
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
@@ -134,7 +97,6 @@ var resurrect={
 			gotoUrl='http://web.archive.org/web/*/'+rawUrl
 			break;
 		case 'yahoo':
-			//opener.resurrect.yahooApi(encUrl);
 			var xhr=new XMLHttpRequest();
 			xhr.open('GET',
 				'http://api.search.yahoo.com/WebSearchService/V1/'+
@@ -148,6 +110,25 @@ var resurrect={
 				gotoUrl=c[0].firstChild.textContent;
 			} catch (e ) {
 				gotoUrl='http://search.yahoo.com/search?p='+encUrl;
+			}
+
+			break;
+		case 'msn':
+			//FD382E93B5ABC456C5E34C238A906CAB2DEEB5D6
+			//ugh, they've got an API but .. SOAP?  blech too complicated
+
+			var searchUrl='http://search.msn.com/results.aspx?q='+encUrl;
+
+			var xhr=new XMLHttpRequest();
+			xhr.open('GET', searchUrl, false);
+			xhr.send(null);
+
+			try {
+				var m=xhr.responseText.match(/<a href=\"([^\"]+)\">Cached page/);
+				gotoUrl=m[1];
+				gotoUrl=gotoUrl.replace('&amp;', '&');
+			} catch (e ) {
+				gotoUrl=searchUrl;
 			}
 
 			break;
