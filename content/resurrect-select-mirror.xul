@@ -16,8 +16,43 @@
 	<vbox>
 		<label value='&resurrect.selectmirror;' />
 
-		<listbox id='mirror' rows='0' onselect='resurrect.selectMirror(event);'>
+		<listbox id='mirror' rows='5' onselect='resurrect.selectMirror(event);'>
+			<listhead>
+				<listheader label='&resurrect.mirror;' />
+				<listheader label='&resurrect.quality;' />
+			</listhead>
+
+			<listcols>
+				<listcol flex='1' />
+				<listcol />
+			</listcols>
+
+			<listitem value='coralcdn'>
+				<listcell label='&resurrect.coralcdn;' />
+				<listcell label='&resurrect.great;' />
+			</listitem>
+			<listitem value='google'>
+				<listcell label='&resurrect.google;' />
+				<listcell label='&resurrect.great;' />
+			</listitem>
+			<listitem value='yahoo'>
+				<listcell label='&resurrect.yahoo;' />
+				<listcell label='&resurrect.good;' />
+			</listitem>
+			<listitem value='archive'>
+				<listcell label='&resurrect.archive;' />
+				<listcell label='&resurrect.good;' />
+			</listitem>
+			<listitem value='msn'>
+				<listcell label='&resurrect.msn;' />
+				<listcell label='&resurrect.ok;' />
+			</listitem>
+			<!--
+			<listitem value='google' label='&resurrect.google;' />
+			<listitem value='yahoo' label='&resurrect.yahoo;' />
+			<listitem value='archive' label='&resurrect.archive;' />
+			<listitem value='msn' label='&resurrect.msn;' />
+			-->
 		</listbox>
 	</vbox>
-	<spacer flex="1" />
 </dialog>

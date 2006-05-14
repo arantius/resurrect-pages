@@ -66,17 +66,6 @@ var resurrect={
 		);
 	},
 
-	loadMirrors:function() {
-		var listbox=document.getElementById('mirror');
-		for (var i=0, mirror=null; mirror=resurrect.mirrors[i]; i++) {
-			var listitem=document.createElement('listitem');
-			listitem.setAttribute('label', mirror.name);
-			listitem.setAttribute('value', mirror.id);
-			listbox.appendChild(listitem);
-		}
-		listbox.setAttribute('rows', listbox.getRowCount());
-	},
-
 	selectMirror:function(event) {
 		var listbox=document.getElementById('mirror');
 
