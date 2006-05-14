@@ -18,9 +18,9 @@ var resurrect={
 	mirrors:[
 		{name:'CoralCDN', id:'coralcdn'},
 		{name:'Google Cache', id:'google'},
-		{name:'Yahoo! Cache', id:'yahoo'},
-		{name:'MSN Cache', id:'msn'},
 		{name:'The Internet Archive', id:'archive'}
+		{name:'MSN Cache', id:'msn'},
+		{name:'Yahoo! Cache', id:'yahoo'},
 	],
 
 	originalDoc:null,
@@ -38,9 +38,9 @@ var resurrect={
 	toggleContextItems:function(event) {
 		resurrect.clickTarget=event.target;
 
-		var onDocument=!( 
-			gContextMenu.isContentSelected || gContextMenu.onTextInput || 
-			gContextMenu.onLink || gContextMenu.onImage 
+		var onDocument=!(
+			gContextMenu.isContentSelected || gContextMenu.onTextInput ||
+			gContextMenu.onLink || gContextMenu.onImage
 		);
 
 		document.getElementById('resurrect-page-context')
@@ -132,6 +132,24 @@ var resurrect={
 			break;
 		case 'archive':
 			gotoUrl='http://web.archive.org/web/*/'+rawUrl
+			break;
+		case 'yahoo':
+			//opener.resurrect.yahooApi(encUrl);
+			var xhr=new XMLHttpRequest();
+			xhr.open('GET',
+				'http://api.search.yahoo.com/WebSearchService/V1/'+
+				'webSearch?appid=firefox-resurrect&query='+encUrl+'&results=1',
+				false
+			);
+			xhr.send(null);
+
+			try {
+				var c=xhr.responseXML.getElementsByTagName('Cache');
+				gotoUrl=c[0].firstChild.textContent;
+			} catch (e ) {
+				gotoUrl='http://search.yahoo.com/search?p='+encUrl;
+			}
+
 			break;
 		}
 		if (gotoUrl) {
