@@ -81,7 +81,7 @@ var resurrect={
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
 	page:function(event) {
-		var doc=resurrect.findTag('HTML').ownerDocument;
+		var doc=getBrowser().contentWindow.document;
 		resurrect.showDialog(doc.location.href);
 	},
 
