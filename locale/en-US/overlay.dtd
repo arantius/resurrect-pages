@@ -1,4 +1,5 @@
-<!ENTITY resurrect.title     "Resurrect">
-<!ENTITY resurrect.accesskey "u">
-<!ENTITY resurrect.thispage  "Resurrect this page">
-<!ENTITY resurrect.thislink  "Resurrect this link">
+<!ENTITY resurrect.title        "Resurrect">
+<!ENTITY resurrect.accesskey    "u">
+<!ENTITY resurrect.thispage     "Resurrect this page">
+<!ENTITY resurrect.thislink     "Resurrect this link">
+<!ENTITY resurrect.selectmirror "Select a mirror:">

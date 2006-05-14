@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay SYSTEM "chrome://resurrect/locale/overlay.dtd">
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<dialog id="resurrect-select-mirror"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="&resurrect.title;"
+	buttons="accept, cancel"
+	onload="resurrect.loadMirrors()"
+	ondialogaccept="resurrect.selectMirror(event);"
+	persist="width height screenX screenY"
+>
+
+	<script	type='application/x-javascript'	src='chrome://resurrect/content/resurrect.js'></script>
+
+	<vbox>
+		<label value='&resurrect.selectmirror;' />
+
+		<listbox id='mirror' rows='0' onselect='resurrect.selectMirror(event);'>
+		</listbox>
+	</vbox>
+	<spacer flex="1" />
+</dialog>
