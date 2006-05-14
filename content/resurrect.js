@@ -130,6 +130,9 @@ var resurrect={
 		case 'google':
 			gotoUrl='http://www.google.com/search?q=cache:'+encUrl
 			break;
+		case 'archive':
+			gotoUrl='http://web.archive.org/web/*/'+rawUrl
+			break;
 		}
 		if (gotoUrl) {
 			opener.resurrect.originalDoc.location.assign(gotoUrl);
