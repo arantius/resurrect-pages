@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<!DOCTYPE overlay SYSTEM "chrome://resurrect/locale/overlay.dtd">
+<overlay id='resurrect-overlay'	xmlns='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul'>
+
+<script	type='application/x-javascript'	src='chrome://resurrect/content/resurrect.js'></script>
+
+<popup id="contentAreaContextMenu">
+	<menuitem id="resurrect-page-context" insertafter="context-bookmarkpage"
+		label="&resurrect.thispage;" accesskey="&resurrect.accesskey;"
+		oncommand="resurrect.page(event);"
+	/>
+	<menuitem id="resurrect-link-context" insertafter="context-bookmarklink"
+		label="&resurrect.thislink;" accesskey="&resurrect.accesskey;"
+		oncommand="resurrect.link(event);"
+	/>
+</popup>
+
+</overlay>

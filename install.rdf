@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>{0c8fbd76-bdeb-4c52-9b24-d587ce7b9dc3}</em:id>
+		<em:name>Resurrect Pages</em:name>
+		<em:version>1.0</em:version>
+		<em:description>Resurrect dead pages, by finding ghost copies.</em:description>
+		<em:creator>Anthony Lieuallen</em:creator>
+		<em:homepageURL>http://www.arantius.com/article/resurrect</em:homepageURL>
+		<em:updateURL>http://www.arantius.com/misc/firefox-extensions/mine/updates.rdf</em:updateURL>
+		<em:iconURL>chrome://resurrect/skin/em-icon.png</em:iconURL>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.5</em:minVersion>
+				<em:maxVersion>1.6</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
+</RDF>

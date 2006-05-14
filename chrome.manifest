@@ -1,0 +1,5 @@
+content	resurrect	content/
+overlay	chrome://browser/content/browser.xul	chrome://resurrect/content/resurrect-overlay.xul
+skin	resurrect	classic/1.0	skin/
+
+locale	resurrect	en-US	locale/en-US/
