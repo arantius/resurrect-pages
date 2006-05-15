@@ -1,8 +1,20 @@
 <?xml version='1.0'?>
 <!DOCTYPE overlay SYSTEM "chrome://resurrect/locale/overlay.dtd">
+<?xml-stylesheet href='chrome://resurrect/skin/resurrect-overlay.css' type='text/css'?> 
 <overlay id='resurrect-overlay'	xmlns='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul'>
 
 <script	type='application/x-javascript'	src='chrome://resurrect/content/resurrect.js'></script>
+
+<toolbarpalette id='BrowserToolbarPalette'>
+	<toolbarbutton id='resurrect-page-tb' 
+		type="" 
+		class="toolbarbutton-1"
+		oncommand="resurrect.page();"
+		label='&resurrect.thispage;'
+		tooltiptext='&resurrect.thispage;'
+	>
+	</toolbarbutton>
+</toolbarpalette>
 
 <popup id="contentAreaContextMenu">
 	<menuitem id="resurrect-page-context" insertafter="context-bookmarkpage"
@@ -14,5 +26,13 @@
 		oncommand="resurrect.link(event);"
 	/>
 </popup>
+
+<keyset id="mainKeyset">
+	<key id='resurrect-key-shortcut'
+		modifiers='control shift'
+		keycode='&resurrect.accesskey;'
+		oncommand='resurrect.page();'
+	/>
+</keyset>
 
 </overlay>

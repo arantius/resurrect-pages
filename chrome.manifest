@@ -1,5 +1,6 @@
 content	resurrect	content/
 overlay	chrome://browser/content/browser.xul	chrome://resurrect/content/resurrect-overlay.xul
 skin	resurrect	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://resurrect/skin/resurrect-overlay.css
 
 locale	resurrect	en-US	locale/en-US/
