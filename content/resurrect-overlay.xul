@@ -30,7 +30,7 @@
 <keyset id="mainKeyset">
 	<key id='resurrect-key-shortcut'
 		modifiers='control shift'
-		keycode='&resurrect.accesskey;'
+		key='&resurrect.accesskey;'
 		oncommand='resurrect.page();'
 	/>
 </keyset>
