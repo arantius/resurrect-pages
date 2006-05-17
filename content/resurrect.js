@@ -49,7 +49,7 @@ var resurrect={
 				contentWin.document.getElementById('mirrorSelect').addEventListener(
 					'click', resurrect.selectMirror, false
 				);
-			} cach (e) { }
+			} catch (e) { }
 		}
 	},
 
