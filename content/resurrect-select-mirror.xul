@@ -7,7 +7,7 @@
 	title="&resurrect.title;"
 	buttons="accept, cancel"
 	onload="document.getElementById('mirror').focus();"
-	ondialogaccept="resurrect.selectMirror(event);"
+	ondialogaccept="return resurrect.selectMirror(event);"
 	persist="width height screenX screenY"
 >
 
@@ -16,39 +16,9 @@
 	<vbox>
 		<label value='&resurrect.selectmirror;' />
 
-		<listbox id='mirror' rows='5' onselect='resurrect.selectMirror(event);'>
-			<!--
-			<listhead>
-				<listheader label='&resurrect.mirror;' />
-				<listheader label='&resurrect.quality;' />
-			</listhead>
-
-			<listcols>
-				<listcol flex='1' />
-				<listcol />
-			</listcols>
-
-			<listitem value='coralcdn'>
-				<listcell label='&resurrect.coralcdn;' />
-				<listcell label='&resurrect.great;' />
-			</listitem>
-			<listitem value='google'>
-				<listcell label='&resurrect.google;' />
-				<listcell label='&resurrect.great;' />
-			</listitem>
-			<listitem value='yahoo'>
-				<listcell label='&resurrect.yahoo;' />
-				<listcell label='&resurrect.good;' />
-			</listitem>
-			<listitem value='archive'>
-				<listcell label='&resurrect.archive;' />
-				<listcell label='&resurrect.good;' />
-			</listitem>
-			<listitem value='msn'>
-				<listcell label='&resurrect.msn;' />
-				<listcell label='&resurrect.ok;' />
-			</listitem>
-			-->
+		<listbox id='mirror' rows='5' 
+			onclick='resurrect.selectMirror(event);'
+		>
 			<listitem value='coralcdn' label='&resurrect.coralcdn;' />
 			<listitem value='google' label='&resurrect.google;' />
 			<listitem value='yahoo' label='&resurrect.yahoo;' />

@@ -18,6 +18,10 @@ var resurrect={
 
 		document.getElementById('contentAreaContextMenu')
 			.addEventListener('popupshowing', resurrect.toggleContextItems, false);
+
+		window.document.getElementById("appcontent").addEventListener(
+			'DOMContentLoaded', resurrect.attachClickEvent, false
+		);
 	},
 
 	toggleContextItems:function(event) {
@@ -32,6 +36,21 @@ var resurrect={
 			.setAttribute('hidden', !onDocument);
 		document.getElementById('resurrect-link-context')
 			.setAttribute('hidden', !gContextMenu.onLink);
+	},
+
+	attachClickEvent:function() {
+		var contentWin=getBrowser().contentWindow;
+		if (contentWin.document.documentURI.match(/^about:neterror/)) {
+			contentWin.document.getElementById('mirror').addEventListener(
+				'click', resurrect.selectMirror, false
+			);
+			try {
+				// because this button isn't always there
+				contentWin.document.getElementById('mirrorSelect').addEventListener(
+					'click', resurrect.selectMirror, false
+				);
+			} cach (e) { }
+		}
 	},
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
@@ -67,11 +86,21 @@ var resurrect={
 	},
 
 	selectMirror:function(event) {
-		var listbox=document.getElementById('mirror');
+		var ownerDoc=event.target.ownerDocument;
+
+		var listbox=ownerDoc.getElementById('mirror');
+
+		// find the content document -- this depends on whether we are
+		// living inline in the netError page
+		var contentDoc;
+		if (window.opener && window.opener.resurrect) {
+			contentDoc=window.opener.resurrect.originalDoc;
+		} else {
+			contentDoc=window.getBrowser().contentWindow.document;
+		}
 
 		var gotoUrl=null;
-
-		var rawUrl=opener.resurrect.gotoUrl;
+		var rawUrl=contentDoc.location.href;
 		var encUrl=encodeURIComponent(rawUrl);
 
 		switch (listbox.value) {
@@ -121,13 +150,18 @@ var resurrect={
 			}
 
 			break;
+		default:
+			return false;
+			break;
 		}
 		if (gotoUrl) {
-			opener.resurrect.originalDoc.location.assign(gotoUrl);
+			contentDoc.location.assign(gotoUrl);
 		}
 
-		//setTimeout avoids error message when selecting in listbox
-		setTimeout(window.close, 0);
+		if ('chrome://resurrect/content/resurrect-select-mirror.xul'==window.document.location) {
+			// setTimeout avoids errors because the window is gone
+			setTimeout(window.close, 0);
+		}
 	}
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
