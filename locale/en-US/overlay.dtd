@@ -4,13 +4,6 @@
 <!ENTITY resurrect.thislink     "Resurrect this link">
 <!ENTITY resurrect.selectmirror "Select a mirror:">
 
-<!ENTITY resurrect.mirror       "Mirror">
-<!ENTITY resurrect.quality      "Quality">
-
-<!ENTITY resurrect.great        "Great">
-<!ENTITY resurrect.good         "Good">
-<!ENTITY resurrect.ok           "OK">
-
 <!ENTITY resurrect.coralcdn     "CoralCDN">
 <!ENTITY resurrect.google       "Google Cache">
 <!ENTITY resurrect.yahoo        "Yahoo! Cache">
