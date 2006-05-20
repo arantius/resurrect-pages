@@ -9,7 +9,7 @@ var resurrect={
 	],
 
 	originalDoc:null,
-	gotoUrl:null,
+	disabled:false,
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
@@ -76,7 +76,6 @@ var resurrect={
 
 	showDialog:function(url) {
 		resurrect.originalDoc=getBrowser().contentWindow.document;
-		resurrect.gotoUrl=url;
 
 		window.openDialog(
 			'chrome://resurrect/content/resurrect-select-mirror.xul',
@@ -87,8 +86,9 @@ var resurrect={
 
 	selectMirror:function(event) {
 		var ownerDoc=event.target.ownerDocument;
-
 		var listbox=ownerDoc.getElementById('mirror');
+		if (resurrect.disabled) return false;
+		resurrect.disabled=true;
 
 		// find the content document -- this depends on whether we are
 		// living inline in the netError page
