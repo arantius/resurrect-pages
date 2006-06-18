@@ -74,6 +74,17 @@ var resurrect={
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
+	selectTab:function(aTab) {
+		with (gBrowser) {
+			selectedTab=aTab;
+			mTabBox.selectedPanel=getBrowserForTab(mCurrentTab).parentNode;
+			mCurrentTab.selected = true;
+			updateCurrentBrowser();
+		}
+	},
+
+// // // // // // // // // // // // // // // // // // // // // // // // // // //
+
 	showDialog:function(url) {
 		resurrect.originalDoc=getBrowser().contentWindow.document;
 
@@ -153,8 +164,25 @@ var resurrect={
 			return false;
 			break;
 		}
+
 		if (gotoUrl) {
-			contentDoc.location.assign(gotoUrl);
+			if (ownerDoc.getElementById('targetTab').getAttribute('selected')) {
+				var newTab=window.opener.gBrowser.addTab(gotoUrl);
+
+				//replicate broken focus-new-tab functionality
+				var prefServ=Components.classes['@mozilla.org/preferences-service;1']
+					.getService(Components.interfaces.nsIPrefBranch);
+				if (!prefServ.getBoolPref('browser.tabs.loadInBackground')) {
+					window.opener.resurrect.selectTab(newTab);
+				}
+			} else if (ownerDoc.getElementById('targetWin').getAttribute('selected')) {
+				// the setTimeout keeps focus from returning to the opener
+				setTimeout(function(){
+					window.opener.openNewWindowWith(gotoUrl, null, null);
+				}, 10);
+			} else {
+				contentDoc.location.assign(gotoUrl);
+			}
 		}
 
 		if ('chrome://resurrect/content/resurrect-select-mirror.xul'==window.document.location) {

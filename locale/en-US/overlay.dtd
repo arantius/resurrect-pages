@@ -1,11 +1,16 @@
-<!ENTITY resurrect.title        "Resurrect">
-<!ENTITY resurrect.accesskey    "u">
-<!ENTITY resurrect.thispage     "Resurrect this page">
-<!ENTITY resurrect.thislink     "Resurrect this link">
-<!ENTITY resurrect.selectmirror "Select a mirror:">
+<!ENTITY resurrect.title         "Resurrect">
+<!ENTITY resurrect.accesskey     "u">
+<!ENTITY resurrect.this          "Resurrect this">
+<!ENTITY resurrect.thispage      "Resurrect this page">
+<!ENTITY resurrect.thislink      "Resurrect this link">
+<!ENTITY resurrect.fromMirror    "From mirror">
 
-<!ENTITY resurrect.coralcdn     "CoralCDN">
-<!ENTITY resurrect.google       "Google Cache">
-<!ENTITY resurrect.yahoo        "Yahoo! Cache">
-<!ENTITY resurrect.archive      "The Internet Archive">
-<!ENTITY resurrect.msn          "MSN Cache">
+<!ENTITY resurrect.coralcdn      "CoralCDN">
+<!ENTITY resurrect.google        "Google Cache">
+<!ENTITY resurrect.yahoo         "Yahoo! Cache">
+<!ENTITY resurrect.archive       "The Internet Archive">
+<!ENTITY resurrect.msn           "MSN Cache">
+
+<!ENTITY resurrect.inCurrTab     "In the current tab/window">
+<!ENTITY resurrect.inNewTab      "In a new tab">
+<!ENTITY resurrect.inNewWin      "In a new window">

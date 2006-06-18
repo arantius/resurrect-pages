@@ -14,8 +14,14 @@
 	<script	type='application/x-javascript'	src='chrome://resurrect/content/resurrect.js'></script>
 
 	<vbox>
-		<label value='&resurrect.selectmirror;' />
+		<label value='&resurrect.this;' />
+		<radiogroup>
+			<radio id='targetCurr' label='&resurrect.inCurrTab;' selected='true' />
+			<radio id='targetTab' label='&resurrect.inNewTab;' />
+			<radio id='targetWin' label='&resurrect.inNewWin;' />
+		</radiogroup>
 
+		<label value='&resurrect.fromMirror;' />
 		<listbox id='mirror' rows='5' 
 			onclick='resurrect.selectMirror(event);'
 		>
