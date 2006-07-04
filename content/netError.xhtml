@@ -214,6 +214,10 @@
 	/>
 
 	<div id='resurrect'>
+		<!-- fake elements that have IDs matching target selector -->
+		<div id='targetTab' style='display: none;'></div>
+		<div id='targetWin' style='display: none;'></div>
+
 		<p>&resurrect.thispage;</p>
 		<select id='mirror' size='5'>
 			<option value='coralcdn'>&resurrect.coralcdn;</option>
@@ -225,7 +229,7 @@
 		<br />
 
 		<xul:button xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-			id="mirrorSelect" label="&okButton.label;" oncommand="resurrect.selectMirror();"
+			id="mirrorSelect" label="&okButton.label;"
 		/>
 	</div>
 </div>

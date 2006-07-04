@@ -39,6 +39,8 @@ var resurrect={
 	},
 
 	attachClickEvent:function() {
+		resurrect.disabled=false;
+
 		var contentWin=getBrowser().contentWindow;
 		if (contentWin.document.documentURI.match(/^about:neterror/)) {
 			contentWin.document.getElementById('mirror').addEventListener(
