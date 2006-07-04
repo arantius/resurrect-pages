@@ -3,12 +3,15 @@
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>{0c8fbd76-bdeb-4c52-9b24-d587ce7b9dc3}</em:id>
 		<em:name>Resurrect Pages</em:name>
-		<em:version>0.9</em:version>
+		<em:version>1.0</em:version>
 		<em:description>Resurrect dead pages, by finding their ghosts.</em:description>
-		<em:creator>Anthony Lieuallen</em:creator>
+
 		<em:homepageURL>http://www.arantius.com/article/resurrect</em:homepageURL>
 		<em:updateURL>http://www.arantius.com/misc/firefox-extensions/mine/updates.rdf</em:updateURL>
 		<em:iconURL>chrome://resurrect/skin/em-icon.png</em:iconURL>
+
+		<em:creator>Anthony Lieuallen</em:creator>
+		<em:contributor>Translators from BabelZilla.org</em:contributor>
 
 		<em:targetApplication>
 			<Description>

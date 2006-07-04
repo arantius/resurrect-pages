@@ -1,0 +1,14 @@
+<!ENTITY resurrect.title "Ressuscitar">
+<!ENTITY resurrect.accesskey "u">
+<!ENTITY resurrect.this "Ressuscitar">
+<!ENTITY resurrect.thispage "Ressuscitar esta página">
+<!ENTITY resurrect.thislink "Ressuscitar este link">
+<!ENTITY resurrect.fromMirror "Do espelho">
+<!ENTITY resurrect.coralcdn "CoralCDN">
+<!ENTITY resurrect.google "Cache do Google">
+<!ENTITY resurrect.yahoo "Cache do Yahoo!">
+<!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.msn "Cache do MSN">
+<!ENTITY resurrect.inCurrTab "Na aba/janela atual">
+<!ENTITY resurrect.inNewTab "Em uma nova aba">
+<!ENTITY resurrect.inNewWin "Em uma nova janela">

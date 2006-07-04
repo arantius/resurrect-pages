@@ -1,0 +1,14 @@
+<!ENTITY resurrect.title "Воскресить">
+<!ENTITY resurrect.accesskey "к">
+<!ENTITY resurrect.this "Воскресить это">
+<!ENTITY resurrect.thispage "Восрксить эту страницу">
+<!ENTITY resurrect.thislink "Воскресть эту ссылку">
+<!ENTITY resurrect.fromMirror "Из зеркала">
+<!ENTITY resurrect.coralcdn "CoralCDN">
+<!ENTITY resurrect.google "Кэш Google">
+<!ENTITY resurrect.yahoo "Кэш Yahoo!">
+<!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.msn "Кэш MSN">
+<!ENTITY resurrect.inCurrTab "В текущей вкладке/окне">
+<!ENTITY resurrect.inNewTab "В новой вкладке">
+<!ENTITY resurrect.inNewWin "В новом окне">

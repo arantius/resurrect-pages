@@ -1,0 +1,14 @@
+<!ENTITY resurrect.title "Tot leven wekken">
+<!ENTITY resurrect.accesskey "W">
+<!ENTITY resurrect.this "Deze tot leven wekken">
+<!ENTITY resurrect.thispage "Deze pagina tot leven wekken">
+<!ENTITY resurrect.thislink "Deze link tot leven wekken">
+<!ENTITY resurrect.fromMirror "Vanuit mirror">
+<!ENTITY resurrect.coralcdn "CoralCDN">
+<!ENTITY resurrect.google "Google Cache">
+<!ENTITY resurrect.yahoo "Yahoo! Cache">
+<!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.msn "MSN Cache">
+<!ENTITY resurrect.inCurrTab "In de huidige tab/het huidige venster">
+<!ENTITY resurrect.inNewTab "In een nieuwe tab">
+<!ENTITY resurrect.inNewWin "In een nieuw venster">
