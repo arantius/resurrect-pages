@@ -38,17 +38,17 @@ var resurrect={
 			.setAttribute('hidden', !gContextMenu.onLink);
 	},
 
-	attachClickEvent:function() {
+	attachClickEvent:function(event) {
 		resurrect.disabled=false;
 
-		var contentWin=getBrowser().contentWindow;
-		if (contentWin.document.documentURI.match(/^about:neterror/)) {
-			contentWin.document.getElementById('mirror').addEventListener(
+		var contentDoc=event.target;
+		if (contentDoc.documentURI.match(/^about:neterror/)) {
+			contentDoc.getElementById('mirror').addEventListener(
 				'click', resurrect.selectMirror, false
 			);
 			try {
 				// because this button isn't always there
-				contentWin.document.getElementById('mirrorSelect').addEventListener(
+				contentDoc.getElementById('mirrorSelect').addEventListener(
 					'click', resurrect.selectMirror, false
 				);
 			} catch (e) { }
