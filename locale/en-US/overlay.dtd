@@ -1,8 +1,8 @@
 <!ENTITY resurrect.title         "Resurrect">
 <!ENTITY resurrect.accesskey     "u">
 <!ENTITY resurrect.this          "Resurrect this">
-<!ENTITY resurrect.thispage      "Resurrect this page">
-<!ENTITY resurrect.thislink      "Resurrect this link">
+<!ENTITY resurrect.thispage      "Resurrect this page...">
+<!ENTITY resurrect.thislink      "Resurrect this link...">
 <!ENTITY resurrect.fromMirror    "From mirror">
 
 <!ENTITY resurrect.coralcdn      "CoralCDN">

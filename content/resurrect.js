@@ -93,7 +93,8 @@ var resurrect={
 		window.openDialog(
 			'chrome://resurrect/content/resurrect-select-mirror.xul',
 			'_blank',
-			'modal,centerscreen,resizable=no,chrome,dependent'
+			'modal,centerscreen,resizable=no,chrome,dependent',
+			getBrowser().contentWindow.document, url
 		);
 	},
 
@@ -105,15 +106,10 @@ var resurrect={
 
 		// find the content document -- this depends on whether we are
 		// living inline in the netError page
-		var contentDoc;
-		if (window.opener && window.opener.resurrect) {
-			contentDoc=window.opener.resurrect.originalDoc;
-		} else {
-			contentDoc=window.getBrowser().contentWindow.document;
-		}
+		var contentDoc=window.arguments[0];
 
 		var gotoUrl=null;
-		var rawUrl=contentDoc.location.href;
+		var rawUrl=window.arguments[1];
 		var encUrl=encodeURIComponent(rawUrl);
 
 		switch (listbox.value) {
