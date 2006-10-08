@@ -7,7 +7,7 @@
 	title="&resurrect.title;"
 	buttons="accept, cancel"
 	onload="document.getElementById('mirror').focus();"
-	ondialogaccept="return resurrect.selectMirror(event);"
+	ondialogaccept="return resurrect.clickedXul(event);"
 	persist="width height screenX screenY"
 >
 
@@ -23,7 +23,7 @@
 
 		<label value='&resurrect.fromMirror;' />
 		<listbox id='mirror' rows='5' 
-			onclick='resurrect.selectMirror(event);'
+			onclick='resurrect.clickedXul(event);'
 		>
 			<listitem value='coralcdn' label='&resurrect.coralcdn;' />
 			<listitem value='google' label='&resurrect.google;' />

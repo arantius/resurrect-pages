@@ -44,12 +44,12 @@ var resurrect={
 		var contentDoc=event.target;
 		if (contentDoc.documentURI.match(/^about:neterror/)) {
 			contentDoc.getElementById('mirror').addEventListener(
-				'click', resurrect.selectMirror, false
+				'click', resurrect.clickedHtml, false
 			);
 			try {
 				// because this button isn't always there
 				contentDoc.getElementById('mirrorSelect').addEventListener(
-					'click', resurrect.selectMirror, false
+					'click', resurrect.clickedHtml, false
 				);
 			} catch (e) { }
 		}
@@ -98,18 +98,28 @@ var resurrect={
 		);
 	},
 
-	selectMirror:function(event) {
-		var ownerDoc=event.target.ownerDocument;
+	clickedHtml:function(event) {
+		resurrect.selectMirror(
+			event.target.ownerDocument,
+			event.target.ownerDocument,
+			event.target.ownerDocument.location.href
+		);
+	},
+
+	clickedXul:function(event) {
+		resurrect.selectMirror(
+			event.target.ownerDocument,
+			window.arguments[0],
+			window.arguments[1]
+		);
+	},
+
+	selectMirror:function(ownerDoc, contentDoc, rawUrl) {
 		var listbox=ownerDoc.getElementById('mirror');
 		if (resurrect.disabled) return false;
 		resurrect.disabled=true;
 
-		// find the content document -- this depends on whether we are
-		// living inline in the netError page
-		var contentDoc=window.arguments[0];
-
 		var gotoUrl=null;
-		var rawUrl=window.arguments[1];
 		var encUrl=encodeURIComponent(rawUrl);
 
 		switch (listbox.value) {
