@@ -1,0 +1,14 @@
+<!ENTITY resurrect.title "恢復">
+<!ENTITY resurrect.accesskey "u">
+<!ENTITY resurrect.this "恢復於">
+<!ENTITY resurrect.thispage "恢復頁面...">
+<!ENTITY resurrect.thislink "恢復此連結...">
+<!ENTITY resurrect.fromMirror "映像來源">
+<!ENTITY resurrect.coralcdn "CoralCDN">
+<!ENTITY resurrect.google "Google">
+<!ENTITY resurrect.yahoo "Yahoo!">
+<!ENTITY resurrect.archive "Internet Archive">
+<!ENTITY resurrect.msn "MSN">
+<!ENTITY resurrect.inCurrTab "目前分頁/視窗">
+<!ENTITY resurrect.inNewTab "新分頁">
+<!ENTITY resurrect.inNewWin "新視窗">
