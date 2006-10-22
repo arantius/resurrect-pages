@@ -1,8 +1,8 @@
 <!ENTITY resurrect.title "Воскресить">
 <!ENTITY resurrect.accesskey "к">
 <!ENTITY resurrect.this "Воскресить это">
-<!ENTITY resurrect.thispage "Восрксить эту страницу">
-<!ENTITY resurrect.thislink "Воскресть эту ссылку">
+<!ENTITY resurrect.thispage "Воскресить эту страницу">
+<!ENTITY resurrect.thislink "Воскресить эту ссылку">
 <!ENTITY resurrect.fromMirror "Из зеркала">
 <!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Кэш Google">

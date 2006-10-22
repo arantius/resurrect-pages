@@ -1,0 +1,14 @@
+<!ENTITY resurrect.title "Wieder beleben">
+<!ENTITY resurrect.accesskey "l">
+<!ENTITY resurrect.this "Dieses Element wieder beleben">
+<!ENTITY resurrect.thispage "Diese Seite wieder beleben">
+<!ENTITY resurrect.thislink "Diesen Verweis wieder beleben">
+<!ENTITY resurrect.fromMirror "Wieder beleben von Spiegelserver">
+<!ENTITY resurrect.coralcdn "CoralCDN">
+<!ENTITY resurrect.google "Google Cache">
+<!ENTITY resurrect.yahoo "Yahoo! Cache">
+<!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.msn "MSN Cache">
+<!ENTITY resurrect.inCurrTab "In aktuellem Tab/Fenster">
+<!ENTITY resurrect.inNewTab "In neuem Tab">
+<!ENTITY resurrect.inNewWin "In neuem Fenster">
