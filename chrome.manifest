@@ -5,6 +5,7 @@ style	chrome://global/content/customizeToolbar.xul	chrome://resurrect/skin/resur
 style	chrome://global/content/netError.xhtml	chrome://resurrect/skin/netError.css
 override chrome://global/content/netError.xhtml chrome://resurrect/content/netError.xhtml
 
+locale resurrect de-DE locale/de-DE/
 locale resurrect en-US locale/en-US/
 locale resurrect es-AR locale/es-AR/
 locale resurrect es-CL locale/es-CL/
@@ -14,3 +15,4 @@ locale resurrect it-IT locale/it-IT/
 locale resurrect nl-NL locale/nl-NL/
 locale resurrect pt-BR locale/pt-BR/
 locale resurrect ru-RU locale/ru-RU/
+locale resurrect zh-TW locale/zh-TW/
