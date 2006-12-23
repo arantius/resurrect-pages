@@ -27,6 +27,7 @@
 		>
 			<listitem value='coralcdn' label='&resurrect.coralcdn;' />
 			<listitem value='google' label='&resurrect.google;' />
+			<listitem value='googletext' label='&resurrect.google;&resurrect.textonly;' />
 			<listitem value='yahoo' label='&resurrect.yahoo;' />
 			<listitem value='archive' label='&resurrect.archive;' />
 			<listitem value='msn' label='&resurrect.msn;' />

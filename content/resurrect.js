@@ -130,6 +130,9 @@ var resurrect={
 		case 'google':
 			gotoUrl='http://www.google.com/search?q=cache:'+encUrl
 			break;
+		case 'googletext':
+			gotoUrl='http://www.google.com/search?strip=1&q=cache:'+encUrl
+			break;
 		case 'archive':
 			gotoUrl='http://web.archive.org/web/*/'+rawUrl
 			break;
