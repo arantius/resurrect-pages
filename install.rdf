@@ -6,7 +6,7 @@
 		<em:version>1.0.6</em:version>
 		<em:description>Resurrect dead pages, by finding their ghosts.</em:description>
 
-		<em:homepageURL>http://firefox-extensions.arantius.com/resurrect</em:homepageURL>
+		<em:homepageURL>http://trac.arantius.com/wiki/Extensions/Resurrect</em:homepageURL>
 		<em:updateURL>http://arantius.com/misc/firefox-extensions/mine/updates.rdf</em:updateURL>
 		<em:iconURL>chrome://resurrect/skin/em-icon.png</em:iconURL>
 
