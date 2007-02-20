@@ -6,6 +6,7 @@
 <!ENTITY resurrect.fromMirror "Из зеркала">
 <!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Кэш Google">
+<!ENTITY resurrect.textonly "(только текст)">
 <!ENTITY resurrect.yahoo "Кэш Yahoo!">
 <!ENTITY resurrect.archive "The Internet Archive">
 <!ENTITY resurrect.msn "Кэш MSN">

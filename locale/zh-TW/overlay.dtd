@@ -6,6 +6,7 @@
 <!ENTITY resurrect.fromMirror "映像來源">
 <!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Google">
+<!ENTITY resurrect.textonly "(限文字)">
 <!ENTITY resurrect.yahoo "Yahoo!">
 <!ENTITY resurrect.archive "Internet Archive">
 <!ENTITY resurrect.msn "MSN">

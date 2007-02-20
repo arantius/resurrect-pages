@@ -1,0 +1,15 @@
+<!ENTITY resurrect.title "Oživi">
+<!ENTITY resurrect.accesskey "O">
+<!ENTITY resurrect.this "Oživi">
+<!ENTITY resurrect.thispage "Oživi to stran...">
+<!ENTITY resurrect.thislink "Oživi to povezavo...">
+<!ENTITY resurrect.fromMirror "Iz zrcalnega strežnika">
+<!ENTITY resurrect.coralcdn "CoralCDN">
+<!ENTITY resurrect.google "Google posnetek">
+<!ENTITY resurrect.textonly "(samo besedilo)">
+<!ENTITY resurrect.yahoo "Yahoo! posnetek">
+<!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.msn "MSN posnetek">
+<!ENTITY resurrect.inCurrTab "V obstoječem zavihku/oknu">
+<!ENTITY resurrect.inNewTab "V novem zavihku">
+<!ENTITY resurrect.inNewWin "V novem oknu">

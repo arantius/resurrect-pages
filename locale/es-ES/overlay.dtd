@@ -6,6 +6,7 @@
 <!ENTITY resurrect.fromMirror "Desde un mirror">
 <!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Caché de Google">
+<!ENTITY resurrect.textonly "(sólo texto)">
 <!ENTITY resurrect.yahoo "Caché de Yahoo!">
 <!ENTITY resurrect.archive "The Internet Archive">
 <!ENTITY resurrect.msn "Caché de MSN">

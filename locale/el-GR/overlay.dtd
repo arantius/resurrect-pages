@@ -1,0 +1,15 @@
+<!ENTITY resurrect.title "Ανασύσταση">
+<!ENTITY resurrect.accesskey "Α">
+<!ENTITY resurrect.this "Ανασύσταση του">
+<!ENTITY resurrect.thispage "Ανασύσταση αυτής της σελίδας...">
+<!ENTITY resurrect.thislink "Ανασύσταση αυτού του δεσμού...">
+<!ENTITY resurrect.fromMirror "Από τον εφεδρικό διαμεσολαβητή">
+<!ENTITY resurrect.coralcdn "CoralCDN">
+<!ENTITY resurrect.google "Google Cache">
+<!ENTITY resurrect.textonly "(μόνο κείμενο)">
+<!ENTITY resurrect.yahoo "Yahoo! Cache">
+<!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.msn "MSN Cache">
+<!ENTITY resurrect.inCurrTab "Στην τρέχουσα καρτέλα/παράθυρο">
+<!ENTITY resurrect.inNewTab "Σε νέα καρτέλα">
+<!ENTITY resurrect.inNewWin "Σε νέο παράθυρο">

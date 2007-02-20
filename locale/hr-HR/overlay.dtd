@@ -1,0 +1,15 @@
+<!ENTITY resurrect.title "Uskrsni">
+<!ENTITY resurrect.accesskey "U">
+<!ENTITY resurrect.this "Uskrsni ovo">
+<!ENTITY resurrect.thispage "Uskrsni ovu stranicu...">
+<!ENTITY resurrect.thislink "Uskrsni ovu poveznice...">
+<!ENTITY resurrect.fromMirror "Iz zrcala">
+<!ENTITY resurrect.coralcdn "CoralCDN">
+<!ENTITY resurrect.google "Google privremeni spremnik">
+<!ENTITY resurrect.textonly "(samo tekst)">
+<!ENTITY resurrect.yahoo "Yahoo! privremeni spremnik">
+<!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.msn "MSN privremeni spremnik">
+<!ENTITY resurrect.inCurrTab "U trenutnoj kartici/prozoru">
+<!ENTITY resurrect.inNewTab "U novoj kartici">
+<!ENTITY resurrect.inNewWin "U novom prozoru">
