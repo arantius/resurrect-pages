@@ -1,9 +1,12 @@
-content	resurrect	content/
-overlay	chrome://browser/content/browser.xul	chrome://resurrect/content/resurrect-overlay.xul
-skin	resurrect	classic/1.0	skin/
-style	chrome://global/content/customizeToolbar.xul	chrome://resurrect/skin/resurrect-overlay.css
-style	chrome://global/content/netError.xhtml	chrome://resurrect/skin/netError.css
+content resurrect               content/
+skin    resurrect   classic/1.0 skin/
+
+overlay chrome://browser/content/browser.xul    chrome://resurrect/content/resurrect-overlay.xul
+
 override chrome://global/content/netError.xhtml chrome://resurrect/content/netError.xhtml
+
+style   chrome://global/content/customizeToolbar.xul chrome://resurrect/skin/resurrect-overlay.css
+style   chrome://global/content/netError.xhtml       chrome://resurrect/skin/netError.css
 
 locale resurrect da-DK locale/da-DK/
 locale resurrect de-DE locale/de-DE/
