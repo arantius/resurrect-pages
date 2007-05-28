@@ -22,7 +22,7 @@
 		</radiogroup>
 
 		<label value='&resurrect.fromMirror;' />
-		<listbox id='mirror' rows='5' 
+		<listbox id='mirror' rows='6'
 			onclick='resurrect.clickedXul(event);'
 		>
 			<listitem value='coralcdn' label='&resurrect.coralcdn;' />

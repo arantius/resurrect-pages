@@ -99,7 +99,7 @@ var resurrect={
 	},
 
 	clickedHtml:function(event) {
-		resurrect.selectMirror(
+		return resurrect.clickHandler(
 			event.target.ownerDocument,
 			event.target.ownerDocument,
 			event.target.ownerDocument.location.href
@@ -107,17 +107,35 @@ var resurrect={
 	},
 
 	clickedXul:function(event) {
-		resurrect.selectMirror(
+		return resurrect.clickHandler(
 			event.target.ownerDocument,
 			window.arguments[0],
 			window.arguments[1]
 		);
 	},
 
+	clickHandler:function(ownerDoc, contentDoc, rawUrl) {
+		// Check, set, disabled status.
+		var listbox=ownerDoc.getElementById('mirror');
+
+		if (-1==listbox.selectedIndex) return false;
+		if (resurrect.disabled) return false;
+
+		resurrect.disabled=true;
+		listbox.setAttribute('disabled', true);
+
+		var button=contentDoc.getElementById('mirrorSelect');
+		if (!button && ownerDoc.documentElement.getButton) {
+			button=ownerDoc.documentElement.getButton('accept');
+		}
+		button.setAttribute('disabled', true);
+
+		// Run the actual code.  After timeout for UI repaint.
+		setTimeout(resurrect.selectMirror, 1, ownerDoc, contentDoc, rawUrl);
+	},
+
 	selectMirror:function(ownerDoc, contentDoc, rawUrl) {
 		var listbox=ownerDoc.getElementById('mirror');
-		if (resurrect.disabled) return false;
-		resurrect.disabled=true;
 
 		var gotoUrl=null;
 		var encUrl=encodeURIComponent(rawUrl);
