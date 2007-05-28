@@ -1,0 +1,15 @@
+<!ENTITY resurrect.title "Palauta">
+<!ENTITY resurrect.accesskey "u">
+<!ENTITY resurrect.this "Palauta tämä">
+<!ENTITY resurrect.thispage "Palauta tämä sivu...">
+<!ENTITY resurrect.thislink "Palauta tämän linkin kohde">
+<!ENTITY resurrect.fromMirror "Peilipalvelimelta">
+<!ENTITY resurrect.coralcdn "CoralCDN">
+<!ENTITY resurrect.google "Google välimuisti">
+<!ENTITY resurrect.textonly "(vain teksti)">
+<!ENTITY resurrect.yahoo "Yahoo! välimuisti">
+<!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.msn "MSN välimuisti">
+<!ENTITY resurrect.inCurrTab "Nykyiseen välilehteen/ikkunaan">
+<!ENTITY resurrect.inNewTab "Uuteen välilehteen">
+<!ENTITY resurrect.inNewWin "Uuteen ikkunaan">

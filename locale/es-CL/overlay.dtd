@@ -1,15 +1,15 @@
 <!ENTITY resurrect.title "Resucitar">
 <!ENTITY resurrect.accesskey "u">
-<!ENTITY resurrect.this "Resucitar this">
-<!ENTITY resurrect.thispage "Resucitar esta p᧩na">
+<!ENTITY resurrect.this "Resucitar esta">
+<!ENTITY resurrect.thispage "Resucitar esta página">
 <!ENTITY resurrect.thislink "Resucitar este enlace">
-<!ENTITY resurrect.fromMirror "Desde el mirror">
+<!ENTITY resurrect.fromMirror "Del mirror">
 <!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Cache de Google">
-<!ENTITY resurrect.textonly "(Solo Texto)">
+<!ENTITY resurrect.textonly "(solo texto)">
 <!ENTITY resurrect.yahoo "Cache de Yahoo!">
-<!ENTITY resurrect.archive "The Internet Archive">
-<!ENTITY resurrect.msn "Cache MSN">
-<!ENTITY resurrect.inCurrTab "En la pesta񡯶entana actual">
-<!ENTITY resurrect.inNewTab "En una nueva pesta񡼯textarea&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;2&quot;&gt;&lt;/tr&gt;&lt;tr bgcolor=&quot;#DDDDDD&quot;&gt;&lt;td class=&quot;name&quot;&gt;resurrect.inNewWin&lt;/td&gt;&lt;/tr&gt;&lt;tr bgcolor=&quot;#EEEEEE&quot;&gt;&lt;td class=&quot;orgString&quot;&gt;In a new window&lt;/td&gt;&lt;/tr&gt;&lt;tr bgcolor=&quot;#EEEEEE&quot;&gt;&lt;td&gt;&lt;textarea name=&quot;strings[7719][resurrect.inNewWin]&quot; class=&quot;textarea&quot; style=&quot;background-color: #FFFFFF;&quot;&gt;En una nueva ventana">
+<!ENTITY resurrect.archive "El Archivo de Internet">
+<!ENTITY resurrect.msn "Cache de MSN">
+<!ENTITY resurrect.inCurrTab "En la actual ventana/pestaña">
+<!ENTITY resurrect.inNewTab "En una nueva pestaña">
 <!ENTITY resurrect.inNewWin "En una nueva ventana">
