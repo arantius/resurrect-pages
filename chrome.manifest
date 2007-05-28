@@ -8,6 +8,7 @@ override chrome://global/content/netError.xhtml chrome://resurrect/content/netEr
 style   chrome://global/content/customizeToolbar.xul chrome://resurrect/skin/resurrect-overlay.css
 style   chrome://global/content/netError.xhtml       chrome://resurrect/skin/netError.css
 
+locale resurrect ca-AD locale/ca-AD/
 locale resurrect da-DK locale/da-DK/
 locale resurrect de-DE locale/de-DE/
 locale resurrect el-GR locale/el-GR/
@@ -15,9 +16,11 @@ locale resurrect en-US locale/en-US/
 locale resurrect es-AR locale/es-AR/
 locale resurrect es-CL locale/es-CL/
 locale resurrect es-ES locale/es-ES/
+locale resurrect fi-FI locale/fi-FI/
 locale resurrect fr-FR locale/fr-FR/
 locale resurrect hr-HR locale/hr-HR/
 locale resurrect it-IT locale/it-IT/
+locale resurrect ko-KR locale/ko-KR/
 locale resurrect nl-NL locale/nl-NL/
 locale resurrect pt-BR locale/pt-BR/
 locale resurrect ru-RU locale/ru-RU/

@@ -3,7 +3,7 @@
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>{0c8fbd76-bdeb-4c52-9b24-d587ce7b9dc3}</em:id>
 		<em:name>Resurrect Pages</em:name>
-		<em:version>1.0.7</em:version>
+		<em:version>1.0.8</em:version>
 		<em:description>Resurrect dead pages, by finding their ghosts.</em:description>
 
 		<em:homepageURL>http://trac.arantius.com/wiki/Extensions/Resurrect</em:homepageURL>
