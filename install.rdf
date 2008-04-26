@@ -3,11 +3,11 @@
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>{0c8fbd76-bdeb-4c52-9b24-d587ce7b9dc3}</em:id>
 		<em:name>Resurrect Pages</em:name>
-		<em:version>1.0.8</em:version>
+		<em:version>2.0</em:version>
 		<em:description>Resurrect dead pages, by finding their ghosts.</em:description>
 
 		<em:homepageURL>http://trac.arantius.com/wiki/Extensions/Resurrect</em:homepageURL>
-		<em:updateURL>http://arantius.com/misc/firefox-extensions/mine/updates.rdf</em:updateURL>
+		<em:updateURL>https://arantius.com/misc/firefox-extensions/mine/resurrect.rdf</em:updateURL>
 		<em:iconURL>chrome://resurrect/skin/em-icon.png</em:iconURL>
 
 		<em:creator>Anthony Lieuallen</em:creator>
@@ -16,8 +16,8 @@
 		<em:targetApplication>
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-				<em:minVersion>1.5</em:minVersion>
-				<em:maxVersion>2.0.0.*</em:maxVersion>
+				<em:minVersion>3.0a5</em:minVersion>
+				<em:maxVersion>3.0.*</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 	</Description>
