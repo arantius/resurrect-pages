@@ -62,10 +62,13 @@
    -
    - ***** END LICENSE BLOCK ***** -->
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+>
   <head>
     <title>&loadError.label;</title>
     <link rel="stylesheet" href="chrome://global/skin/netError.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="chrome://resurrect/skin/netError.css" type="text/css" media="all" />
     <link rel="icon" type="image/png" id="favicon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAANbY1E9YMgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAICSURBVHjaYvz//z8DJQAggJhwiDPvnmlzc2aR0O+JGezt+AwACCCsBhxfYhn59N41FWtXIxZOLu70niRGXVwGAAQQNgNYHj96O8HaWYdJW5ubwd4/mI2Ng7sblwEAAYRhwMm1URk/vn4SUNWVYGD8+YZBXZOZm5OLzRjoCmNsBgAEEKoBN82Y7l851GLrqMjM8Oc7A8O/3wwMP54wuAQFCXNycUzGZgBAAKEYcOaKZO2/f//5FbUVgBrfMoRVcgHpNwyKGjKMXDwCan0prFboBgAEELIBzDcvXyy2cVZhYPj9GWj7H4jo/38MDJ9OMDj7O/KzsjH3oxsAEEBwA/bNNipiZf7FI6cqwcDw8x2qqp8fGORUpVn4BEXlgGHhhCwFEEAwA9gfP3hdZ+Oizcjw+wvCdjgAuuLrFQbXIH9hTm7uqcgyAAEENuD4ctcebm5mbikFYRTbV7V/Q6j88Z5BSuY7q4CQgAjQFR4wYYAAAhtw89L5ZFsnRaDtn4CW/YXrAQcisit+PGVwDgrnZ2NnnwATBQggpsNLvGYLCAmxi8tLARWg+h3FBVBXSEj/ZZWQkRcCuiIQJAQQQCyvnj5KMDTkZ2JgYmRg4FchnHv+vmEwttLmeXT3VjKQtx4ggFgk5TXebV63UfT3ijOMxOZAVlZWdiB1EMQGCCBGSrMzQIABAFR3kRM3KggZAAAAAElFTkSuQmCC"/>
 
     <script type="application/x-javascript"><![CDATA[
@@ -284,31 +287,40 @@
       </div>
 
       <!-- Retry Button -->
-      <xul:button xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-                  id="errorTryAgain" label="&retry.label;" oncommand="retryThis(this);" />
+      <xul:button id="errorTryAgain" label="&retry.label;" oncommand="retryThis(this);" />
 
-      <div id='resurrect'>
-        <!-- fake elements that have IDs matching target selector -->
-        <div id='targetTab' style='display: none;'></div>
-        <div id='targetWin' style='display: none;'></div>
-
-        <p>&resurrect.thispage;</p>
-        <select id='mirror' size='6'>
-          <option value='coralcdn'>&resurrect.coralcdn;</option>
-          <option value='google'>&resurrect.google;</option>
-          <option value='googletext'>&resurrect.google;&resurrect.textonly;</option>
-          <option value='yahoo'>&resurrect.yahoo;</option>
-          <option value='archive'>&resurrect.archive;</option>
-          <option value='msn'>&resurrect.msn;</option>
-        </select>
-        <br />
-
-        <xul:button xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-          id="mirrorSelect" label="&okButton.label;"
+      <fieldset id='resurrect'>
+        <legend>
+          <img src='chrome://resurrect/skin/tb-icon-small.png' />
+          &resurrect.thispage;
+        </legend>
+        <xul:button
+          value='coralcdn' label=' &resurrect.coralcdn;'
+          image='chrome://resurrect/skin/cacheicons/coralcdn.png'
         />
-      </div>
+        <xul:button
+          value='google' label=' &resurrect.google;'
+          image='chrome://resurrect/skin/cacheicons/google.png'
+        />
+        <xul:button
+          value='googletext' label=' &resurrect.google;&resurrect.textonly;'
+          image='chrome://resurrect/skin/cacheicons/google.png'
+        />
+        <xul:button
+          value='yahoo' label=' &resurrect.yahoo;'
+          image='chrome://resurrect/skin/cacheicons/yahoo.png'
+        />
+        <xul:button
+          value='archive' label=' &resurrect.archive;'
+          image='chrome://resurrect/skin/cacheicons/archive.png'
+        />
+        <xul:button
+          value='msn' label=' &resurrect.msn;'
+          image='chrome://resurrect/skin/cacheicons/msn.png'
+        />
+      </fieldset>
 
-	</div>
+    </div>
 
     <!--
     - Note: It is important to run the script this way, instead of using

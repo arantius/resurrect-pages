@@ -1,15 +1,28 @@
-div#resurrect {
-	margin: 2em 0.5em 0em 0.5em;
-	font-size: 110%;
-
-	background: url(chrome://resurrect/skin/em-icon.png) 0px 5px no-repeat;
-	padding-left: 32px;
+div#errorPageContainer {
+	padding-right: 17em;
+	max-width: 47em;
 }
 
-div#resurrect button {
-	margin: 5px 0px;
+fieldset#resurrect {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	background-color: white;
+
+	width: 16em;
+	padding: 1em;
+	margin: 1em;
+	margin-right: 1.5em;
+
+	-moz-border-radius: 10px;
 }
 
-div#resurrect p {
-	margin: 5px 0px;
+fieldset#resurrect legend img {
+	vertical-align: middle;
+	padding-right: 0.25em;
+}
+
+fieldset#resurrect button {
+	width: 16em;
 }
