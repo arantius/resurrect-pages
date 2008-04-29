@@ -1,13 +1,5 @@
 var resurrect={
 
-	mirrors:[
-		{name:'CoralCDN', id:'coralcdn'},
-		{name:'Google Cache', id:'google'},
-		{name:'The Internet Archive', id:'archive'},
-		{name:'MSN Cache', id:'msn'},
-		{name:'Yahoo! Cache', id:'yahoo'}
-	],
-
 	originalDoc:null,
 	disabled:false,
 
@@ -19,7 +11,7 @@ var resurrect={
 		document.getElementById('contentAreaContextMenu')
 			.addEventListener('popupshowing', resurrect.toggleContextItems, false);
 
-		window.document.getElementById("appcontent").addEventListener(
+		window.document.getElementById('appcontent').addEventListener(
 			'DOMContentLoaded', resurrect.attachClickEvent, false
 		);
 	},
@@ -43,15 +35,9 @@ var resurrect={
 
 		var contentDoc=event.target;
 		if (contentDoc.documentURI.match(/^about:neterror/)) {
-			contentDoc.getElementById('mirror').addEventListener(
+			contentDoc.getElementById('resurrect').addEventListener(
 				'click', resurrect.clickedHtml, false
 			);
-			try {
-				// because this button isn't always there
-				contentDoc.getElementById('mirrorSelect').addEventListener(
-					'click', resurrect.clickedHtml, false
-				);
-			} catch (e) { }
 		}
 	},
 
@@ -80,7 +66,7 @@ var resurrect={
 		with (gBrowser) {
 			selectedTab=aTab;
 			mTabBox.selectedPanel=getBrowserForTab(mCurrentTab).parentNode;
-			mCurrentTab.selected = true;
+			mCurrentTab.selected=true;
 			updateCurrentBrowser();
 		}
 	},
@@ -100,6 +86,7 @@ var resurrect={
 
 	clickedHtml:function(event) {
 		return resurrect.clickHandler(
+			event,
 			event.target.ownerDocument,
 			event.target.ownerDocument,
 			event.target.ownerDocument.location.href
@@ -108,39 +95,29 @@ var resurrect={
 
 	clickedXul:function(event) {
 		return resurrect.clickHandler(
+			event,
 			event.target.ownerDocument,
 			window.arguments[0],
 			window.arguments[1]
 		);
 	},
 
-	clickHandler:function(ownerDoc, contentDoc, rawUrl) {
-		// Check, set, disabled status.
-		var listbox=ownerDoc.getElementById('mirror');
-
-		if (-1==listbox.selectedIndex) return false;
-		if (resurrect.disabled) return false;
-
+	clickHandler:function(event, ownerDoc, contentDoc, rawUrl) {
+		if (resurrect.disabled) return;
 		resurrect.disabled=true;
-		listbox.setAttribute('disabled', true);
-
-		var button=contentDoc.getElementById('mirrorSelect');
-		if (!button && ownerDoc.documentElement.getButton) {
-			button=ownerDoc.documentElement.getButton('accept');
-		}
-		button.setAttribute('disabled', true);
 
 		// Run the actual code.  After timeout for UI repaint.
-		setTimeout(resurrect.selectMirror, 1, ownerDoc, contentDoc, rawUrl);
+		setTimeout(
+			resurrect.selectMirror, 1,
+			event.target.getAttribute('value'), ownerDoc, contentDoc, rawUrl
+		);
 	},
 
-	selectMirror:function(ownerDoc, contentDoc, rawUrl) {
-		var listbox=ownerDoc.getElementById('mirror');
-
+	selectMirror:function(mirror, ownerDoc, contentDoc, rawUrl) {
 		var gotoUrl=null;
 		var encUrl=encodeURIComponent(rawUrl);
 
-		switch (listbox.value) {
+		switch (mirror) {
 		case 'coralcdn':
 			gotoUrl=rawUrl.substring(0, 8)+
 				rawUrl.substring(8).replace(/\//, '.nyud.net:8080/');
@@ -212,15 +189,15 @@ var resurrect={
 			} else {
 				contentDoc.location.assign(gotoUrl);
 			}
-		}
 
-		if ('chrome://resurrect/content/resurrect-select-mirror.xul'==window.document.location) {
-			// setTimeout avoids errors because the window is gone
-			setTimeout(window.close, 0);
+			if ('chrome://resurrect/content/resurrect-select-mirror.xul'==window.document.location) {
+				// setTimeout avoids errors because the window is gone
+				setTimeout(window.close, 0);
+			}
+		} else {
+			resurrect.disabled=false;
 		}
 	}
-
-// // // // // // // // // // // // // // // // // // // // // // // // // // //
 
 }//end var resurrect
 

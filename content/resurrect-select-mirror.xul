@@ -23,6 +23,7 @@
 	</radiogroup>
 
 	<label value='&resurrect.fromMirror;' />
+	<vbox id='resurrect'>
 	<button
 		value='coralcdn' label=' &resurrect.coralcdn;'
 		image='chrome://resurrect/skin/cacheicons/coralcdn.png'
@@ -47,6 +48,7 @@
 		value='msn' label=' &resurrect.msn;'
 		image='chrome://resurrect/skin/cacheicons/msn.png'
 	/>
+	</vbox>
 
 </vbox>
 

@@ -290,7 +290,11 @@
       <xul:button id="errorTryAgain" label="&retry.label;" oncommand="retryThis(this);" />
 
       <fieldset id='resurrect'>
-        <legend>
+        <!-- fake elements so getElementById() doesn't die -->
+        <div id='targetTab' style='display: none;'></div>
+        <div id='targetWin' style='display: none;'></div>
+
+		<legend>
           <img src='chrome://resurrect/skin/tb-icon-small.png' />
           &resurrect.thispage;
         </legend>
