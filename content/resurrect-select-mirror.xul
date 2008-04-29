@@ -48,6 +48,10 @@
 		value='msn' label=' &resurrect.msn;'
 		image='chrome://resurrect/skin/cacheicons/msn.png'
 	/>
+	<button
+		value='gigablast' label=' &resurrect.gigablast;'
+		image='chrome://resurrect/skin/cacheicons/gigablast.png'
+	/>
 	</vbox>
 
 </vbox>
