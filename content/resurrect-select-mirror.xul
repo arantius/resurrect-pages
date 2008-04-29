@@ -8,7 +8,6 @@
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	title="&resurrect.title;"
 	buttons="cancel"
-	onload="document.getElementById('mirror').focus();"
 	persist="width height screenX screenY"
 >
 
