@@ -23,7 +23,7 @@
 	</radiogroup>
 
 	<label value='&resurrect.fromMirror;' />
-	<vbox id='resurrect'>
+	<vbox id='resurrect' onclick='resurrect.clickedXul(event);'>
 	<button
 		value='coralcdn' label=' &resurrect.coralcdn;'
 		image='chrome://resurrect/skin/cacheicons/coralcdn.png'
