@@ -172,7 +172,7 @@ var resurrect={
 				var c=xhr.responseXML.getElementsByTagName('CacheUrl');
 				gotoUrl=c[0].textContent;
 			} catch (e) {
-				gotoUrl='http://search.msn.com/results.aspx?q='+encUrl;
+				gotoUrl='http://search.msn.com/results.aspx?q=url:'+encUrl;
 			}
 
 			break;
@@ -195,7 +195,7 @@ var resurrect={
 					+'?page=get&ih=1&ibh=1&cas=0&d='
 					+docId;
 			} catch (e) {
-				gotoUrl='http://www.gigablast.com/index.php?q='+encUrl;
+				gotoUrl='http://www.gigablast.com/index.php?q=url:'+encUrl;
 			}
 
 			break;
