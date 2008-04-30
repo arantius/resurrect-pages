@@ -199,6 +199,9 @@ var resurrect={
 			}
 
 			break;
+		case 'webcitation':
+			gotoUrl='http://webcitation.org/query.php?url='+encUrl;
+			break;
 		default:
 			return false;
 			break;
