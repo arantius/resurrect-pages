@@ -6,6 +6,7 @@
 
 <dialog id="resurrect-select-mirror"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	title="&resurrect.title;"
 	buttons="cancel"
 	persist="width height screenX screenY"
@@ -23,31 +24,31 @@
 
 	<label value='&resurrect.fromMirror;' />
 	<vbox id='resurrect' onclick='resurrect.clickedXul(event);'>
-	<button
+	<xul:button
 		value='coralcdn' label=' &resurrect.coralcdn;'
 		image='chrome://resurrect/skin/cacheicons/coralcdn.png'
 	/>
-	<button
+	<xul:button
 		value='google' label=' &resurrect.google;'
 		image='chrome://resurrect/skin/cacheicons/google.png'
 	/>
-	<button
+	<xul:button
 		value='googletext' label=' &resurrect.google;&resurrect.textonly;'
 		image='chrome://resurrect/skin/cacheicons/google.png'
 	/>
-	<button
+	<xul:button
 		value='yahoo' label=' &resurrect.yahoo;'
 		image='chrome://resurrect/skin/cacheicons/yahoo.png'
 	/>
-	<button
+	<xul:button
 		value='archive' label=' &resurrect.archive;'
 		image='chrome://resurrect/skin/cacheicons/archive.png'
 	/>
-	<button
+	<xul:button
 		value='msn' label=' &resurrect.msn;'
 		image='chrome://resurrect/skin/cacheicons/msn.png'
 	/>
-	<button
+	<xul:button
 		value='gigablast' label=' &resurrect.gigablast;'
 		image='chrome://resurrect/skin/cacheicons/gigablast.png'
 	/>

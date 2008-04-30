@@ -1,7 +1,6 @@
 var resurrect={
 
 	originalDoc:null,
-	disabled:false,
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
@@ -31,13 +30,21 @@ var resurrect={
 	},
 
 	attachClickEvent:function(event) {
-		resurrect.disabled=false;
-
 		var contentDoc=event.target;
+		var contentWin=contentDoc.defaultView;
+
 		if (contentDoc.documentURI.match(/^about:neterror/)) {
 			contentDoc.getElementById('resurrect').addEventListener(
 				'click', resurrect.clickedHtml, false
 			);
+		}
+	},
+
+	disableButtons:function(doc) {
+		var bs=doc.getElementById('resurrect')
+			.getElementsByTagName('xul:button');
+		for (var i=0, b=null; b=bs[i]; i++) {
+			b.setAttribute('disabled', 'true');
 		}
 	},
 
@@ -85,9 +92,12 @@ var resurrect={
 	},
 
 	clickedHtml:function(event) {
+		if ('true'==event.target.getAttribute('disabled')) {
+			return;
+		}
+
 		return resurrect.clickHandler(
 			event,
-			event.target.ownerDocument,
 			event.target.ownerDocument,
 			event.target.ownerDocument.location.href
 		);
@@ -96,20 +106,20 @@ var resurrect={
 	clickedXul:function(event) {
 		return resurrect.clickHandler(
 			event,
-			event.target.ownerDocument,
 			window.arguments[0],
 			window.arguments[1]
 		);
 	},
 
-	clickHandler:function(event, ownerDoc, contentDoc, rawUrl) {
-		if (resurrect.disabled) return;
-		resurrect.disabled=true;
+	clickHandler:function(event, contentDoc, rawUrl) {
+		resurrect.disableButtons(event.target.ownerDocument);
 
 		// Run the actual code.  After timeout for UI repaint.
 		setTimeout(
 			resurrect.selectMirror, 1,
-			event.target.getAttribute('value'), ownerDoc, contentDoc, rawUrl
+			event.target.getAttribute('value'), 
+			event.target.ownerDocument,
+			contentDoc, rawUrl
 		);
 	},
 
@@ -217,8 +227,6 @@ var resurrect={
 				// setTimeout avoids errors because the window is gone
 				setTimeout(window.close, 0);
 			}
-		} else {
-			resurrect.disabled=false;
 		}
 	}
 
