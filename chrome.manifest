@@ -22,7 +22,9 @@ locale resurrect hr-HR locale/hr-HR/
 locale resurrect it-IT locale/it-IT/
 locale resurrect ko-KR locale/ko-KR/
 locale resurrect nl-NL locale/nl-NL/
+locale resurrect pl-PL locale/pl-PL/
 locale resurrect pt-BR locale/pt-BR/
+locale resurrect pt-PT locale/pt-PT/
 locale resurrect ru-RU locale/ru-RU/
 locale resurrect sl-SI locale/sl-SI/
 locale resurrect uk-UA locale/uk-UA/
