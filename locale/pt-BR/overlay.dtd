@@ -10,6 +10,8 @@
 <!ENTITY resurrect.yahoo "Cache do Yahoo!">
 <!ENTITY resurrect.archive "The Internet Archive">
 <!ENTITY resurrect.msn "Cache do MSN">
+<!ENTITY resurrect.gigablast "Gigablast">
+<!ENTITY resurrect.webcitation "WebCite">
 <!ENTITY resurrect.inCurrTab "Na aba/janela atual">
 <!ENTITY resurrect.inNewTab "Em uma nova aba">
 <!ENTITY resurrect.inNewWin "Em uma nova janela">
