@@ -17,6 +17,7 @@ locale resurrect fi-FI locale/fi-FI/
 locale resurrect fr-FR locale/fr-FR/
 locale resurrect hr-HR locale/hr-HR/
 locale resurrect it-IT locale/it-IT/
+locale resurrect ja-JP locale/ja-JP/
 locale resurrect ko-KR locale/ko-KR/
 locale resurrect nl-NL locale/nl-NL/
 locale resurrect pl-PL locale/pl-PL/
