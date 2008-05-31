@@ -203,6 +203,8 @@
           document.getElementById("errorTryAgain").style.display = "none";
           document.getElementById("errorPageContainer").setAttribute("class", "certerror");
           addDomainErrorLink();
+          // Also, remove resurrect buttons, they're not likely to help either.
+          document.body.className='';
         }
         else {
           // Remove the override block for non-certificate errors.  CSS-hiding
@@ -275,7 +277,7 @@
     ]]></script>
   </head>
 
-  <body dir="&locale.dir;">
+  <body dir="&locale.dir;" class="resurrect">
 
     <!-- ERROR ITEM CONTAINER (removed during loading to avoid bug 39098) -->
 

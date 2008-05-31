@@ -1,9 +1,14 @@
-div#errorPageContainer {
+body.resurrect div#errorPageContainer {
 	padding-right: 18em;
 	max-width: 45em;
 }
 
 fieldset#resurrect {
+	display: none;
+}
+body.resurrect fieldset#resurrect {
+	display: block;
+
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -18,11 +23,11 @@ fieldset#resurrect {
 	-moz-border-radius: 10px;
 }
 
-fieldset#resurrect legend img {
+body.resurrect fieldset#resurrect legend img {
 	vertical-align: middle;
 	padding-right: 0.25em;
 }
 
-fieldset#resurrect button {
+body.resurrect fieldset#resurrect button {
 	width: 14em;
 }
