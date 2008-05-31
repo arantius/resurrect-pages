@@ -1,9 +1,9 @@
-<!ENTITY resurrect.title "Resurrect Pages">
-<!ENTITY resurrect.accesskey "u">
-<!ENTITY resurrect.this "Resuscita">
+<!ENTITY resurrect.title "Opzioni di Resurrect Pages">
+<!ENTITY resurrect.accesskey "e">
+<!ENTITY resurrect.this "Dove resuscitare pagina/link:">
 <!ENTITY resurrect.thispage "Resuscita questa pagina...">
 <!ENTITY resurrect.thislink "Resuscita questo link...">
-<!ENTITY resurrect.fromMirror "utilizzando il mirror:">
+<!ENTITY resurrect.fromMirror "Mirror da utilizzare:">
 <!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Google Cache">
 <!ENTITY resurrect.textonly " (solo testo)">
