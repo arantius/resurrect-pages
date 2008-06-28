@@ -69,17 +69,6 @@ var resurrect={
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
-	selectTab:function(aTab) {
-		with (gBrowser) {
-			selectedTab=aTab;
-			mTabBox.selectedPanel=getBrowserForTab(mCurrentTab).parentNode;
-			mCurrentTab.selected=true;
-			updateCurrentBrowser();
-		}
-	},
-
-// // // // // // // // // // // // // // // // // // // // // // // // // // //
-
 	showDialog:function(url) {
 		resurrect.originalDoc=getBrowser().contentWindow.document;
 
@@ -209,14 +198,7 @@ var resurrect={
 
 		if (gotoUrl) {
 			if (ownerDoc.getElementById('targetTab').getAttribute('selected')) {
-				var newTab=window.opener.gBrowser.addTab(gotoUrl);
-
-				//replicate broken focus-new-tab functionality
-				var prefServ=Components.classes['@mozilla.org/preferences-service;1']
-					.getService(Components.interfaces.nsIPrefBranch);
-				if (!prefServ.getBoolPref('browser.tabs.loadInBackground')) {
-					window.opener.resurrect.selectTab(newTab);
-				}
+				window.opener.openUILinkIn(gotoUrl, 'tab');
 			} else if (ownerDoc.getElementById('targetWin').getAttribute('selected')) {
 				// the setTimeout keeps focus from returning to the opener
 				setTimeout(function(){
