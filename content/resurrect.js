@@ -120,7 +120,7 @@ var resurrect={
 		switch (mirror) {
 		case 'coralcdn':
 			gotoUrl=rawUrl.substring(0, 8)+
-				rawUrl.substring(8).replace(/\//, '.nyud.net:8080/');
+				rawUrl.substring(8).replace(/\//, '.nyud.net/');
 			break;
 		case 'google':
 			gotoUrl='http://www.google.com/search?q=cache:'+encUrl
