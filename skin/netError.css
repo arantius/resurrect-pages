@@ -1,6 +1,7 @@
 body.resurrect div#errorPageContainer {
 	padding-right: 22em;
 	max-width: 41em;
+	min-height: 20em;
 }
 
 fieldset#resurrect {
