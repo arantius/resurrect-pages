@@ -69,6 +69,25 @@ var resurrect={
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
+	loadTarget:function() {
+		var pref=Components.classes['@mozilla.org/preferences-service;1']
+			.getService(Components.interfaces.nsIPrefBranch);
+		var target=pref.getCharPref('extensions.resurrect.target');
+
+		document.getElementById('targetGroup').selectedItem=
+			document.getElementById(target);
+	},
+
+	saveTarget:function(el) {
+		var target=document.getElementById('targetGroup').selectedItem.id;
+
+		var pref=Components.classes['@mozilla.org/preferences-service;1']
+			.getService(Components.interfaces.nsIPrefBranch);
+		pref.setCharPref('extensions.resurrect.target', target);
+	},
+
+// // // // // // // // // // // // // // // // // // // // // // // // // // //
+
 	showDialog:function(url) {
 		resurrect.originalDoc=getBrowser().contentWindow.document;
 
@@ -93,6 +112,8 @@ var resurrect={
 	},
 
 	clickedXul:function(event) {
+		resurrect.saveTarget(event.target);
+
 		return resurrect.clickHandler(
 			event,
 			window.arguments[0],

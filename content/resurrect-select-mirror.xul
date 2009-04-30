@@ -14,13 +14,16 @@
 >
 
 <script type='application/x-javascript' src='chrome://resurrect/content/resurrect.js'></script>
+<script type='application/x-javascript'>
+window.addEventListener('load', resurrect.loadTarget, false);
+</script>
 
 <vbox>
 	<groupbox>
 		<caption label='&resurrect.this;' />
 
-		<radiogroup>
-			<radio id='targetCurr' label='&resurrect.inCurrTab;' selected='true' />
+		<radiogroup id='targetGroup'>
+			<radio id='targetCurr' label='&resurrect.inCurrTab;' />
 			<radio id='targetTab' label='&resurrect.inNewTab;' />
 			<radio id='targetWin' label='&resurrect.inNewWin;' />
 		</radiogroup>
