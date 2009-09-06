@@ -169,20 +169,22 @@ var resurrect={
 			}
 
 			break;
-		case 'msn':
-			var soapBody='<?xml version="1.0" encoding="ISO-8859-1"?><SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:si="http://soapinterop.org/xsd"><SOAP-ENV:Body><ns1:Search xmlns:ns1="http://testuri.org"><Request><AppID xsi:type="xsd:string">FD382E93B5ABC456C5E34C238A906CAB2DEEB5D6</AppID><Query xsi:type="xsd:string">url:'+xmlUrl+'</Query><CultureInfo xsi:type="xsd:string">en-US</CultureInfo><SafeSearch xsi:type="xsd:string">Off</SafeSearch><Requests><SourceRequest><Source xsi:type="xsd:string">Web</Source><Offset xsi:type="xsd:int">0</Offset><Count xsi:type="xsd:int">1</Count><ResultFields xsi:type="xsd:string">All</ResultFields></SourceRequest></Requests></Request></ns1:Search></SOAP-ENV:Body></SOAP-ENV:Envelope>';
-
+		case 'bing':
 			var xhr=new XMLHttpRequest();
-			xhr.open('POST', 'http://soap.search.msn.com/webservices.asmx', false);
-			xhr.setRequestHeader('Content-Type', 'text/xml; charset=ISO-8859-1');
-			xhr.setRequestHeader('SOAPAction', '""');
-			xhr.send(soapBody);
+			xhr.open('GET',
+				'http://api.search.live.net/xml.aspx'+
+				'?AppId=FD382E93B5ABC456C5E34C238A906CAB1E6F9875'+
+				'&Query=url:'+encUrl+
+				'&Sources=web&Web.Count=1',
+				false
+			);
+			xhr.send(null);
 
 			try {
-				var c=xhr.responseXML.getElementsByTagName('CacheUrl');
+				var c=xhr.responseXML.getElementsByTagName('web:CacheUrl');
 				gotoUrl=c[0].textContent;
 			} catch (e) {
-				gotoUrl='http://search.msn.com/results.aspx?q=url:'+encUrl;
+				gotoUrl='http://www.bing.com/search?q=url:'+encUrl;
 			}
 
 			break;
