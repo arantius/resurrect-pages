@@ -11,7 +11,7 @@ var resurrect={
 			.addEventListener('popupshowing', resurrect.toggleContextItems, false);
 
 		window.document.getElementById('appcontent').addEventListener(
-			'DOMContentLoaded', resurrect.attachClickEvent, false
+			'DOMContentLoaded', resurrect.contentDomLoad, false
 		);
 	},
 
@@ -29,11 +29,34 @@ var resurrect={
 			.setAttribute('hidden', !gContextMenu.onLink);
 	},
 
-	attachClickEvent:function(event) {
+	contentDomLoad:function(event) {
 		var contentDoc=event.target;
 		var contentWin=contentDoc.defaultView;
 
 		if (contentDoc.documentURI.match(/^about:neterror/)) {
+			// Inject our content...
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', 'chrome://resurrect/content/netError.xhtml', false);
+			xhr.send(null);
+			var resurrectFieldset = xhr.responseXML.getElementById('resurrect');
+			var newFieldset = contentDoc.adoptNode(resurrectFieldset);
+			var container = contentDoc.getElementById('errorPageContainer');
+			container.appendChild(newFieldset);
+			// ...including the CSS.
+			var link = contentDoc.createElement('link');
+			link.setAttribute('rel', 'stylesheet');
+			link.setAttribute('href', 'chrome://resurrect/skin/netError.css');
+			link.setAttribute('type', 'text/css');
+			link.setAttribute('media', 'all');
+			contentDoc.getElementsByTagName('head')[0].appendChild(link);
+
+			// Add the className that enables it, only when appropriate.
+			contentDoc.location.href =
+				'javascript:if ("nssBadCert" != getErrorCode()) {'
+					+ 'document.body.className += " resurrect";'
+				+ '}; void(0)';
+
+			// Add event listener.
 			contentDoc.getElementById('resurrect').addEventListener(
 				'click', resurrect.clickedHtml, false
 			);

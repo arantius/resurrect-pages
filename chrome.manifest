@@ -2,7 +2,6 @@ content resurrect               content/ contentaccessible=yes
 skin    resurrect   classic/1.0 skin/
 
 overlay chrome://browser/content/browser.xul chrome://resurrect/content/resurrect-overlay.xul
-override chrome://global/content/netError.xhtml chrome://resurrect/content/netError.xhtml
 style chrome://global/content/customizeToolbar.xul chrome://resurrect/skin/resurrect-overlay.css
 
 locale resurrect ca-AD locale/ca-AD/
