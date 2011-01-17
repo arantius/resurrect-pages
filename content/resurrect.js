@@ -59,7 +59,7 @@ var resurrect={
 		var el=document.popupNode;
 
 		try {
-			while (el && el.tagName && 'A'!=el.tagName) {
+			while (el && el.tagName && 'A'!=el.tagName.toUpperCase()) {
 				el=el.parentNode;
 			}
 			resurrect.showDialog(el.href);
@@ -127,7 +127,7 @@ var resurrect={
 		// Run the actual code.  After timeout for UI repaint.
 		setTimeout(
 			resurrect.selectMirror, 1,
-			event.target.getAttribute('value'), 
+			event.target.getAttribute('value'),
 			event.target.ownerDocument,
 			contentDoc, rawUrl
 		);
