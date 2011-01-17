@@ -1,13 +1,16 @@
 <?xml version='1.0'?>
 <!DOCTYPE overlay SYSTEM "chrome://resurrect/locale/overlay.dtd">
-<?xml-stylesheet href='chrome://resurrect/skin/resurrect-overlay.css' type='text/css'?> 
+<?xml-stylesheet href='chrome://resurrect/skin/resurrect-overlay.css' type='text/css'?>
 <overlay id='resurrect-overlay'	xmlns='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul'>
 
-<script	type='application/x-javascript'	src='chrome://resurrect/content/resurrect.js'></script>
+<script type='application/x-javascript'	src='chrome://resurrect/content/resurrect.js'></script>
+<script type='application/x-javascript'>
+window.addEventListener('load', resurrect.onLoad, false);
+</script>
 
 <toolbarpalette id='BrowserToolbarPalette'>
-	<toolbarbutton id='resurrect-page-tb' 
-		type="" 
+	<toolbarbutton id='resurrect-page-tb'
+		type=""
 		class="toolbarbutton-1"
 		oncommand="resurrect.page();"
 		label='&resurrect.thispage;'

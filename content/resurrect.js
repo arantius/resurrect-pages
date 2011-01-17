@@ -260,9 +260,4 @@ var resurrect={
 			}
 		}
 	}
-
-}//end var resurrect
-
-if ('undefined'!=typeof gBrowser) {
-	window.addEventListener('load', resurrect.onLoad, false);
-}
+};
