@@ -167,13 +167,13 @@ var resurrect={
 				rawUrl.substring(8).replace(/\//, '.nyud.net/');
 			break;
 		case 'google':
-			gotoUrl='http://www.google.com/search?q=cache:'+encUrl
+			gotoUrl='http://www.google.com/search?q=cache:'+encUrl;
 			break;
 		case 'googletext':
-			gotoUrl='http://www.google.com/search?strip=1&q=cache:'+encUrl
+			gotoUrl='http://www.google.com/search?strip=1&q=cache:'+encUrl;
 			break;
 		case 'archive':
-			gotoUrl='http://web.archive.org/web/*/'+rawUrl
+			gotoUrl='http://web.archive.org/web/*/'+rawUrl;
 			break;
 		case 'yahoo':
 			var xhr=new XMLHttpRequest();
