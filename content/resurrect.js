@@ -175,6 +175,9 @@ var resurrect={
 		case 'archive':
 			gotoUrl='http://web.archive.org/web/*/'+rawUrl;
 			break;
+		case 'waybackmachine':
+			gotoUrl='http://waybackmachine.org/*/'+rawUrl;
+			break;
 		case 'yahoo':
 			var xhr=new XMLHttpRequest();
 			xhr.open('GET',
