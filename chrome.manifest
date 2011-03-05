@@ -5,24 +5,36 @@ overlay chrome://browser/content/browser.xul chrome://resurrect/content/resurrec
 style chrome://global/content/customizeToolbar.xul chrome://resurrect/skin/resurrect-overlay.css
 
 locale resurrect ca-AD locale/ca-AD/
+locale resurrect cs-CZ locale/cs-CZ/
+locale resurrect da locale/da/
 locale resurrect da-DK locale/da-DK/
+locale resurrect de locale/de/
 locale resurrect de-DE locale/de-DE/
+locale resurrect el locale/el/
 locale resurrect el-GR locale/el-GR/
 locale resurrect en-US locale/en-US/
 locale resurrect es-AR locale/es-AR/
 locale resurrect es-CL locale/es-CL/
 locale resurrect es-ES locale/es-ES/
 locale resurrect fi-FI locale/fi-FI/
+locale resurrect fr locale/fr/
 locale resurrect fr-FR locale/fr-FR/
 locale resurrect hr-HR locale/hr-HR/
+locale resurrect it locale/it/
 locale resurrect it-IT locale/it-IT/
 locale resurrect ja-JP locale/ja-JP/
 locale resurrect ko-KR locale/ko-KR/
+locale resurrect nl locale/nl/
 locale resurrect nl-NL locale/nl-NL/
+locale resurrect pl locale/pl/
 locale resurrect pl-PL locale/pl-PL/
 locale resurrect pt-BR locale/pt-BR/
 locale resurrect pt-PT locale/pt-PT/
 locale resurrect ru-RU locale/ru-RU/
 locale resurrect sl-SI locale/sl-SI/
+locale resurrect sr locale/sr/
+locale resurrect sv-SE locale/sv-SE/
+locale resurrect tr-TR locale/tr-TR/
 locale resurrect uk-UA locale/uk-UA/
+locale resurrect zh-CN locale/zh-CN/
 locale resurrect zh-TW locale/zh-TW/

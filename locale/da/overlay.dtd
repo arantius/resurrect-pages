@@ -5,9 +5,9 @@
 <!ENTITY resurrect.thislink "Genopliv dette link...">
 <!ENTITY resurrect.fromMirror "Fra spejl">
 <!ENTITY resurrect.coralcdn "CoralCDN">
-<!ENTITY resurrect.google "Google Cache">
+<!ENTITY resurrect.google "Google">
 <!ENTITY resurrect.textonly "(kun tekst)">
-<!ENTITY resurrect.yahoo "Yahoo! Cache">
+<!ENTITY resurrect.yahoo "Yahoo!">
 <!ENTITY resurrect.archive "The Internet Archive">
 <!ENTITY resurrect.waybackmachine "The Wayback Machine">
 <!ENTITY resurrect.bing "Bing">

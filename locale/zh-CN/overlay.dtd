@@ -1,0 +1,18 @@
+<!ENTITY resurrect.title "Resurrect">
+<!ENTITY resurrect.accesskey "u">
+<!ENTITY resurrect.this "修复这个">
+<!ENTITY resurrect.thispage "修复此页面...">
+<!ENTITY resurrect.thislink "修复此链接...">
+<!ENTITY resurrect.fromMirror "来自镜像">
+<!ENTITY resurrect.coralcdn "CoralCDN">
+<!ENTITY resurrect.google "Google">
+<!ENTITY resurrect.textonly "(纯文字版)">
+<!ENTITY resurrect.yahoo "Yahoo!">
+<!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.waybackmachine "The Wayback Machine">
+<!ENTITY resurrect.bing "Bing">
+<!ENTITY resurrect.gigablast "Gigablast">
+<!ENTITY resurrect.webcitation "WebCite">
+<!ENTITY resurrect.inCurrTab "在当前标签页或窗口">
+<!ENTITY resurrect.inNewTab "在新标签页">
+<!ENTITY resurrect.inNewWin "在新窗口">

@@ -9,6 +9,7 @@
 <!ENTITY resurrect.textonly " (solo testo)">
 <!ENTITY resurrect.yahoo "Yahoo! Cache">
 <!ENTITY resurrect.archive "Internet Archive">
+<!ENTITY resurrect.waybackmachine "The Wayback Machine">
 <!ENTITY resurrect.bing "Bing">
 <!ENTITY resurrect.gigablast "Gigablast">
 <!ENTITY resurrect.webcitation "WebCite">
