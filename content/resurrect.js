@@ -164,10 +164,7 @@ var resurrect={
       gotoUrl='http://www.google.com/search?strip=1&q=cache:'+encUrl;
       break;
     case 'archive':
-      gotoUrl='http://web.archive.org/web/*/'+rawUrl;
-      break;
-    case 'waybackmachine':
-      gotoUrl='http://waybackmachine.org/*/'+rawUrl;
+      gotoUrl='http://wayback.archive.org/web/*/'+rawUrl;
       break;
     case 'yahoo':
       var xhr=new XMLHttpRequest();
