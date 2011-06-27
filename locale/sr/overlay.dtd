@@ -1,9 +1,9 @@
-<!ENTITY resurrect.title "Врати">
-<!ENTITY resurrect.accesskey "В">
-<!ENTITY resurrect.this "Врати ово">
-<!ENTITY resurrect.thispage "Врати ову страницу…">
-<!ENTITY resurrect.thislink "Врати ову везу…">
-<!ENTITY resurrect.fromMirror "са резервног места за преузимање">
+<!ENTITY resurrect.title "Оживи">
+<!ENTITY resurrect.accesskey "О">
+<!ENTITY resurrect.this "Оживи ово">
+<!ENTITY resurrect.thispage "Оживи ову страницу…">
+<!ENTITY resurrect.thislink "Оживи ову везу…">
+<!ENTITY resurrect.fromMirror "са друге локације">
 <!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Google">
 <!ENTITY resurrect.textonly "(само текст)">
@@ -12,6 +12,6 @@
 <!ENTITY resurrect.bing "Bing">
 <!ENTITY resurrect.gigablast "Gigablast">
 <!ENTITY resurrect.webcitation "WebCite">
-<!ENTITY resurrect.inCurrTab "у тренутној картици/прозору">
-<!ENTITY resurrect.inNewTab "у новој картици">
+<!ENTITY resurrect.inCurrTab "у тренутном језичку/прозору">
+<!ENTITY resurrect.inNewTab "у новом језичку">
 <!ENTITY resurrect.inNewWin "у новом прозору">
