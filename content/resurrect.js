@@ -29,7 +29,6 @@ var resurrect={
 
   contentDomLoad:function(event) {
     var contentDoc=event.target;
-    var contentWin=contentDoc.defaultView;
 
     if (contentDoc.documentURI.match(/^about:neterror/)) {
       // Inject our content...
@@ -152,7 +151,6 @@ var resurrect={
   selectMirror:function(mirror, ownerDoc, contentDoc, rawUrl) {
     var gotoUrl=null;
     var encUrl=encodeURIComponent(rawUrl);
-    var xmlUrl=rawUrl.replace('&', '&amp;');
 
     switch (mirror) {
     case 'coralcdn':
