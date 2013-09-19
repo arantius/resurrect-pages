@@ -3,10 +3,10 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>{0c8fbd76-bdeb-4c52-9b24-d587ce7b9dc3}</em:id>
     <em:name>Resurrect Pages</em:name>
-    <em:version>2.0.7</em:version>
+    <em:version>2.1</em:version>
     <em:description>Resurrect dead pages, by finding their ghosts.</em:description>
 
-    <em:homepageURL>http://trac.arantius.com/wiki/Extensions/Resurrect</em:homepageURL>
+    <em:homepageURL>https://github.com/Albirew/resurrect-pages</em:homepageURL>
     <em:iconURL>chrome://resurrect/skin/em-icon.png</em:iconURL>
 
     <em:creator>Anthony Lieuallen</em:creator>
@@ -16,7 +16,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>5.*</em:maxVersion>
+        <em:maxVersion>*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
