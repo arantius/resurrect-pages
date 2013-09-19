@@ -227,6 +227,9 @@ var resurrect={
     case 'webcitation':
       gotoUrl='http://webcitation.org/query.php?url='+encUrl;
       break;
+    case 'isup':
+      gotoUrl='http://isup.me/'+rawUrl;
+      break;
     default:
       return false;
       break;
