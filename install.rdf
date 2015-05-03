@@ -6,7 +6,7 @@
     <em:version>2.1</em:version>
     <em:description>Resurrect dead pages, by finding their ghosts.</em:description>
 
-    <em:homepageURL>https://github.com/Albirew/resurrect-pages</em:homepageURL>
+    <em:homepageURL>http://trac.arantius.com/wiki/Extensions/Resurrect</em:homepageURL>
     <em:iconURL>chrome://resurrect/skin/em-icon.png</em:iconURL>
 
     <em:creator>Anthony Lieuallen</em:creator>
