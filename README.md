@@ -16,6 +16,7 @@ Or, the easier route, use this extension.
    * [MSN Cache](http://search.msn.com/)
    * [Gigablast Cache](http://www.gigablast.com/)
    * [WebCite](http://www.webcitation.org/)
+   * [Down for everyone?](http://www.isup.me/)
 
 Of course, not every page can be in every cache.
 When a page is unavailable, you'll generally see that site's error page.
@@ -29,6 +30,9 @@ Hit back and try another one!
 
 # Changelog
 
+ * Version 2.1 (Sep 19, 2013)
+   * Firefox 22+ compatibility
+   * Added isup.me provider
  * Version 2.0.7 (Jun 26, 2011)
    * Firefox 5.0 compatibility.
    * Updated translations from babelzilla.org.

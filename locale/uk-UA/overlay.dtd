@@ -12,6 +12,7 @@
 <!ENTITY resurrect.bing "Bing">
 <!ENTITY resurrect.gigablast "Gigablast">
 <!ENTITY resurrect.webcitation "WebCite">
+<!ENTITY resurrect.isup "Down for everyone?">
 <!ENTITY resurrect.inCurrTab "In the current tab/window">
 <!ENTITY resurrect.inNewTab "In a new tab">
 <!ENTITY resurrect.inNewWin "In a new window">

@@ -6,12 +6,13 @@
 <!ENTITY resurrect.fromMirror "Depuis le miroir">
 <!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Cache Google">
-<!ENTITY resurrect.textonly "(texte seulement)">
+<!ENTITY resurrect.textonly " (texte seul)">
 <!ENTITY resurrect.yahoo "Cache Yahoo!">
 <!ENTITY resurrect.archive "Archive internet">
 <!ENTITY resurrect.bing "Bing">
 <!ENTITY resurrect.gigablast "Gogablast">
 <!ENTITY resurrect.webcitation "WebCite">
+<!ENTITY resurrect.isup "Down for everyone?">
 <!ENTITY resurrect.inCurrTab "dans l'onglet/la fenêtre courant(e)">
 <!ENTITY resurrect.inNewTab "dans un nouvel onglet">
 <!ENTITY resurrect.inNewWin "dans une nouvelle fenêtre">
