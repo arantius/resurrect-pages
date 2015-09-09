@@ -7,6 +7,7 @@
 <!ENTITY resurrect.google "Google Cache">
 <!ENTITY resurrect.textonly "(μόνο κείμενο)">
 <!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.archiveis "archive.is">
 <!ENTITY resurrect.webcitation "WebCite">
 <!ENTITY resurrect.inCurrTab "Στην τρέχουσα καρτέλα/παράθυρο">
 <!ENTITY resurrect.inNewTab "Σε νέα καρτέλα">

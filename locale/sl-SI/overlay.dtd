@@ -7,6 +7,7 @@
 <!ENTITY resurrect.google "Google posnetek">
 <!ENTITY resurrect.textonly "(samo besedilo)">
 <!ENTITY resurrect.archive "The Internet Archive">
+<!ENTITY resurrect.archiveis "archive.is">
 <!ENTITY resurrect.webcitation "WebCite">
 <!ENTITY resurrect.inCurrTab "V obstoječem zavihku/oknu">
 <!ENTITY resurrect.inNewTab "V novem zavihku">

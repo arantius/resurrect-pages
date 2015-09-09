@@ -7,6 +7,7 @@
 <!ENTITY resurrect.google "Google">
 <!ENTITY resurrect.textonly "(prostý text)">
 <!ENTITY resurrect.archive "Internet Archive">
+<!ENTITY resurrect.archiveis "archive.is">
 <!ENTITY resurrect.webcitation "WebCite">
 <!ENTITY resurrect.inCurrTab "V současném panelu/okně">
 <!ENTITY resurrect.inNewTab "V novém panelu">

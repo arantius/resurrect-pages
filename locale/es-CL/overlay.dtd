@@ -7,6 +7,7 @@
 <!ENTITY resurrect.google "Cache de Google">
 <!ENTITY resurrect.textonly "(solo texto)">
 <!ENTITY resurrect.archive "El Archivo de Internet">
+<!ENTITY resurrect.archiveis "archive.is">
 <!ENTITY resurrect.webcitation "WebCite">
 <!ENTITY resurrect.inCurrTab "En la actual ventana/pestaña">
 <!ENTITY resurrect.inNewTab "En una nueva pestaña">

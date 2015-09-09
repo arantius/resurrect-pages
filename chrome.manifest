@@ -16,6 +16,7 @@ locale resurrect en-US locale/en-US/
 locale resurrect es-AR locale/es-AR/
 locale resurrect es-CL locale/es-CL/
 locale resurrect es-ES locale/es-ES/
+locale resurrect fi locale/fi/
 locale resurrect fi-FI locale/fi-FI/
 locale resurrect fr locale/fr/
 locale resurrect fr-FR locale/fr-FR/
@@ -34,6 +35,7 @@ locale resurrect ru-RU locale/ru-RU/
 locale resurrect sl-SI locale/sl-SI/
 locale resurrect sr locale/sr/
 locale resurrect sv-SE locale/sv-SE/
+locale resurrect tr locale/tr/
 locale resurrect tr-TR locale/tr-TR/
 locale resurrect uk-UA locale/uk-UA/
 locale resurrect zh-CN locale/zh-CN/
