@@ -32,3 +32,11 @@ body.resurrect fieldset#resurrect legend img {
 body.resurrect fieldset#resurrect button {
   width: 14em;
 }
+
+/* Issue #6: Display below this popup. */
+body.resurrect fieldset#resurrect {
+  z-index: 1;
+}
+body.resurrect #certificateErrorReportingPanel {
+  z-index: 2;
+}
