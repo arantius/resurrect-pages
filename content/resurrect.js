@@ -172,30 +172,6 @@ var resurrect={
     case 'archiveis':
       gotoUrl='https://archive.is/'+rawUrl;
       break;
-    case 'gigablast':
-      var siteRegex = new RegExp('://([^/]+)');
-      var apiUrl=[
-          'http://feed.gigablast.com/search',
-          '?q=url:', encUrl,
-          '&site=', (siteRegex.match(rawUrl)[1]),
-          '&n=1&ns=0&raw=9&bq=0&nrt=0'
-          ].join('');
-
-      var xhr=new XMLHttpRequest();
-      xhr.open('GET', apiUrl, false);
-      xhr.send(null);
-
-      try {
-        var docId=xhr.responseXML
-            .getElementsByTagName('docId')[0].textContent;
-        gotoUrl='http://www.gigablast.com/index.php'
-            +'?page=get&ih=1&ibh=1&cas=0&d='
-            +docId;
-      } catch (e) {
-        gotoUrl='http://www.gigablast.com/index.php?q=url:'+encUrl;
-      }
-
-      break;
     case 'webcitation':
       gotoUrl='http://webcitation.org/query.php?url='+encUrl;
       break;

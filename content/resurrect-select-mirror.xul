@@ -49,10 +49,6 @@ window.addEventListener('load', resurrect.loadTarget, false);
       image='chrome://resurrect/skin/cacheicons/archiveis.ico'
     />
     <xul:button
-      value='gigablast' label=' &resurrect.gigablast;'
-      image='chrome://resurrect/skin/cacheicons/gigablast.png'
-    />
-    <xul:button
       value='webcitation' label=' &resurrect.webcitation;'
       image='chrome://resurrect/skin/cacheicons/webcitation.png'
     />
