@@ -175,22 +175,6 @@ var resurrect={
     case 'archiveis':
       gotoUrl='https://archive.is/'+rawUrl;
       break;
-    case 'yahoo':
-      var xhr=new XMLHttpRequest();
-      xhr.open('GET',
-          'http://api.search.yahoo.com/WebSearchService/V1/'+
-          'webSearch?appid=firefox-resurrect&query='+encUrl+'&results=1',
-          false);
-      xhr.send(null);
-
-      try {
-        var c=xhr.responseXML.getElementsByTagName('Cache');
-        gotoUrl=c[0].firstChild.textContent;
-      } catch (e ) {
-        gotoUrl='http://search.yahoo.com/search?p='+encUrl;
-      }
-
-      break;
     case 'bing':
       var xhr=new XMLHttpRequest();
       xhr.open('GET',
