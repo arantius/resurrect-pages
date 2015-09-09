@@ -166,7 +166,8 @@ var resurrect={
       gotoUrl='http://www.google.com/search?strip=1&q=cache:'+encUrl;
       break;
     case 'archive':
-      gotoUrl='http://wayback.archive.org/web/*/'+rawUrl;
+      var dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
+      gotoUrl='http://wayback.archive.org/web/'+dateStr+'/'+rawUrl;
       break;
     case 'archiveis':
       gotoUrl='https://archive.is/'+rawUrl;
