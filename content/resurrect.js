@@ -56,6 +56,8 @@ var resurrect={
       // Add event listener.
       contentDoc.getElementById('resurrect').addEventListener(
           'click', resurrect.clickedHtml, false);
+      contentDoc.getElementById('resurrect').addEventListener(
+          'keypress', resurrect.clickedHtml, false);
     }
   },
 
@@ -120,6 +122,10 @@ var resurrect={
   clickedHtml:function(event) {
     if ('true'==event.target.getAttribute('disabled')) {
       return;
+    }
+    if ('keypress' == event.type) {
+      if (event.target.parentNode.id != 'resurrect') return;
+      if (event.charCode != 32 && event.keyCode != 13) return;
     }
 
     return resurrect.clickHandler(

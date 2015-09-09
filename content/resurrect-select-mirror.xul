@@ -29,7 +29,7 @@ window.addEventListener('load', resurrect.loadTarget, false);
     </radiogroup>
   </groupbox>
 
-  <groupbox id='resurrect' onclick='resurrect.clickedXul(event);'>
+  <groupbox id='resurrect' oncommand='resurrect.clickedXul(event);'>
     <caption label='&resurrect.fromMirror;' />
 
     <xul:button
