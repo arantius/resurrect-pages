@@ -4,7 +4,6 @@
 <!ENTITY resurrect.thispage "Diese Seite wiederbeleben">
 <!ENTITY resurrect.thislink "Diesen Verweis wiederbeleben">
 <!ENTITY resurrect.fromMirror "Wiederbeleben von Spiegelserver">
-<!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Google">
 <!ENTITY resurrect.textonly "(Nur Text)">
 <!ENTITY resurrect.archive "The Internet Archive">

@@ -4,7 +4,6 @@
 <!ENTITY resurrect.thispage "恢復頁面...">
 <!ENTITY resurrect.thislink "恢復此連結...">
 <!ENTITY resurrect.fromMirror "映像來源">
-<!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Google">
 <!ENTITY resurrect.textonly "(限文字)">
 <!ENTITY resurrect.archive "Internet Archive">

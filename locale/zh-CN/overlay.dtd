@@ -4,7 +4,6 @@
 <!ENTITY resurrect.thispage "修复此页面...">
 <!ENTITY resurrect.thislink "修复此链接...">
 <!ENTITY resurrect.fromMirror "来自镜像">
-<!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Google">
 <!ENTITY resurrect.textonly "(纯文字版)">
 <!ENTITY resurrect.archive "The Internet Archive">

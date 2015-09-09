@@ -4,7 +4,6 @@
 <!ENTITY resurrect.thispage "Ressuscitar esta página">
 <!ENTITY resurrect.thislink "Ressuscitar este endereço">
 <!ENTITY resurrect.fromMirror "Do espelho">
-<!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Cache do Google">
 <!ENTITY resurrect.textonly "(só texto)">
 <!ENTITY resurrect.archive "Arquivo de internet">

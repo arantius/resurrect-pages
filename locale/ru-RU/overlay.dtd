@@ -4,7 +4,6 @@
 <!ENTITY resurrect.thispage "Воскресить эту страницу">
 <!ENTITY resurrect.thislink "Воскресить эту ссылку">
 <!ENTITY resurrect.fromMirror "Из зеркала:">
-<!ENTITY resurrect.coralcdn "CoralCDN">
 <!ENTITY resurrect.google "Google">
 <!ENTITY resurrect.textonly "(только текст)">
 <!ENTITY resurrect.archive "The Internet Archive">
