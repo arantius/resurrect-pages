@@ -53,6 +53,10 @@ window.addEventListener('load', resurrect.loadTarget, false);
       image='chrome://resurrect/skin/cacheicons/archive.png'
     />
     <xul:button
+      value='archiveis' label=' &resurrect.archiveis;'
+      image='chrome://resurrect/skin/cacheicons/archiveis.ico'
+    />
+    <xul:button
       value='bing' label=' &resurrect.bing;'
       image='chrome://resurrect/skin/cacheicons/bing.png'
     />
