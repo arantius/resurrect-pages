@@ -175,24 +175,6 @@ var resurrect={
     case 'archiveis':
       gotoUrl='https://archive.is/'+rawUrl;
       break;
-    case 'bing':
-      var xhr=new XMLHttpRequest();
-      xhr.open('GET',
-          'http://api.search.live.net/xml.aspx'+
-          '?AppId=FD382E93B5ABC456C5E34C238A906CAB1E6F9875'+
-          '&Query=url:'+encUrl+
-          '&Sources=web&Web.Count=1',
-          false);
-      xhr.send(null);
-
-      try {
-        var c=xhr.responseXML.getElementsByTagName('web:CacheUrl');
-        gotoUrl=c[0].textContent;
-      } catch (e) {
-        gotoUrl='http://www.bing.com/search?q=url:'+encUrl;
-      }
-
-      break;
     case 'gigablast':
       var siteRegex = new RegExp('://([^/]+)');
       var apiUrl=[
