@@ -32,6 +32,10 @@ body.resurrect fieldset#resurrect legend img {
 body.resurrect fieldset#resurrect button {
   width: 14em;
 }
+body.resurrect fieldset#resurrect button img {
+  vertical-align: middle;
+  margin-top: -6px;
+}
 
 /* Issue #6: Display below this popup. */
 body.resurrect fieldset#resurrect {

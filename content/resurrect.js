@@ -1,21 +1,18 @@
 var resurrect={
 
-  originalDoc:null,
+  contextUrl:null,
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
   onLoad:function() {
     window.removeEventListener('load', resurrect.onLoad, false);
-
     document.getElementById('contentAreaContextMenu')
         .addEventListener('popupshowing', resurrect.toggleContextItems, false);
-
-    window.document.getElementById('appcontent').addEventListener(
-        'DOMContentLoaded', resurrect.contentDomLoad, false);
+    addEventListener('DOMContentLoaded', resurrect.contentDomLoad, false);
   },
 
   toggleContextItems:function(event) {
-    resurrect.clickTarget=event.target;
+    resurrect.contextUrl = gContextMenu.linkURL;
 
     var onDocument=!(
         gContextMenu.isContentSelected || gContextMenu.onTextInput ||
@@ -30,16 +27,18 @@ var resurrect={
   contentDomLoad:function(event) {
     var contentDoc=event.target;
 
-    if (contentDoc.documentURI.match(/^about:neterror/)) {
-      // Inject our content...
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'chrome://resurrect/content/netError.xhtml', false);
-      xhr.send(null);
-      var resurrectFieldset = xhr.responseXML.getElementById('resurrect');
-      var newFieldset = contentDoc.adoptNode(resurrectFieldset);
+    if (contentDoc.documentURI.indexOf('about:neterror') != 0) return;
+
+    // Inject our content...
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'chrome://resurrect/content/netError.xhtml', true);
+    xhr.onload = function() {
+      var fieldset = xhr.responseXML.getElementById('resurrect');
+      var xhtml = new XMLSerializer().serializeToString(fieldset);
       var container = contentDoc.getElementById('errorPageContainer');
-      container.appendChild(newFieldset);
-      // ...including the CSS.
+      container.innerHTML += xhtml;
+
+      // ...plus the CSS.
       var link = contentDoc.createElement('link');
       link.setAttribute('rel', 'stylesheet');
       link.setAttribute('href', 'chrome://resurrect/skin/netError.css');
@@ -49,16 +48,17 @@ var resurrect={
 
       // Add the className that enables it, only when appropriate.
       contentDoc.location.href =
-        'javascript:if ("nssBadCert" != getErrorCode()) {'
+          'javascript:if ("nssBadCert" != getErrorCode()) {'
           + 'document.body.className += " resurrect";'
-        + '}; void(0)';
+          + '}; void(0)';
 
       // Add event listener.
       contentDoc.getElementById('resurrect').addEventListener(
           'click', resurrect.clickedHtml, false);
       contentDoc.getElementById('resurrect').addEventListener(
           'keypress', resurrect.clickedHtml, false);
-    }
+    };
+    xhr.send(null);
   },
 
   disableButtons:function(doc) {
@@ -77,15 +77,7 @@ var resurrect={
   },
 
   link:function(event) {
-    var el=document.popupNode;
-
-    try {
-      while (el && el.tagName && 'A'!=el.tagName.toUpperCase()) {
-        el=el.parentNode;
-      }
-      resurrect.showDialog(el.href);
-    } catch (e) { }
-    return null;
+    resurrect.showDialog(resurrect.contextUrl);
   },
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
@@ -110,8 +102,6 @@ var resurrect={
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
   showDialog:function(url) {
-    resurrect.originalDoc=getBrowser().contentWindow.document;
-
     window.openDialog(
         'chrome://resurrect/content/resurrect-select-mirror.xul',
         '_blank',

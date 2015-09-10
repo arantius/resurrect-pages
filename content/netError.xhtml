@@ -3,11 +3,10 @@
 
 <html
   xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 >
   <body class="resurrect">
     <fieldset id='resurrect'>
-      <!-- fake elements so getElementById() doesn't die -->
+      <!-- fake elements so getElementById() in selectMirror() doesn't die -->
       <div id='targetTab' style='display: none;'></div>
       <div id='targetWin' style='display: none;'></div>
 
@@ -16,26 +15,26 @@
         &resurrect.thispage;
       </legend>
 
-      <xul:button
-        value='google' label=' &resurrect.google;'
-        image='chrome://resurrect/skin/cacheicons/google.png'
-      />
-      <xul:button
-        value='googletext' label=' &resurrect.google;&resurrect.textonly;'
-        image='chrome://resurrect/skin/cacheicons/google.png'
-      />
-      <xul:button
-        value='archive' label=' &resurrect.archive;'
-        image='chrome://resurrect/skin/cacheicons/archive.png'
-      />
-      <xul:button
-        value='archiveis' label=' &resurrect.archiveis;'
-        image='chrome://resurrect/skin/cacheicons/archiveis.ico'
-      />
-      <xul:button
-        value='webcitation' label=' &resurrect.webcitation;'
-        image='chrome://resurrect/skin/cacheicons/webcitation.png'
-      />
+      <button value='google'>
+        <img src='chrome://resurrect/skin/cacheicons/google.png' />
+        &resurrect.google;
+      </button>
+      <button value='googletext'>
+        <img src='chrome://resurrect/skin/cacheicons/google.png' />
+        &resurrect.google;&resurrect.textonly;
+      </button>
+      <button value='archive'>
+        <img src='chrome://resurrect/skin/cacheicons/archive.png' />
+        &resurrect.archive;
+      </button>
+      <button value='archiveis'>
+        <img src='chrome://resurrect/skin/cacheicons/archiveis.ico' />
+        &resurrect.archiveis;
+      </button>
+      <button value='webcitation'>
+        <img src='chrome://resurrect/skin/cacheicons/webcitation.png' />
+        &resurrect.webcitation;
+      </button>
     </fieldset>
   </body>
 </html>
