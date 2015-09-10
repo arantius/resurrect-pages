@@ -6,16 +6,13 @@ What do we do when a page is dead but we still want to see it?
 Call in the clerics, and perform a resurrection ceremony!
 Or, the easier route, use this extension.
 
-## Features 
+## Features
 
  * Searches through seven page cache/mirrors:
-   * [CoralCDN](http://www.coralcdn.org/)
    * [Google Cache](http://www.google.com/) (plus text-only version)
-   * [Yahoo! Cache](http://search.yahoo.com/)
    * [The Internet Archive](http://web.archive.org/)
-   * [MSN Cache](http://search.msn.com/)
-   * [Gigablast Cache](http://www.gigablast.com/)
    * [WebCite](http://www.webcitation.org/)
+   * [archive.is](https://archive.is/)
 
 Of course, not every page can be in every cache.
 When a page is unavailable, you'll generally see that site's error page.
@@ -29,6 +26,12 @@ Hit back and try another one!
 
 # Changelog
 
+ * Version 3 (Sep 9, 2015)
+   * Fix layout on error page w.r.t. the "report error" dialog.
+   * Add keyboard accessibility for cache retrieval buttons.
+   * Add source: archive.is.
+   * Remove sources: CoralCDN, Yahoo, Bing, Gigablast.
+   * Compatibility with multi-process Firefox.
  * Version 2.0.7 (Jun 26, 2011)
    * Firefox 5.0 compatibility.
    * Updated translations from babelzilla.org.
