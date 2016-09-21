@@ -150,14 +150,14 @@ var resurrect={
 
     switch (mirror) {
     case 'google':
-      gotoUrl='http://www.google.com/search?q=cache:'+encUrl;
+      gotoUrl='https://www.google.com/search?q=cache:'+encUrl;
       break;
     case 'googletext':
-      gotoUrl='http://www.google.com/search?strip=1&q=cache:'+encUrl;
+      gotoUrl='https://www.google.com/search?strip=1&q=cache:'+encUrl;
       break;
     case 'archive':
       var dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
-      gotoUrl='http://wayback.archive.org/web/'+dateStr+'/'+rawUrl;
+      gotoUrl='https://wayback.archive.org/web/'+dateStr+'/'+rawUrl;
       break;
     case 'archiveis':
       gotoUrl='https://archive.is/'+rawUrl;
