@@ -157,7 +157,7 @@ var resurrect={
       break;
     case 'archive':
       var dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
-      gotoUrl='https://wayback.archive.org/web/'+dateStr+'/'+rawUrl;
+      gotoUrl='https://web.archive.org/web/'+dateStr+'/'+rawUrl;
       break;
     case 'archiveis':
       gotoUrl='https://archive.is/'+rawUrl;
