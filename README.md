@@ -28,6 +28,9 @@ Hit back and try another one!
 
  * Accessible:
    * In the context (right-click) menu for the current page, and for all links.
+   * In the toolbar, just customize it to drag the button in.
+   * With the keyboard: press `Ctrl-Shift-U`
+
 
 # Changelog
 
