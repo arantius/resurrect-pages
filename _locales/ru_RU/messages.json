@@ -1,0 +1,73 @@
+{
+  "extensionName": {
+    "message": "Resurrect Pages",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Воскрешает мертвые страницы, находя их в кэше.",
+    "description": "Description of the add-on."
+  },
+
+  "contextMenuItemResurrectPage": {
+    "message": "Воскресить эту страницу",
+    "description": "Resurrect this page"
+  },
+
+  "contextMenuItemResurrectLink": {
+    "message": "Воскресить эту ссылку",
+    "description": "Resurrect this link"
+  },
+
+  "contextMenuItemResurrectSelection": {
+    "message": "Resurrect this selection",
+    "description": "Resurrect this selection, TODO: only if its a link, no translation"
+  },
+
+  "contextMenuItemResurrectGoogle": {
+    "message": "Google",
+    "description": "with Google"
+  },
+
+  "contextMenuItemResurrectGoogleText": {
+    "message": "Google (только текст)",
+    "description": "with Google (text only)"
+  },
+
+  "contextMenuItemResurrectArchive": {
+    "message": "The Internet Archive",
+    "description": "with The Internet Archive"
+  },
+
+  "contextMenuItemResurrectArchiveIs": {
+    "message": "archive.is",
+    "description": "with archive.is"
+  },
+
+  "contextMenuItemResurrectWebcitation": {
+    "message": "WebCite",
+    "description": "with WebCite"
+  },
+
+  "contextMenuItemResurrectConfigCurrentTab": {
+    "message": "В текущей вкладке/окне",
+    "description": "in the current tab"
+  },
+
+  "contextMenuItemResurrectConfigNewTab": {
+    "message": "В новой вкладке (foreground)",
+    "description": "in a new tab (foreground)"
+  },
+
+  "contextMenuItemResurrectConfigNewBackgroundTab": {
+    "message": "В новой вкладке (background)",
+    "description": "in a new tab (background)"
+  },
+
+  "contextMenuItemResurrectConfigNewWindow": {
+    "message": "В новом окне",
+    "description": "in a new window"
+  }
+
+}
+

@@ -1,0 +1,73 @@
+{
+  "extensionName": {
+    "message": "Resurrect Pages",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "죽은 페이지의 영혼을 찾아내서 부활시킵니다.",
+    "description": "Description of the add-on."
+  },
+
+  "contextMenuItemResurrectPage": {
+    "message": "이 페이지를 부활",
+    "description": "Resurrect this page"
+  },
+
+  "contextMenuItemResurrectLink": {
+    "message": "이 링크를 부활",
+    "description": "Resurrect this link"
+  },
+
+  "contextMenuItemResurrectSelection": {
+    "message": "Resurrect this selection",
+    "description": "Resurrect this selection, TODO: only if its a link, no translation"
+  },
+
+  "contextMenuItemResurrectGoogle": {
+    "message": "Google 캐쉬",
+    "description": "with Google"
+  },
+
+  "contextMenuItemResurrectGoogleText": {
+    "message": "Google 캐쉬 (본문 만)",
+    "description": "with Google (text only)"
+  },
+
+  "contextMenuItemResurrectArchive": {
+    "message": "인터넷 아카이브",
+    "description": "with The Internet Archive"
+  },
+
+  "contextMenuItemResurrectArchiveIs": {
+    "message": "archive.is",
+    "description": "with archive.is"
+  },
+
+  "contextMenuItemResurrectWebcitation": {
+    "message": "WebCite",
+    "description": "with WebCite"
+  },
+
+  "contextMenuItemResurrectConfigCurrentTab": {
+    "message": "현재 탭/창으로",
+    "description": "in the current tab"
+  },
+
+  "contextMenuItemResurrectConfigNewTab": {
+    "message": "새 탭으로 (foreground)",
+    "description": "in a new tab (foreground)"
+  },
+
+  "contextMenuItemResurrectConfigNewBackgroundTab": {
+    "message": "새 탭으로 (background)",
+    "description": "in a new tab (background)"
+  },
+
+  "contextMenuItemResurrectConfigNewWindow": {
+    "message": "새 창으로",
+    "description": "in a new window"
+  }
+
+}
+

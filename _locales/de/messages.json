@@ -1,0 +1,73 @@
+{
+  "extensionName": {
+    "message": "Resurrect Pages",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Wiederbeleben von toten Seiten, indem die Geister-Abbilder dieser Seiten gesucht werden.",
+    "description": "Description of the add-on."
+  },
+
+  "contextMenuItemResurrectPage": {
+    "message": "Diese Seite wiederbeleben",
+    "description": "Resurrect this page"
+  },
+
+  "contextMenuItemResurrectLink": {
+    "message": "Diesen Verweis wiederbeleben",
+    "description": "Resurrect this link"
+  },
+
+  "contextMenuItemResurrectSelection": {
+    "message": "Resurrect this selection",
+    "description": "Resurrect this selection, TODO: only if its a link, no translation"
+  },
+
+  "contextMenuItemResurrectGoogle": {
+    "message": "Google",
+    "description": "with Google"
+  },
+
+  "contextMenuItemResurrectGoogleText": {
+    "message": "Google (Nur Text)",
+    "description": "with Google (text only)"
+  },
+
+  "contextMenuItemResurrectArchive": {
+    "message": "The Internet Archive",
+    "description": "with The Internet Archive"
+  },
+
+  "contextMenuItemResurrectArchiveIs": {
+    "message": "archive.is",
+    "description": "with archive.is"
+  },
+
+  "contextMenuItemResurrectWebcitation": {
+    "message": "WebCite",
+    "description": "with WebCite"
+  },
+
+  "contextMenuItemResurrectConfigCurrentTab": {
+    "message": "In aktuellem Tab/Fenster",
+    "description": "in the current tab"
+  },
+
+  "contextMenuItemResurrectConfigNewTab": {
+    "message": "In neuem Tab (foreground)",
+    "description": "in a new tab (foreground)"
+  },
+
+  "contextMenuItemResurrectConfigNewBackgroundTab": {
+    "message": "In neuem Tab (background)",
+    "description": "in a new tab (background)"
+  },
+
+  "contextMenuItemResurrectConfigNewWindow": {
+    "message": "In neuem Fenster",
+    "description": "in a new window"
+  }
+
+}
+

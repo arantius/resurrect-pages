@@ -1,0 +1,73 @@
+{
+  "extensionName": {
+    "message": "Resurrect Pages",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "死んだページを亡霊から生き返らせる。",
+    "description": "Description of the add-on."
+  },
+
+  "contextMenuItemResurrectPage": {
+    "message": "このページを蘇生",
+    "description": "Resurrect this page"
+  },
+
+  "contextMenuItemResurrectLink": {
+    "message": "このリンクを蘇生",
+    "description": "Resurrect this link"
+  },
+
+  "contextMenuItemResurrectSelection": {
+    "message": "Resurrect this selection",
+    "description": "Resurrect this selection, TODO: only if its a link, no translation"
+  },
+
+  "contextMenuItemResurrectGoogle": {
+    "message": "Google",
+    "description": "with Google"
+  },
+
+  "contextMenuItemResurrectGoogleText": {
+    "message": "Google (テキストのみ)",
+    "description": "with Google (text only)"
+  },
+
+  "contextMenuItemResurrectArchive": {
+    "message": "The Internet Archive",
+    "description": "with The Internet Archive"
+  },
+
+  "contextMenuItemResurrectArchiveIs": {
+    "message": "archive.is",
+    "description": "with archive.is"
+  },
+
+  "contextMenuItemResurrectWebcitation": {
+    "message": "WebCite",
+    "description": "with WebCite"
+  },
+
+  "contextMenuItemResurrectConfigCurrentTab": {
+    "message": "現在のタブ・ウィンドウ",
+    "description": "in the current tab"
+  },
+
+  "contextMenuItemResurrectConfigNewTab": {
+    "message": "新しいタブ (foreground)",
+    "description": "in a new tab (foreground)"
+  },
+
+  "contextMenuItemResurrectConfigNewBackgroundTab": {
+    "message": "新しいタブ (background)",
+    "description": "in a new tab (background)"
+  },
+
+  "contextMenuItemResurrectConfigNewWindow": {
+    "message": "新しいウィンドウ",
+    "description": "in a new window"
+  }
+
+}
+
