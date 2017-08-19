@@ -7,6 +7,7 @@
   "default_locale": "en",
   "applications": {
     "gecko": {
+      "id":"resurrect-pages@gir.st",
       "strict_min_version": "56.0b3"
     }
   },
