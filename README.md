@@ -10,7 +10,7 @@ Or, the easier route, use this extension.
 
 ## Screenshots
 
-![Context Menu](https://camo.githubusercontent.com/ac74ac3d78d2ff79c7f820c5f5db4497714bd6dd/68747470733a2f2f692e696d6775722e636f6d2f3975476b737a612e706e67)
+![Context Menu](https://camo.githubusercontent.com/264d0c9221bd3b22a41b3848597eeedbd606a5fb/68747470733a2f2f692e696d6775722e636f6d2f48654d666f77792e706e67)
 ![Toolbar Menu](https://camo.githubusercontent.com/973154dcbc6c17736b9b2d4e4a4a00959465ec6d/68747470733a2f2f692e696d6775722e636f6d2f6d4c554e52414c2e706e67)
 
 
