@@ -1,10 +1,18 @@
-# Documentation
+# Resurrect Pages 4
+
+## Documentation
 
 Dead pages, broken links, the scourge of the internet.
 Powerhouse sites like Slashdot and Digg can bring a server to its knees.
 What do we do when a page is dead but we still want to see it?
 Call in the clerics, and perform a resurrection ceremony!
 Or, the easier route, use this extension.
+
+## Screenshots
+
+![Context Menu](https://camo.githubusercontent.com/ac74ac3d78d2ff79c7f820c5f5db4497714bd6dd/68747470733a2f2f692e696d6775722e636f6d2f3975476b737a612e706e67)
+![Toolbar Menu](https://camo.githubusercontent.com/973154dcbc6c17736b9b2d4e4a4a00959465ec6d/68747470733a2f2f692e696d6775722e636f6d2f6d4c554e52414c2e706e67)
+
 
 ## Features
 
@@ -23,8 +31,11 @@ Hit back and try another one!
 
 # Changelog
 
+ * Version 4.1 (Aug 20, 2017)
+   * includes toolbar icon with popup, keyboard shortcut
+   * does not include netError page ([not possible currently](https://bugzilla.mozilla.org/show_bug.cgi?id=1376793))
  * Version 4 (Aug 19, 2017)
-   * completely rewritten as WebExtension
+   * completely rewritten as WebExtension by [Tobias Girstmair](https://gir.st/)
    * Not everything from the old version ported over yet
  * Version 3 (Sep 9, 2015)
    * Fix layout on error page w.r.t. the "report error" dialog.
