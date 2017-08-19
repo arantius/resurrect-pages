@@ -20,12 +20,12 @@ Hit back and try another one!
 
  * Accessible:
    * In the context (right-click) menu for the current page, and for all links.
-   * In the toolbar, just customize it to drag the button in.
-   * With the keyboard: press `Ctrl-Shift-U`
-   * Directly in the net error ("Firefox could not load this page...") page.
 
 # Changelog
 
+ * Version 4 (Aug 19, 2017)
+   * completely rewritten as WebExtension
+   * Not everything from the old version ported over yet
  * Version 3 (Sep 9, 2015)
    * Fix layout on error page w.r.t. the "report error" dialog.
    * Add keyboard accessibility for cache retrieval buttons.

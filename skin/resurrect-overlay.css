@@ -1,6 +1,0 @@
-#resurrect-page-tb {
-  list-style-image: url("chrome://resurrect/skin/tb-icon-large.png");
-}
-toolbar[iconsize="small"] #resurrect-page-tb {
-  list-style-image: url("chrome://resurrect/skin/tb-icon-small.png");
-}
