@@ -21,53 +21,52 @@
 
   "contextMenuItemResurrectSelection": {
     "message": "Resurrect this selection",
-    "description": "Resurrect this selection, TODO: only if its a link, no translation"
+    "description": "Resurrect this selection, TODO: only if its a link"
   },
 
   "contextMenuItemResurrectGoogle": {
-    "message": "Google",
+    "message": "with Google",
     "description": "with Google"
   },
 
   "contextMenuItemResurrectGoogleText": {
-    "message": "Google  (text only)",
+    "message": "with Google (text only)",
     "description": "with Google (text only)"
   },
 
   "contextMenuItemResurrectArchive": {
-    "message": "The Internet Archive",
+    "message": "with The Internet Archive",
     "description": "with The Internet Archive"
   },
 
   "contextMenuItemResurrectArchiveIs": {
-    "message": "archive.is",
+    "message": "with archive.is",
     "description": "with archive.is"
   },
 
   "contextMenuItemResurrectWebcitation": {
-    "message": "WebCite",
+    "message": "with WebCite",
     "description": "with WebCite"
   },
 
   "contextMenuItemResurrectConfigCurrentTab": {
-    "message": "In the current tab/window",
+    "message": "in the current tab",
     "description": "in the current tab"
   },
 
   "contextMenuItemResurrectConfigNewTab": {
-    "message": "In a new tab (foreground)",
+    "message": "in a new tab (foreground)",
     "description": "in a new tab (foreground)"
   },
 
   "contextMenuItemResurrectConfigNewBackgroundTab": {
-    "message": "In a new tab (background)",
+    "message": "in a new tab (background)",
     "description": "in a new tab (background)"
   },
 
   "contextMenuItemResurrectConfigNewWindow": {
-    "message": "In a new window",
+    "message": "in a new window",
     "description": "in a new window"
   }
 
 }
-
