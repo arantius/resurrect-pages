@@ -21,6 +21,13 @@
     "default_title": "__MSG_extensionName__",
     "default_popup": "popup.htm"
   },
+  "commands": {
+      "_execute_browser_action": {
+          "suggested_key": {
+              "default": "Ctrl+Shift+U"
+          }
+      }
+  },
 
   "permissions": [
     "storage",
