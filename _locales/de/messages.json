@@ -10,62 +10,62 @@
   },
 
   "contextMenuItemResurrectPage": {
-    "message": "Diese Seite wiederbeleben",
+    "message": "diese Seite wiederbeleben",
     "description": "Resurrect this page"
   },
 
   "contextMenuItemResurrectLink": {
-    "message": "Diesen Verweis wiederbeleben",
+    "message": "diesen Verweis wiederbeleben",
     "description": "Resurrect this link"
   },
 
   "contextMenuItemResurrectSelection": {
-    "message": "Resurrect this selection",
+    "message": "diese Markierung wiederbeleben",
     "description": "Resurrect this selection, TODO: only if its a link, no translation"
   },
 
   "contextMenuItemResurrectGoogle": {
-    "message": "Google",
+    "message": "mit Google",
     "description": "with Google"
   },
 
   "contextMenuItemResurrectGoogleText": {
-    "message": "Google (Nur Text)",
+    "message": "mit Google (Nur Text)",
     "description": "with Google (text only)"
   },
 
   "contextMenuItemResurrectArchive": {
-    "message": "The Internet Archive",
+    "message": "mit The Internet Archive",
     "description": "with The Internet Archive"
   },
 
   "contextMenuItemResurrectArchiveIs": {
-    "message": "archive.is",
+    "message": "mit archive.is",
     "description": "with archive.is"
   },
 
   "contextMenuItemResurrectWebcitation": {
-    "message": "WebCite",
+    "message": "mit WebCite",
     "description": "with WebCite"
   },
 
   "contextMenuItemResurrectConfigCurrentTab": {
-    "message": "In aktuellem Tab/Fenster",
+    "message": "in aktuellem Tab/Fenster",
     "description": "in the current tab"
   },
 
   "contextMenuItemResurrectConfigNewTab": {
-    "message": "In neuem Tab (foreground)",
+    "message": "in neuem Tab (Vordergrund)",
     "description": "in a new tab (foreground)"
   },
 
   "contextMenuItemResurrectConfigNewBackgroundTab": {
-    "message": "In neuem Tab (background)",
+    "message": "in neuem Tab (Hintergrund)",
     "description": "in a new tab (background)"
   },
 
   "contextMenuItemResurrectConfigNewWindow": {
-    "message": "In neuem Fenster",
+    "message": "in neuem Fenster",
     "description": "in a new window"
   }
 
