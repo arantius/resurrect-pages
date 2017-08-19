@@ -5,16 +5,20 @@ body {
 	font-family: sans-serif;
 	font-size: small;
 }
-input[type=button] {
+button {
 	width: 100%;
+	text-align:left;
+}
+img {
+	vertical-align:bottom;
 }
 </style>
 <form>
-	<input type="button" id="resurrectWithGoogle"></br>
-	<input type="button" id="resurrectWithGoogleText"></br>
-	<input type="button" id="resurrectWithInternetArchive"></br>
-	<input type="button" id="resurrectWithArchiveIs"></br>
-	<input type="button" id="resurrectWithWebCite"></br>
+	<button id="resurrectWithGoogle"         ><img src="icons/cacheicons/google.png">         <span id="lgo"></span></button><br>
+	<button id="resurrectWithGoogleText"     ><img src="icons/cacheicons/google.png">         <span id="lgt"></span></button><br>
+	<button id="resurrectWithInternetArchive"><img src="icons/cacheicons/waybackmachine.png"> <span id="lia"></span></button><br>
+	<button id="resurrectWithArchiveIs"      ><img src="icons/cacheicons/archiveis.png">      <span id="lai"></span></button><br>
+	<button id="resurrectWithWebCite"        ><img src="icons/cacheicons/webcitation.png">    <span id="lwc"></span></button><br>
 	<hr>
 	<input type="radio" name="openIn" value="0" id="current" ><label for="current" id="lc"></label></br>
 	<input type="radio" name="openIn" value="1" id="newtabfg"><label for="newtabfg" id="ltf"></label></br>

@@ -29,11 +29,11 @@ onError("can't read openIn");
   document.querySelector("#newtabbg").onchange = function(){setOpenIn(document.querySelector('input[name="openIn"]:checked').value)};
   document.querySelector("#newwin").onchange   = function(){setOpenIn(document.querySelector('input[name="openIn"]:checked').value)};
 
-  document.querySelector("#resurrectWithGoogle").value          = browser.i18n.getMessage("contextMenuItemResurrectGoogle");
-  document.querySelector("#resurrectWithGoogleText").value      = browser.i18n.getMessage("contextMenuItemResurrectGoogleText");
-  document.querySelector("#resurrectWithInternetArchive").value = browser.i18n.getMessage("contextMenuItemResurrectArchive");
-  document.querySelector("#resurrectWithArchiveIs").value       = browser.i18n.getMessage("contextMenuItemResurrectArchiveIs");
-  document.querySelector("#resurrectWithWebCite").value         = browser.i18n.getMessage("contextMenuItemResurrectWebcitation");
+  document.querySelector("#lgo").innerHTML = browser.i18n.getMessage("contextMenuItemResurrectGoogle");
+  document.querySelector("#lgt").innerHTML = browser.i18n.getMessage("contextMenuItemResurrectGoogleText");
+  document.querySelector("#lia").innerHTML = browser.i18n.getMessage("contextMenuItemResurrectArchive");
+  document.querySelector("#lai").innerHTML = browser.i18n.getMessage("contextMenuItemResurrectArchiveIs");
+  document.querySelector("#lwc").innerHTML = browser.i18n.getMessage("contextMenuItemResurrectWebcitation");
 
   browser.tabs.query({active:true,currentWindow:true}).then(function(tabObj){
     pageURL = tabObj[0].url;
