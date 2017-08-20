@@ -4,7 +4,12 @@ Dead pages, broken links, the scourge of the internet.
 Powerhouse sites like Slashdot and Digg can bring a server to its knees.
 What do we do when a page is dead but we still want to see it?
 Call in the clerics, and perform a resurrection ceremony!
-Or, the easier route, use this extension.
+Or (the easier route) use this extension.
+
+## Screenshots
+
+![Context Menu](https://camo.githubusercontent.com/264d0c9221bd3b22a41b3848597eeedbd606a5fb/68747470733a2f2f692e696d6775722e636f6d2f48654d666f77792e706e67)
+![Toolbar Menu](https://camo.githubusercontent.com/973154dcbc6c17736b9b2d4e4a4a00959465ec6d/68747470733a2f2f692e696d6775722e636f6d2f6d4c554e52414c2e706e67)
 
 ## Features
 
@@ -22,10 +27,15 @@ Hit back and try another one!
    * In the context (right-click) menu for the current page, and for all links.
    * In the toolbar, just customize it to drag the button in.
    * With the keyboard: press `Ctrl-Shift-U`
-   * Directly in the net error ("Firefox could not load this page...") page.
 
 # Changelog
 
+ * Version 4 (**pending release**)
+   * Rewritten as WebExtension with major contributions
+     by [Tobias Girstmair](https://gir.st/)
+     * Does not include netError page
+       ([not possible currently](http://bugzil.la/1376793))
+   * Not everything from the old version ported over yet
  * Version 3 (Sep 9, 2015)
    * Fix layout on error page w.r.t. the "report error" dialog.
    * Add keyboard accessibility for cache retrieval buttons.
