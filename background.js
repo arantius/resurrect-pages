@@ -49,13 +49,13 @@ chrome.storage.local.get('openIn', item => {
     }, onCreated);
 
     addConfigItem(
-        context, 'CurrentTab', 'current-tab', openIn == openInEnum.CURRENT_TAB);
+        context, 'CurrentTab', 'current-tab', openIn === openInEnum.CURRENT_TAB);
     addConfigItem(
-        context, 'NewTab', 'new-tab', openIn == openInEnum.NEW_TAB);
+        context, 'NewTab', 'new-tab', openIn === openInEnum.NEW_TAB);
     addConfigItem(
-        context, 'BgTab', 'bg-tab', openIn == openInEnum.BG_TAB);
+        context, 'BgTab', 'bg-tab', openIn === openInEnum.BG_TAB);
     addConfigItem(
-        context, 'NewWindow', 'new-window', openIn == openInEnum.NEW_WINDOW);
+        context, 'NewWindow', 'new-window', openIn === openInEnum.NEW_WINDOW);
   });
 });
 
