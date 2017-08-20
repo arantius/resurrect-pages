@@ -1,9 +1,11 @@
 {
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
+  "short_name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
   "version": "5",
   "default_locale": "en",
+  "homepage_url": "https://github.com/arantius/resurrect-pages",
 
   "applications": {
     "gecko": {
