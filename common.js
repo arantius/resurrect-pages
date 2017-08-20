@@ -59,7 +59,7 @@ function updateContextRadios() {
         'resurrect-new-tab-' + context,
         {checked: openIn == openInEnum.NEW_TAB});
     chrome.contextMenus.update(
-        'resurrect-new-bg-tab-' + context,
+        'resurrect-bg-tab-' + context,
         {checked: openIn == openInEnum.NEW_BGTAB});
     chrome.contextMenus.update(
         'resurrect-new-window-' + context,
