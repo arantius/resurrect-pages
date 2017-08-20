@@ -1,72 +1,15 @@
 {
-  "extensionName": {
-    "message": "Resurrect Pages",
-    "description": "Name of the extension."
-  },
-
-  "extensionDescription": {
-    "message": "Resurrect dead pages, by finding their ghosts.",
-    "description": "Description of the add-on."
-  },
-
-  "contextMenuItemResurrectPage": {
-    "message": "Resurrect this page",
-    "description": "Resurrect this page"
-  },
-
-  "contextMenuItemResurrectLink": {
-    "message": "Resurrect this link",
-    "description": "Resurrect this link"
-  },
-
-  "contextMenuItemResurrectSelection": {
-    "message": "Resurrect this selection",
-    "description": "Resurrect this selection, TODO: only if its a link"
-  },
-
-  "contextMenuItemResurrectGoogle": {
-    "message": "with Google",
-    "description": "with Google"
-  },
-
-  "contextMenuItemResurrectGoogleText": {
-    "message": "with Google (text only)",
-    "description": "with Google (text only)"
-  },
-
-  "contextMenuItemResurrectArchive": {
-    "message": "with The Internet Archive",
-    "description": "with The Internet Archive"
-  },
-
-  "contextMenuItemResurrectArchiveIs": {
-    "message": "with archive.is",
-    "description": "with archive.is"
-  },
-
-  "contextMenuItemResurrectWebcitation": {
-    "message": "with WebCite",
-    "description": "with WebCite"
-  },
-
-  "contextMenuItemResurrectConfigCurrentTab": {
-    "message": "in the current tab",
-    "description": "in the current tab"
-  },
-
-  "contextMenuItemResurrectConfigNewTab": {
-    "message": "in a new tab (foreground)",
-    "description": "in a new tab (foreground)"
-  },
-
-  "contextMenuItemResurrectConfigNewBackgroundTab": {
-    "message": "in a new tab (background)",
-    "description": "in a new tab (background)"
-  },
-
-  "contextMenuItemResurrectConfigNewWindow": {
-    "message": "in a new window",
-    "description": "in a new window"
-  }
-
-}
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "Resurrect dead pages, by finding their ghosts." },
+  "ResurrectPage":         { "message": "Resurrect this page" },
+  "ResurrectLink":         { "message": "Resurrect this link" },
+  "ResurrectGoogle":       { "message": "with Google" },
+  "ResurrectGoogleText":   { "message": "with Google (text only)" },
+  "ResurrectArchive":      { "message": "with The Internet Archive" },
+  "ResurrectArchiveIs":    { "message": "with archive.is" },
+  "ResurrectWebcitation":  { "message": "with WebCite" },
+  "ResurrectInCurrentTab": { "message": "in the current tab/window" },
+  "ResurrectInNewTab":     { "message": "in a new tab (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "in a new tab (background)" },
+  "ResurrectInNewWindow":  { "message": "in a new window" }
+} 

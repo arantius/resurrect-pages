@@ -20,7 +20,7 @@ function genGoogleTextURL (url) {
   return 'https://www.google.com/search?strip=1&q=cache:'+encodeURIComponent(url);
 }
 
-function genIAURL (url) {
+function genArchiveURL (url) {
   var dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
   return 'https://web.archive.org/web/'+dateStr+'/'+url;
 }
@@ -29,7 +29,7 @@ function genArchiveIsURL (url) {
   return 'https://archive.is/'+url;
 }
 
-function genWebCiteURL (url) {
+function genWebcitationURL (url) {
   return 'http://webcitation.org/query.php?url='+encodeURIComponent(url);
 }
 
@@ -40,20 +40,15 @@ function setOpenIn (where) {
 }
 
 function update_context_radios() {
-  browser.contextMenus.update ("resurrect-page-current-tab"       , {checked: openIn==openInEnum.CURRENT_TAB});
-  browser.contextMenus.update ("resurrect-page-new-tab"           , {checked: openIn==openInEnum.NEW_TAB});
-  browser.contextMenus.update ("resurrect-page-new-background-tab", {checked: openIn==openInEnum.NEW_BGTAB});
-  browser.contextMenus.update ("resurrect-page-new-window"        , {checked: openIn==openInEnum.NEW_WINDOW});
+  browser.contextMenus.update ("ResurrectPageInCurrentTab", {checked: openIn==openInEnum.CURRENT_TAB});
+  browser.contextMenus.update ("ResurrectPageInNewTab"    , {checked: openIn==openInEnum.NEW_TAB});
+  browser.contextMenus.update ("ResurrectPageInNewBGTab"  , {checked: openIn==openInEnum.NEW_BGTAB});
+  browser.contextMenus.update ("ResurrectPageInNewWindow" , {checked: openIn==openInEnum.NEW_WINDOW});
 
-  browser.contextMenus.update ("resurrect-link-current-tab"       , {checked: openIn==openInEnum.CURRENT_TAB});
-  browser.contextMenus.update ("resurrect-link-new-tab"           , {checked: openIn==openInEnum.NEW_TAB});
-  browser.contextMenus.update ("resurrect-link-new-background-tab", {checked: openIn==openInEnum.NEW_BGTAB});
-  browser.contextMenus.update ("resurrect-link-new-window"        , {checked: openIn==openInEnum.NEW_WINDOW});
-
-  browser.contextMenus.update ("resurrect-slct-current-tab"       , {checked: openIn==openInEnum.CURRENT_TAB});
-  browser.contextMenus.update ("resurrect-slct-new-tab"           , {checked: openIn==openInEnum.NEW_TAB});
-  browser.contextMenus.update ("resurrect-slct-new-background-tab", {checked: openIn==openInEnum.NEW_BGTAB});
-  browser.contextMenus.update ("resurrect-slct-new-window"        , {checked: openIn==openInEnum.NEW_WINDOW});
+  browser.contextMenus.update ("ResurrectLinkInCurrentTab", {checked: openIn==openInEnum.CURRENT_TAB});
+  browser.contextMenus.update ("ResurrectLinkInNewTab"    , {checked: openIn==openInEnum.NEW_TAB});
+  browser.contextMenus.update ("ResurrectLinkInNewBGTab"  , {checked: openIn==openInEnum.NEW_BGTAB});
+  browser.contextMenus.update ("ResurrectLinkInNewWindow" , {checked: openIn==openInEnum.NEW_WINDOW});
 }
 
 function goToURL (url, where) {
