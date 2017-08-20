@@ -83,7 +83,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     setOpenIn(openInEnum.CURRENT_TAB);
   } else if (id.startsWith('resurrect-new-tab-')) {
     setOpenIn(openInEnum.NEW_TAB);
-  } else if (id.startsWith('resurrect-new-bg-tab-')) {
+  } else if (id.startsWith('resurrect-bg-tab-')) {
     setOpenIn(openInEnum.NEW_BGTAB);
   } else if (id.startsWith('resurrect-new-window-')) {
     setOpenIn(openInEnum.NEW_WINDOW);
