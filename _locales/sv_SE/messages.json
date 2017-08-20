@@ -1,0 +1,15 @@
+{
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "Få webbsidor att återuppstå från de döda genom att hitta deras spöken." },
+  "ResurrectPage":         { "message": "Återuppväck den här webbsidan" },
+  "ResurrectLink":         { "message": "Återuppväck den här länken" },
+  "ResurrectGoogle":       { "message": "Google" },
+  "ResurrectGoogleText":   { "message": "Google (endast text)" },
+  "ResurrectArchive":      { "message": "The Internet Archive" },
+  "ResurrectArchiveIs":    { "message": "archive.is" },
+  "ResurrectWebcitation":  { "message": "WebCite" },
+  "ResurrectInCurrentTab": { "message": "Nuvarande flik/fönster" },
+  "ResurrectInNewTab":     { "message": "En ny flik (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "En ny flik (background)" },
+  "ResurrectInNewWindow":  { "message": "Ett nytt fönster" }
+} 

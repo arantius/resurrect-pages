@@ -1,0 +1,15 @@
+{
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "Oživi nedosegljive strani, prikaži njihove posnetke." },
+  "ResurrectPage":         { "message": "Oživi to stran" },
+  "ResurrectLink":         { "message": "Oživi to povezavo" },
+  "ResurrectGoogle":       { "message": "Google posnetek" },
+  "ResurrectGoogleText":   { "message": "Google posnetek (samo besedilo)" },
+  "ResurrectArchive":      { "message": "The Internet Archive" },
+  "ResurrectArchiveIs":    { "message": "archive.is" },
+  "ResurrectWebcitation":  { "message": "WebCite" },
+  "ResurrectInCurrentTab": { "message": "V obstoječem zavihku/oknu" },
+  "ResurrectInNewTab":     { "message": "V novem zavihku (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "V novem zavihku (background)" },
+  "ResurrectInNewWindow":  { "message": "V novem oknu" }
+} 

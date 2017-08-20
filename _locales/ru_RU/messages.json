@@ -1,0 +1,15 @@
+{
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "Воскрешает мертвые страницы, находя их в кэше." },
+  "ResurrectPage":         { "message": "Воскресить эту страницу" },
+  "ResurrectLink":         { "message": "Воскресить эту ссылку" },
+  "ResurrectGoogle":       { "message": "Google" },
+  "ResurrectGoogleText":   { "message": "Google (только текст)" },
+  "ResurrectArchive":      { "message": "The Internet Archive" },
+  "ResurrectArchiveIs":    { "message": "archive.is" },
+  "ResurrectWebcitation":  { "message": "WebCite" },
+  "ResurrectInCurrentTab": { "message": "В текущей вкладке/окне" },
+  "ResurrectInNewTab":     { "message": "В новой вкладке (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "В новой вкладке (background)" },
+  "ResurrectInNewWindow":  { "message": "В новом окне" }
+} 

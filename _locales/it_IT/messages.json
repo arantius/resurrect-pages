@@ -1,0 +1,15 @@
+{
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "Permette di resuscitare pagine non più accessibili trovando corrispondenti pagine fantasma" },
+  "ResurrectPage":         { "message": "Resuscita questa pagina" },
+  "ResurrectLink":         { "message": "Resuscita questo link" },
+  "ResurrectGoogle":       { "message": "Google Cache" },
+  "ResurrectGoogleText":   { "message": "Google Cache  (solo testo)" },
+  "ResurrectArchive":      { "message": "Internet Archive" },
+  "ResurrectArchiveIs":    { "message": "archive.is" },
+  "ResurrectWebcitation":  { "message": "WebCite" },
+  "ResurrectInCurrentTab": { "message": "nella scheda/finestra attuale" },
+  "ResurrectInNewTab":     { "message": "in una nuova scheda (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "in una nuova scheda (background)" },
+  "ResurrectInNewWindow":  { "message": "in una nuova finestra" }
+} 

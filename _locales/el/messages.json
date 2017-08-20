@@ -1,0 +1,15 @@
+{
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "Ανασύσταση «εξαφανισμένων» σελίδων." },
+  "ResurrectPage":         { "message": "Ανασύσταση αυτής της σελίδας" },
+  "ResurrectLink":         { "message": "Ανασύσταση αυτού του δεσμού" },
+  "ResurrectGoogle":       { "message": "Google Cache" },
+  "ResurrectGoogleText":   { "message": "Google Cache (μόνο κείμενο)" },
+  "ResurrectArchive":      { "message": "The Internet Archive" },
+  "ResurrectArchiveIs":    { "message": "archive.is" },
+  "ResurrectWebcitation":  { "message": "WebCite" },
+  "ResurrectInCurrentTab": { "message": "Στην τρέχουσα καρτέλα/παράθυρο" },
+  "ResurrectInNewTab":     { "message": "Σε νέα καρτέλα (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "Σε νέα καρτέλα (background)" },
+  "ResurrectInNewWindow":  { "message": "Σε νέο παράθυρο" }
+} 

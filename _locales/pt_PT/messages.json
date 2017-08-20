@@ -1,0 +1,15 @@
+{
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "Ressuscita páginas mortas, ao encontrar os seus fantasmas." },
+  "ResurrectPage":         { "message": "Ressuscitar esta página" },
+  "ResurrectLink":         { "message": "Ressuscitar este endereço" },
+  "ResurrectGoogle":       { "message": "Cache do Google" },
+  "ResurrectGoogleText":   { "message": "Cache do Google (só texto)" },
+  "ResurrectArchive":      { "message": "Arquivo de internet" },
+  "ResurrectArchiveIs":    { "message": "archive.is" },
+  "ResurrectWebcitation":  { "message": "WebCite" },
+  "ResurrectInCurrentTab": { "message": "Na aba/janela actual" },
+  "ResurrectInNewTab":     { "message": "Numa nova aba (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "Numa nova aba (background)" },
+  "ResurrectInNewWindow":  { "message": "Numa nova janela" }
+} 

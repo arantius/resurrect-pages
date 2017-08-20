@@ -1,0 +1,15 @@
+{
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "通过寻找页库存档来还原失效的页面。" },
+  "ResurrectPage":         { "message": "修复此页面" },
+  "ResurrectLink":         { "message": "修复此链接" },
+  "ResurrectGoogle":       { "message": "Google" },
+  "ResurrectGoogleText":   { "message": "Google (纯文字版)" },
+  "ResurrectArchive":      { "message": "The Internet Archive" },
+  "ResurrectArchiveIs":    { "message": "archive.is" },
+  "ResurrectWebcitation":  { "message": "WebCite" },
+  "ResurrectInCurrentTab": { "message": "在当前标签页或窗口" },
+  "ResurrectInNewTab":     { "message": "在新标签页 (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "在新标签页 (background)" },
+  "ResurrectInNewWindow":  { "message": "在新窗口" }
+} 

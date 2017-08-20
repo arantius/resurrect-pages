@@ -1,0 +1,15 @@
+{
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "Oživuje mrtvé webové stránky vyhledáváním jejich duchů v archivech." },
+  "ResurrectPage":         { "message": "Oživit tuto stránku" },
+  "ResurrectLink":         { "message": "Oživit tento odkaz" },
+  "ResurrectGoogle":       { "message": "Google" },
+  "ResurrectGoogleText":   { "message": "Google (prostý text)" },
+  "ResurrectArchive":      { "message": "Internet Archive" },
+  "ResurrectArchiveIs":    { "message": "archive.is" },
+  "ResurrectWebcitation":  { "message": "WebCite" },
+  "ResurrectInCurrentTab": { "message": "V současném panelu/okně" },
+  "ResurrectInNewTab":     { "message": "V novém panelu (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "V novém panelu (background)" },
+  "ResurrectInNewWindow":  { "message": "V novém okně" }
+} 

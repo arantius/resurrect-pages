@@ -1,0 +1,15 @@
+{
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "Resurrect dead pages, by finding their ghosts." },
+  "ResurrectPage":         { "message": "Resurrect this page" },
+  "ResurrectLink":         { "message": "Resurrect this link" },
+  "ResurrectGoogle":       { "message": "Google Cache" },
+  "ResurrectGoogleText":   { "message": "Google Cache  (text only)" },
+  "ResurrectArchive":      { "message": "The Internet Archive" },
+  "ResurrectArchiveIs":    { "message": "archive.is" },
+  "ResurrectWebcitation":  { "message": "WebCite" },
+  "ResurrectInCurrentTab": { "message": "In the current tab/window" },
+  "ResurrectInNewTab":     { "message": "In a new tab (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "In a new tab (background)" },
+  "ResurrectInNewWindow":  { "message": "In a new window" }
+} 

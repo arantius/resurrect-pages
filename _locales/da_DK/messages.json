@@ -1,0 +1,15 @@
+{
+  "extensionName":         { "message": "Resurrect Pages" },
+  "extensionDescription":  { "message": "Genopliv døde sider, ved at finde deres spøgelser." },
+  "ResurrectPage":         { "message": "Genopliv denne side" },
+  "ResurrectLink":         { "message": "Genopliv dette link" },
+  "ResurrectGoogle":       { "message": "Google Cache" },
+  "ResurrectGoogleText":   { "message": "Google Cache (kun tekst)" },
+  "ResurrectArchive":      { "message": "The Internet Archive" },
+  "ResurrectArchiveIs":    { "message": "archive.is" },
+  "ResurrectWebcitation":  { "message": "WebCite" },
+  "ResurrectInCurrentTab": { "message": "I nuværende faneblad/vindue" },
+  "ResurrectInNewTab":     { "message": "I et nyt faneblad (foreground)" },
+  "ResurrectInNewBGTab":   { "message": "I et nyt faneblad (background)" },
+  "ResurrectInNewWindow":  { "message": "I et nyt vindue" }
+} 
