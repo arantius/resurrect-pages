@@ -30,7 +30,7 @@ Hit back and try another one!
 
 # Changelog
 
- * Version 4 (**pending release**)
+ * Version 4 (Aug 20, 2017)
    * Rewritten as WebExtension with major contributions
      by [Tobias Girstmair](https://gir.st/)
      * Does not include netError page
