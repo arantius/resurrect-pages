@@ -9,64 +9,58 @@
     "description": "Description of the add-on."
   },
 
-  "contextMenuItemResurrectPage": {
+  "resurrect_page": {
     "message": "Resurrect this page",
     "description": "Resurrect this page"
   },
 
-  "contextMenuItemResurrectLink": {
+  "resurrect_link": {
     "message": "Resurrect this link",
     "description": "Resurrect this link"
   },
 
-  "contextMenuItemResurrectSelection": {
-    "message": "Resurrect this selection",
-    "description": "Resurrect this selection, TODO: only if its a link"
-  },
-
-  "contextMenuItemResurrectGoogle": {
+  "resurrectGoogle": {
     "message": "with Google",
     "description": "with Google"
   },
 
-  "contextMenuItemResurrectGoogleText": {
+  "resurrectGoogleText": {
     "message": "with Google (text only)",
     "description": "with Google (text only)"
   },
 
-  "contextMenuItemResurrectArchive": {
+  "resurrectArchive": {
     "message": "with The Internet Archive",
     "description": "with The Internet Archive"
   },
 
-  "contextMenuItemResurrectArchiveIs": {
+  "resurrectArchiveIs": {
     "message": "with archive.is",
     "description": "with archive.is"
   },
 
-  "contextMenuItemResurrectWebcitation": {
+  "resurrectWebcitation": {
     "message": "with WebCite",
     "description": "with WebCite"
   },
 
-  "contextMenuItemResurrectConfigCurrentTab": {
+  "resurrectConfigCurrentTab": {
     "message": "in the current tab",
     "description": "in the current tab"
   },
 
-  "contextMenuItemResurrectConfigNewTab": {
+  "resurrectConfigNewTab": {
     "message": "in a new tab (foreground)",
     "description": "in a new tab (foreground)"
   },
 
-  "contextMenuItemResurrectConfigNewBackgroundTab": {
+  "resurrectConfigBgTab": {
     "message": "in a new tab (background)",
     "description": "in a new tab (background)"
   },
 
-  "contextMenuItemResurrectConfigNewWindow": {
+  "resurrectConfigNewWindow": {
     "message": "in a new window",
     "description": "in a new window"
   }
-
 }
