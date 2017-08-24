@@ -6,7 +6,9 @@ chrome.storage.local.get('openIn', res => {
 
 
 document.querySelectorAll('*[data-locale]').forEach(el => {
-  el.innerHTML += ' ' + chrome.i18n.getMessage(el.getAttribute('data-locale'));
+  el.appendChild(document.createTextNode(
+      ' ' + chrome.i18n.getMessage(el.getAttribute('data-locale'))
+      ));
 });
 
 
