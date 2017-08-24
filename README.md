@@ -30,6 +30,8 @@ Hit back and try another one!
 
 # Changelog
 
+ * Version 5 (Aug 23, 2017)
+   * Don't use `innerHTML`, per Mozilla reviewer.
  * Version 4 (Aug 20, 2017)
    * Rewritten as WebExtension with major contributions
      by [Tobias Girstmair](https://gir.st/)
