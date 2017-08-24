@@ -1,6 +1,6 @@
 chrome.storage.local.get('openIn', res => {
   document.querySelectorAll('input[type=radio]').forEach(el => {
-    el.checked = el.value == res.openIn;
+    el.checked = el.value === res.openIn;
   });
 });
 

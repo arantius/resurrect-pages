@@ -54,16 +54,16 @@ function updateContextRadios() {
   ['page', 'link'].forEach(context => {
     chrome.contextMenus.update(
         'resurrect-current-tab-' + context,
-        {checked: openIn == openInEnum.CURRENT_TAB});
+        {checked: openIn === openInEnum.CURRENT_TAB});
     chrome.contextMenus.update(
         'resurrect-new-tab-' + context,
-        {checked: openIn == openInEnum.NEW_TAB});
+        {checked: openIn === openInEnum.NEW_TAB});
     chrome.contextMenus.update(
-        'resurrect-new-bg-tab-' + context,
-        {checked: openIn == openInEnum.NEW_BGTAB});
+        'resurrect-bg-tab-' + context,
+        {checked: openIn === openInEnum.NEW_BGTAB});
     chrome.contextMenus.update(
         'resurrect-new-window-' + context,
-        {checked: openIn == openInEnum.NEW_WINDOW});
+        {checked: openIn === openInEnum.NEW_WINDOW});
   });
 }
 
