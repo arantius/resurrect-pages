@@ -49,6 +49,11 @@
     "description": "with WebCite"
   },
 
+  "resurrectMementoWeb": {
+    "message": "with Memento Timetravel",
+    "description": "with Memento Timetravel"
+  },
+
   "resurrectConfigCurrentTab": {
     "message": "in the current tab",
     "description": "in the current tab"

@@ -41,6 +41,7 @@ chrome.storage.local.get('openIn', item => {
     addResurrectItem(context, 'ArchiveList', 'archivelist', 'waybackmachine');
     addResurrectItem(context, 'ArchiveIs', 'archiveis', 'archiveis');
     addResurrectItem(context, 'Webcitation', 'webcitation', 'webcitation');
+    addResurrectItem(context, 'MementoWeb', 'mementoweb', 'mementoweb');
 
     chrome.contextMenus.create({
       id: 'resurrect-separator-config-' + context,
@@ -54,7 +55,7 @@ chrome.storage.local.get('openIn', item => {
     addConfigItem(
         context, 'NewTab', 'new-tab', openIn == openInEnum.NEW_TAB);
     addConfigItem(
-        context, 'BgTab', 'bg-tab', openIn == openInEnum.BG_TAB);
+        context, 'BgTab', 'bg-tab', openIn == openInEnum.NEW_BGTAB);
     addConfigItem(
         context, 'NewWindow', 'new-window', openIn == openInEnum.NEW_WINDOW);
   });
@@ -82,6 +83,8 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     goToUrl(genArchiveIsUrl(url), openIn);
   } else if (id.startsWith('resurrect-webcitation-')) {
     goToUrl(genWebCiteUrl(url), openIn);
+  } else if (id.startsWith('resurrect-mementoweb-')) {
+    goToUrl(genMementoUrl(url), openIn);
   } else if (id.startsWith('resurrect-current-tab-')) {
     setOpenIn(openInEnum.CURRENT_TAB);
   } else if (id.startsWith('resurrect-new-tab-')) {
