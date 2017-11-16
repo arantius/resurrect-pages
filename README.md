@@ -1,18 +1,15 @@
-# Resurrect Pages 4
-
-## Documentation
+# Documentation
 
 Dead pages, broken links, the scourge of the internet.
 Powerhouse sites like Slashdot and Digg can bring a server to its knees.
 What do we do when a page is dead but we still want to see it?
 Call in the clerics, and perform a resurrection ceremony!
-Or, the easier route, use this extension.
+Or (the easier route) use this extension.
 
 ## Screenshots
 
 ![Context Menu](https://camo.githubusercontent.com/264d0c9221bd3b22a41b3848597eeedbd606a5fb/68747470733a2f2f692e696d6775722e636f6d2f48654d666f77792e706e67)
 ![Toolbar Menu](https://camo.githubusercontent.com/973154dcbc6c17736b9b2d4e4a4a00959465ec6d/68747470733a2f2f692e696d6775722e636f6d2f6d4c554e52414c2e706e67)
-
 
 ## Features
 
@@ -31,14 +28,15 @@ Hit back and try another one!
    * In the toolbar, just customize it to drag the button in.
    * With the keyboard: press `Ctrl-Shift-U`
 
-
 # Changelog
 
- * Version 4.1 (Aug 20, 2017)
-   * includes toolbar icon with popup, keyboard shortcut
-   * does not include netError page ([not possible currently](https://bugzilla.mozilla.org/show_bug.cgi?id=1376793))
- * Version 4 (Aug 19, 2017)
-   * completely rewritten as WebExtension by [Tobias Girstmair](https://gir.st/)
+ * Version 5 (Aug 23, 2017)
+   * Don't use `innerHTML`, per Mozilla reviewer.
+ * Version 4 (Aug 20, 2017)
+   * Rewritten as WebExtension with major contributions
+     by [Tobias Girstmair](https://gir.st/)
+     * Does not include netError page
+       ([not possible currently](http://bugzil.la/1376793))
    * Not everything from the old version ported over yet
  * Version 3 (Sep 9, 2015)
    * Fix layout on error page w.r.t. the "report error" dialog.

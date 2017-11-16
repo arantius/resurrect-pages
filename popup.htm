@@ -2,28 +2,55 @@
 <meta charset="utf-8">
 <style>
 body {
-	font-family: sans-serif;
-	font-size: small;
+	font-family: caption, sans-serif;
+}
+button, label {
+	display: block;
+  width: 100%;
 }
 button {
-	width: 100%;
-	text-align:left;
+  margin: 2px 0;
+  padding: 2px;
+  text-align: left;
+}
+label {
+  font-size: small;
 }
 img {
-	vertical-align:bottom;
+	vertical-align: bottom;
 }
 </style>
 <form>
-	<button id="resurrectWithGoogle"     ><img src="icons/cacheicons/google.png">         <span id="labelGoogle"></span></button><br>
-	<button id="resurrectWithGoogleText" ><img src="icons/cacheicons/google.png">         <span id="labelGoogleText"></span></button><br>
-	<button id="resurrectWithArchive"    ><img src="icons/cacheicons/waybackmachine.png"> <span id="labelArchive"></span></button><br>
-	<button id="resurrectWithArchiveIs"  ><img src="icons/cacheicons/archiveis.png">      <span id="labelArchiveIs"></span></button><br>
-	<button id="resurrectWithWebcitation"><img src="icons/cacheicons/webcitation.png">    <span id="labelWebcitation"></span></button><br>
-	<hr>
-	<input type="radio" name="openIn" value="0" id="ResurrectInCurrentTab"><label for="ResurrectInCurrentTab" id="labelCurrentTab"></label></br>
-	<input type="radio" name="openIn" value="1" id="ResurrectInNewTab"    ><label for="ResurrectInNewTab"     id="labelNewTab"></label></br>
-	<input type="radio" name="openIn" value="2" id="ResurrectInNewBGTab"  ><label for="ResurrectInNewBGTab"   id="labelNewBGTab"></label></br>
-	<input type="radio" name="openIn" value="3" id="ResurrectInNewWindow" ><label for="ResurrectInNewWindow"  id="labelNewWindow"></label></br>
+  <button data-locale="resurrectGoogle" data-gen="genGoogleUrl">
+    <img src="icons/cacheicons/google.png">
+  </button>
+  <button data-locale="resurrectGoogleText" data-gen="genGoogleTextUrl">
+    <img src="icons/cacheicons/google.png">
+  </button>
+  <button data-locale="resurrectArchive" data-gen="genIaUrl">
+    <img src="icons/cacheicons/waybackmachine.png">
+  </button>
+  <button data-locale="resurrectArchiveIs" data-gen="genArchiveIsUrl">
+    <img src="icons/cacheicons/archiveis.png">
+  </button>
+  <button data-locale="resurrectWebcitation" data-gen="genWebCiteUrl">
+    <img src="icons/cacheicons/webcitation.png">
+  </button>
+
+  <br>
+
+  <label data-locale="resurrectConfigCurrentTab">
+	  <input type="radio" name="openIn" value="0">
+  </label>
+  <label data-locale="resurrectConfigNewTab">
+  	<input type="radio" name="openIn" value="1">
+  </label>
+  <label data-locale="resurrectConfigBgTab">
+	  <input type="radio" name="openIn" value="2">
+  </label>
+  <label data-locale="resurrectConfigNewWindow">
+  	<input type="radio" name="openIn" value="3">
+  </label>
 </form>
 
 <script src="common.js"></script>
