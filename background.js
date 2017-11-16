@@ -36,8 +36,9 @@ chrome.storage.local.get('openIn', item => {
     }, onCreated);
 
     addResurrectItem(context, 'Google', 'google', 'google');
-    addResurrectItem(context, 'GoogleText', 'google-text', 'google');
+    addResurrectItem(context, 'GoogleText', 'googletext', 'google');
     addResurrectItem(context, 'Archive', 'archive', 'waybackmachine');
+    addResurrectItem(context, 'ArchiveList', 'archivelist', 'waybackmachine');
     addResurrectItem(context, 'ArchiveIs', 'archiveis', 'archiveis');
     addResurrectItem(context, 'Webcitation', 'webcitation', 'webcitation');
 
@@ -75,6 +76,8 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     goToUrl(genGoogleTextUrl(url), openIn);
   } else if (id.startsWith('resurrect-archive-')) {
     goToUrl(genIaUrl(url), openIn);
+  } else if (id.startsWith('resurrect-archivelist-')) {
+    goToUrl(genIaListUrl(url), openIn);
   } else if (id.startsWith('resurrect-archiveis-')) {
     goToUrl(genArchiveIsUrl(url), openIn);
   } else if (id.startsWith('resurrect-webcitation-')) {
