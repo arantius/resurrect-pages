@@ -34,12 +34,22 @@ function genIaUrl(url) {
   return 'https://web.archive.org/web/'+dateStr+'/'+url;
 }
 
+function genIaListUrl(url) {
+  let dateStr =(new Date()).toISOString().replace(/-|T|:|\..*/g, '');
+  return 'https://web.archive.org/web/*/'+url;
+}
+
 function genArchiveIsUrl(url) {
   return 'https://archive.is/'+url;
 }
 
 function genWebCiteUrl(url) {
   return 'http://webcitation.org/query.php?url='+encodeURIComponent(url);
+}
+
+function genMementoUrl(url) {
+  let dateStr =(new Date()).toISOString().replace(/-|T|:|\..*/g, '');
+  return 'http://timetravel.mementoweb.org/list/'+dateStr+'/'+encodeURIComponent(url);
 }
 
 
