@@ -13,11 +13,12 @@ Or (the easier route) use this extension.
 
 ## Features
 
- * Searches through seven page cache/mirrors:
+ * Searches through five page cache/mirrors:
    * [Google Cache](http://www.google.com/) (plus text-only version)
    * [The Internet Archive](http://web.archive.org/)
    * [WebCite](http://www.webcitation.org/)
    * [archive.is](https://archive.is/)
+   * [Memento Time Travel](http://timetravel.mementoweb.org/)
 
 Of course, not every page can be in every cache.
 When a page is unavailable, you'll generally see that site's error page.
@@ -30,6 +31,10 @@ Hit back and try another one!
 
 # Changelog
 
+ * Version 6 (Feb 25, 2018)
+   * Bug fixes.
+   * Add "list all versions" for The Internet Archive.
+   * Add MementoWeb TimeTravel source.
  * Version 5 (Aug 23, 2017)
    * Don't use `innerHTML`, per Mozilla reviewer.
  * Version 4 (Aug 20, 2017)
