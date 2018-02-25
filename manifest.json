@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Resurrect Pages",
   "description": "Resurrect dead pages, by finding their ghosts.",
-  "version": "5",
+  "version": "6",
   "homepage_url": "https://github.com/arantius/resurrect-pages",
 
   "applications": {
