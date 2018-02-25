@@ -3,41 +3,36 @@ chrome.storage.local.get('openIn', item => {
     openIn = item.openIn;
   }
 
-  function addResurrectItem(context, i18n, id, icon) {
-    chrome.contextMenus.create({
-      id: 'resurrect-' + id + '-' + context,
-      title: chrome.i18n.getMessage('resurrect' + i18n),
-      icons: {16: 'icons/cacheicons/' + icon + '.png'},
-      contexts: [context],
-      parentId: 'resurrect-' + context
-    }, logLastError);
-  }
-
-  function addConfigItem(context, i18n, where, checked) {
-    chrome.contextMenus.create({
-      id: 'resurrect-' + where + '-' + context,
-      type: 'radio',
-      title: chrome.i18n.getMessage('resurrectConfig' + i18n),
-      contexts: [context],
-      checked: checked,
-      parentId: 'resurrect-' + context
-    }, logLastError);
-  }
-
   ['page', 'link'].forEach(context => {
     chrome.contextMenus.create({
+      contexts: [context],
       id: 'resurrect-' + context,
-      title: chrome.i18n.getMessage('resurrect_' + context),
-      contexts: [context]
+      title: 'Resurrect this ' + context,
     }, logLastError);
 
-    addResurrectItem(context, 'Google', 'google', 'google');
-    addResurrectItem(context, 'GoogleText', 'googletext', 'google');
-    addResurrectItem(context, 'Archive', 'archive', 'waybackmachine');
-    addResurrectItem(context, 'ArchiveList', 'archivelist', 'waybackmachine');
-    addResurrectItem(context, 'ArchiveIs', 'archiveis', 'archiveis');
-    addResurrectItem(context, 'Webcitation', 'webcitation', 'webcitation');
-    addResurrectItem(context, 'MementoWeb', 'mementoweb', 'mementoweb');
+    chrome.contextMenus.create({
+      enabled: false,
+      id: 'resurrect-with-' + context,
+      parentId: 'resurrect-' + context,
+      title: 'With:',
+    });
+    for (let [name, id, icon] of [
+      ['Google', 'google', 'google'],
+      ['Google (text only)', 'googletext', 'google'],
+      ['The Internet Archive', 'archive', 'waybackmachine'],
+      ['The Internet Archive (list all)', 'archivelist', 'waybackmachine'],
+      ['archive.is', 'archiveis', 'archiveis'],
+      ['WebCite', 'webcitation', 'webcitation'],
+      ['Memento Timetravel', 'mementoweb', 'mementoweb'],
+    ]) {
+      chrome.contextMenus.create({
+        contexts: [context],
+        icons: {16: 'icons/cacheicons/' + icon + '.png'},
+        id: 'resurrect-' + id + '-' + context,
+        parentId: 'resurrect-' + context,
+        title: name,
+      }, logLastError);
+    }
 
     chrome.contextMenus.create({
       id: 'resurrect-separator-config-' + context,
@@ -46,14 +41,27 @@ chrome.storage.local.get('openIn', item => {
       parentId: 'resurrect-' + context
     }, logLastError);
 
-    addConfigItem(
-        context, 'CurrentTab', 'current-tab', openIn == openInEnum.CURRENT_TAB);
-    addConfigItem(
-        context, 'NewTab', 'new-tab', openIn == openInEnum.NEW_TAB);
-    addConfigItem(
-        context, 'BgTab', 'bg-tab', openIn == openInEnum.NEW_BGTAB);
-    addConfigItem(
-        context, 'NewWindow', 'new-window', openIn == openInEnum.NEW_WINDOW);
+    chrome.contextMenus.create({
+      enabled: false,
+      id: 'resurrect-in-' + context,
+      parentId: 'resurrect-' + context,
+      title: 'In:',
+    });
+    for (let [name, where, checked] of [
+      ['the current tab', 'current-tab', openIn == openInEnum.CURRENT_TAB],
+      ['a new tab (foreground)', 'new-tab', openIn == openInEnum.NEW_TAB],
+      ['a new tab (background)', 'bg-tab', openIn == openInEnum.NEW_BGTAB],
+      ['a new window', 'new-window', openIn == openInEnum.NEW_WINDOW],
+    ]) {
+      chrome.contextMenus.create({
+        id: 'resurrect-' + where + '-' + context,
+        type: 'radio',
+        title: name,
+        contexts: [context],
+        checked: checked,
+        parentId: 'resurrect-' + context
+      }, logLastError);
+    }
   });
 });
 

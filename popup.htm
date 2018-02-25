@@ -22,41 +22,54 @@ img {
 }
 </style>
 <form>
-  <button data-locale="resurrectGoogle" data-gen="genGoogleUrl">
+  <em>With:</em>
+  <button data-gen="genGoogleUrl">
     <img src="icons/cacheicons/google.png">
+    Google
   </button>
-  <button data-locale="resurrectGoogleText" data-gen="genGoogleTextUrl">
+  <button data-gen="genGoogleTextUrl">
     <img src="icons/cacheicons/google.png">
+    Google (text only)
   </button>
-  <button data-locale="resurrectArchive" data-gen="genIaUrl">
+  <button data-gen="genIaUrl">
     <img src="icons/cacheicons/waybackmachine.png">
+    The Internet Archive
   </button>
-  <button data-locale="resurrectArchiveList" data-gen="genIaListUrl">
+  <button data-gen="genIaListUrl">
     <img src="icons/cacheicons/waybackmachine.png">
+    The Internet Archive (list all)
   </button>
-  <button data-locale="resurrectArchiveIs" data-gen="genArchiveIsUrl">
+  <button data-gen="genArchiveIsUrl">
     <img src="icons/cacheicons/archiveis.png">
+    archive.is
   </button>
-  <button data-locale="resurrectWebcitation" data-gen="genWebCiteUrl">
+  <button data-gen="genWebCiteUrl">
     <img src="icons/cacheicons/webcitation.png">
+    WebCite
   </button>
-  <button data-locale="resurrectMementoWeb" data-gen="genMementoUrl">
+  <button data-gen="genMementoUrl">
     <img src="icons/cacheicons/mementoweb.png">
+    Memento Timetravel
   </button>
 
-  <br>
+  <div style='line-height: 8px;'>&nbsp;</div>
 
-  <label data-locale="resurrectConfigCurrentTab">
+  <em>In:</em>
+  <label>
 	  <input type="radio" name="openIn" value="0">
+    the current tab
   </label>
-  <label data-locale="resurrectConfigNewTab">
+  <label>
   	<input type="radio" name="openIn" value="1">
+    a new tab (foreground)
   </label>
-  <label data-locale="resurrectConfigBgTab">
+  <label>
 	  <input type="radio" name="openIn" value="2">
+    a new tab (background)
   </label>
-  <label data-locale="resurrectConfigNewWindow">
+  <label>
   	<input type="radio" name="openIn" value="3">
+    a new window
   </label>
 </form>
 

@@ -1,10 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "__MSG_extensionName__",
-  "short_name": "__MSG_extensionName__",
-  "description": "__MSG_extensionDescription__",
+  "name": "Resurrect Pages",
+  "description": "Resurrect dead pages, by finding their ghosts.",
   "version": "5",
-  "default_locale": "en",
   "homepage_url": "https://github.com/arantius/resurrect-pages",
 
   "applications": {
@@ -23,7 +21,7 @@
 
   "browser_action": {
     "default_icon": "icons/page-32.png",
-    "default_title": "__MSG_extensionName__",
+    "default_title": "Resurrect Pages",
     "default_popup": "popup.htm"
   },
 

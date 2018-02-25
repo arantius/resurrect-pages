@@ -5,13 +5,6 @@ chrome.storage.local.get('openIn', res => {
 });
 
 
-document.querySelectorAll('*[data-locale]').forEach(el => {
-  el.appendChild(document.createTextNode(
-      ' ' + chrome.i18n.getMessage(el.getAttribute('data-locale'))
-      ));
-});
-
-
 function onOpenInChange() {
   setOpenIn(document.querySelector('input[name="openIn"]:checked').value);
 };
