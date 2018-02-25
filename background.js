@@ -1,7 +1,3 @@
-function onCreated(n) {
-}
-
-
 chrome.storage.local.get('openIn', item => {
   if (item.openIn) {
     openIn = item.openIn;
@@ -14,7 +10,7 @@ chrome.storage.local.get('openIn', item => {
       icons: {16: 'icons/cacheicons/' + icon + '.png'},
       contexts: [context],
       parentId: 'resurrect-' + context
-    }, onCreated);
+    }, logLastError);
   }
 
   function addConfigItem(context, i18n, where, checked) {
@@ -25,7 +21,7 @@ chrome.storage.local.get('openIn', item => {
       contexts: [context],
       checked: checked,
       parentId: 'resurrect-' + context
-    }, onCreated);
+    }, logLastError);
   }
 
   ['page', 'link'].forEach(context => {
@@ -33,7 +29,7 @@ chrome.storage.local.get('openIn', item => {
       id: 'resurrect-' + context,
       title: chrome.i18n.getMessage('resurrect_' + context),
       contexts: [context]
-    }, onCreated);
+    }, logLastError);
 
     addResurrectItem(context, 'Google', 'google', 'google');
     addResurrectItem(context, 'GoogleText', 'googletext', 'google');
@@ -48,7 +44,7 @@ chrome.storage.local.get('openIn', item => {
       type: 'separator',
       contexts: [context],
       parentId: 'resurrect-' + context
-    }, onCreated);
+    }, logLastError);
 
     addConfigItem(
         context, 'CurrentTab', 'current-tab', openIn == openInEnum.CURRENT_TAB);

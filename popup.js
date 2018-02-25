@@ -23,11 +23,16 @@ document.querySelectorAll('input[type=radio]').forEach(el => {
 function resurrect(gen) {
   return function() {
     chrome.tabs.query({active: true, currentWindow: true}, tabObj => {
-      goToUrl(gen(tabObj[0].url), openIn);
+      logLastError();
+      let url = gen(tabObj[0].url);
+      console.info('Resurrecting via URL', url);
+      goToUrl(url, openIn);
       window.close();
     });
   }
 }
+
+
 document.querySelectorAll('button').forEach(el => {
   el.addEventListener(
       'click', resurrect(window[el.getAttribute('data-gen')]), true);

@@ -2,7 +2,7 @@ openInEnum = {
 	CURRENT_TAB : 0,
 	NEW_TAB     : 1,
 	NEW_BGTAB   : 2,
-	NEW_WINDOW  : 3
+	NEW_WINDOW  : 3,
 }
 let openIn = openInEnum.CURRENT_TAB;
 
@@ -14,28 +14,28 @@ chrome.storage.local.get('openIn', item => {
 });
 
 
-function onError(error) {
+function logLastError() {
   if (chrome.runtime.lastError) {
-    console.error('Resurrect error: ', chrome.runtime.lastError);
+    console.error('Resurrect error:', chrome.runtime.lastError);
   }
 }
 
 
 function genGoogleUrl(url) {
-  return 'https://www.google.com/search?q=cache:'+encodeURIComponent(url);
+  return 'https://www.google.com/search?q=cache:' + encodeURIComponent(url);
 }
 
 function genGoogleTextUrl(url) {
-  return 'https://www.google.com/search?strip=1&q=cache:'+encodeURIComponent(url);
+  return 'https://www.google.com/search?strip=1&q=cache:' + encodeURIComponent(url);
 }
 
 function genIaUrl(url) {
-  let dateStr =(new Date()).toISOString().replace(/-|T|:|\..*/g, '');
+  let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
   return 'https://web.archive.org/web/'+dateStr+'/'+url;
 }
 
 function genIaListUrl(url) {
-  let dateStr =(new Date()).toISOString().replace(/-|T|:|\..*/g, '');
+  let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
   return 'https://web.archive.org/web/*/'+url;
 }
 
@@ -48,14 +48,15 @@ function genWebCiteUrl(url) {
 }
 
 function genMementoUrl(url) {
-  let dateStr =(new Date()).toISOString().replace(/-|T|:|\..*/g, '');
-  return 'http://timetravel.mementoweb.org/list/'+dateStr+'/'+encodeURIComponent(url);
+  let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
+  return 'http://timetravel.mementoweb.org/list/'
+      + dateStr + '/' + encodeURIComponent(url);
 }
 
 
 function setOpenIn(where) {
   openIn = where;
-  chrome.storage.local.set({openIn: openIn}, onError);
+  chrome.storage.local.set({openIn: openIn}, logLastError);
   updateContextRadios();
 }
 
