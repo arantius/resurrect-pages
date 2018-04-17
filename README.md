@@ -31,6 +31,8 @@ Hit back and try another one!
 
 # Changelog
 
+ * Version 7 (Apr 16, 2018)
+   * New high resolution icons.
  * Version 6 (Feb 25, 2018)
    * Bug fixes.
    * Add "list all versions" for The Internet Archive.
