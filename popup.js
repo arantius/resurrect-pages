@@ -19,7 +19,7 @@ function resurrect(gen) {
       logLastError();
       let url = gen(tabObj[0].url);
       console.info('Resurrecting via URL', url);
-      goToUrl(url, openIn);
+      goToUrl(url, openIn, tabObj[0].id);
       window.close();
     });
   }

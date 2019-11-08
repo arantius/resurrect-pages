@@ -79,16 +79,16 @@ function updateContextRadios() {
 }
 
 
-function goToUrl(url, where) {
+function goToUrl(url, where, openerTabId) {
   switch(Number(where)) {
     case openInEnum.CURRENT_TAB:
       chrome.tabs.update({'url': url});
       break;
     case openInEnum.NEW_TAB:
-      chrome.tabs.create({'url': url});
+      chrome.tabs.create({'url': url, openerTabId});
       break;
     case openInEnum.NEW_BGTAB:
-      chrome.tabs.create({'url': url, 'active': false});
+      chrome.tabs.create({'url': url, 'active': false, openerTabId});
       break;
     case openInEnum.NEW_WINDOW:
       chrome.windows.create({'url': url});
