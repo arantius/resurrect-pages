@@ -53,6 +53,10 @@ function genMementoUrl(url) {
       + dateStr + '/' + encodeURIComponent(url);
 }
 
+function genNlaUrl(url) {
+//   let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
+  return 'https://trove.nla.gov.au/website/result?q='+url;
+}
 
 function setOpenIn(where) {
   openIn = where;
