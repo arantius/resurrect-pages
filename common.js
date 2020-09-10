@@ -55,7 +55,7 @@ function genMementoUrl(url) {
 
 function genNlaUrl(url) {
 //   let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
-  return 'https://trove.nla.gov.au/website/result?q='+url;
+  return 'https://trove.nla.gov.au/search/category/websites?keyword='+url;
 }
 
 function setOpenIn(where) {
