@@ -24,6 +24,8 @@ chrome.storage.local.get('openIn', item => {
       ['archive.is', 'archiveis', 'archiveis'],
       ['WebCite', 'webcitation', 'webcitation'],
       ['Memento Timetravel', 'mementoweb', 'mementoweb'],
+      ['Australian Web Archive', 'nla', 'nla'],
+      ['Australian Web Archive', 'nlalist', 'nla'],
     ]) {
       chrome.contextMenus.create({
         contexts: [context],
@@ -89,6 +91,10 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     goToUrl(genWebCiteUrl(url), openIn, tab.id);
   } else if (id.startsWith('resurrect-mementoweb-')) {
     goToUrl(genMementoUrl(url), openIn, tab.id);
+  } else if (id.startsWith('resurrect-nla-')) {
+    goToUrl(genNlaUrl(url), openIn, tab.id);
+  } else if (id.startsWith('resurrect-nlalist-')) {
+    goToUrl(genNlaListUrl(url), openIn, tab.id);
   } else if (id.startsWith('resurrect-current-tab-')) {
     setOpenIn(openInEnum.CURRENT_TAB);
   } else if (id.startsWith('resurrect-new-tab-')) {

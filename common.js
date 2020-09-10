@@ -54,6 +54,21 @@ function genMementoUrl(url) {
 }
 
 
+function genNlaUrl(url) {
+  let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
+  return 'https://webarchive.nla.gov.au/awa/'+dateStr+'/'+url;
+}
+
+function genNlaListUrl(url) {
+  let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
+  return 'https://webarchive.nla.gov.au/awa/*/'+url;
+}
+
+// function genNlaUrl(url) {
+// //   let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
+//   return 'https://trove.nla.gov.au/search/category/websites?keyword='+url;
+// }
+
 function setOpenIn(where) {
   openIn = where;
   chrome.storage.local.set({openIn: openIn}, logLastError);
