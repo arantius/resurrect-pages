@@ -74,6 +74,9 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
   } else if (id.endsWith('-link')) {
     url = info.linkUrl;
   }
+  
+  if (url.startsWith("about:reader?url=")
+      url = decodeURIcomponent(url.replace("about:reader?url=", ""))
 
   if (id.startsWith('resurrect-google-')) {
     goToUrl(genGoogleUrl(url), openIn, tab.id);
