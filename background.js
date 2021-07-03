@@ -76,7 +76,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
   }
 
   if (url.startsWith('about:reader?url=')) {
-    url = decodeURIComponent(url.replace('about:reader?url=', ''))
+    url = decodeURIComponent(url.replace('about:reader?url=', ''));
   }
 
   if (id.startsWith('resurrect-google-')) {
