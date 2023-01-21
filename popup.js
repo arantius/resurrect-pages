@@ -17,7 +17,13 @@ function resurrect(gen) {
   return function() {
     chrome.tabs.query({active: true, currentWindow: true}, tabObj => {
       logLastError();
-      let url = gen(tabObj[0].url);
+      
+      var og_url = tabObj[0].url;
+      if (og_url.startsWith('about:reader?url=')) {
+        og_url = decodeURIComponent(og_url.replace('about:reader?url=', ''));
+      }
+      let url = gen(og_url);
+
       console.info('Resurrecting via URL', url);
       goToUrl(url, openIn, tabObj[0].id);
       window.close();
