@@ -54,6 +54,19 @@ function genMementoUrl(url) {
 }
 
 
+/* process edge cases in the page URL
+ * file:// scheme pages and FF reader mode
+ */
+function processPageUrlEdgeCases(url) {
+  if (url.startsWith("about:reader?url="))
+    return decodeURIComponent(url.replace("about:reader?url=", ""));
+  else if (!url.startsWith("file://"))
+    return url;
+  else
+    return null;
+}
+
+
 function setOpenIn(where) {
   openIn = where;
   chrome.storage.local.set({openIn: openIn}, logLastError);

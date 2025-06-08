@@ -70,32 +70,36 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
   let id = info.menuItemId;
   let url = null;
   if (id.endsWith('-page')) {
-    url = info.pageUrl;
+    url = processPageUrlEdgeCases(info.pageUrl);
   } else if (id.endsWith('-link')) {
     url = info.linkUrl;
   }
 
-  if (id.startsWith('resurrect-google-')) {
-    goToUrl(genGoogleUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-googletext-')) {
-    goToUrl(genGoogleTextUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-archive-')) {
-    goToUrl(genIaUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-archivelist-')) {
-    goToUrl(genIaListUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-archiveis-')) {
-    goToUrl(genArchiveIsUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-webcitation-')) {
-    goToUrl(genWebCiteUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-mementoweb-')) {
-    goToUrl(genMementoUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-current-tab-')) {
+  if (url != null) {
+    if (id.startsWith('resurrect-google-')) {
+      goToUrl(genGoogleUrl(url), openIn, tab.id);
+    } else if (id.startsWith('resurrect-googletext-')) {
+      goToUrl(genGoogleTextUrl(url), openIn, tab.id);
+    } else if (id.startsWith('resurrect-archive-')) {
+      goToUrl(genIaUrl(url), openIn, tab.id);
+    } else if (id.startsWith('resurrect-archivelist-')) {
+      goToUrl(genIaListUrl(url), openIn, tab.id);
+    } else if (id.startsWith('resurrect-archiveis-')) {
+      goToUrl(genArchiveIsUrl(url), openIn, tab.id);
+    } else if (id.startsWith('resurrect-webcitation-')) {
+      goToUrl(genWebCiteUrl(url), openIn, tab.id);
+    } else if (id.startsWith('resurrect-mementoweb-')) {
+      goToUrl(genMementoUrl(url), openIn, tab.id);
+    }
+  }
+
+  if (id.startsWith('resurrect-current-tab-')) {
     setOpenIn(openInEnum.CURRENT_TAB);
   } else if (id.startsWith('resurrect-new-tab-')) {
-    setOpenIn(openInEnum.NEW_TAB);
+      setOpenIn(openInEnum.NEW_TAB);
   } else if (id.startsWith('resurrect-bg-tab-')) {
-    setOpenIn(openInEnum.NEW_BGTAB);
+      setOpenIn(openInEnum.NEW_BGTAB);
   } else if (id.startsWith('resurrect-new-window-')) {
-    setOpenIn(openInEnum.NEW_WINDOW);
+      setOpenIn(openInEnum.NEW_WINDOW);
   }
 });
