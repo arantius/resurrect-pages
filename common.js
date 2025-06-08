@@ -58,9 +58,9 @@ function genMementoUrl(url) {
  * file:// scheme pages and FF reader mode
  */
 function processPageUrlEdgeCases(url) {
-  if (url.startsWith("about:reader?url="))
-    return decodeURIComponent(url.replace("about:reader?url=", ""));
-  else if (!url.startsWith("file://"))
+  if (url.startsWith('about:reader?url='))
+    return decodeURIComponent(url.replace('about:reader?url=', ''));
+  else if (!url.startsWith('file://'))
     return url;
   else
     return null;
