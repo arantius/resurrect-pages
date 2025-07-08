@@ -58,15 +58,13 @@ function genMementoUrl(url) {
  * file:// scheme pages and FF reader mode
  */
 function processPageUrlEdgeCases(url) {
-  if (!url.startsWith('file://')) {
-    if (url.startsWith('about:reader?url=')) {
-      return decodeURIComponent(url.replace('about:reader?url=', ''));
-    }
-    return url;
+  if (url.startsWith('about:reader?url=')) {
+    return decodeURIComponent(url.replace('about:reader?url=', ''));
   }
-  else {
-    return null;
+  else if (url.startsWith('file:') || url.startsWith('about:')) {
+    return null
   }
+  return url;
 }
 
 
