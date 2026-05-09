@@ -17,7 +17,9 @@ function resurrect(gen) {
   return function() {
     chrome.tabs.query({active: true, currentWindow: true}, tabObj => {
       logLastError();
-      let url = gen(tabObj[0].url);
+      let url = processPageUrlEdgeCases(tabObj[0].url);
+      if (url == null) return;
+      url = gen(url);
       console.info('Resurrecting via URL', url);
       goToUrl(url, openIn, tabObj[0].id);
       window.close();

@@ -26,6 +26,7 @@ Hit back and try another one!
 
  * Version 9 (May 9, 2026)
    * Remove broken providers (Google, MementoWeb).
+   * Handle `file://` and reader URLs. (#52)
  * Version 8 (Sep 9, 2019)
    * Improved behavior when opening new tabs.
  * Version 7 (Apr 16, 2018)

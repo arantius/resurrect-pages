@@ -67,7 +67,8 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
   let id = info.menuItemId;
   let url = null;
   if (id.endsWith('-page')) {
-    url = info.pageUrl;
+    url = processPageUrlEdgeCases(info.pageUrl);
+    if (!url) return;
   } else if (id.endsWith('-link')) {
     url = info.linkUrl;
   }
