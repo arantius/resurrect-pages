@@ -21,14 +21,6 @@ function logLastError() {
 }
 
 
-function genGoogleUrl(url) {
-  return 'https://www.google.com/search?q=cache:' + encodeURIComponent(url);
-}
-
-function genGoogleTextUrl(url) {
-  return 'https://www.google.com/search?strip=1&q=cache:' + encodeURIComponent(url);
-}
-
 function genIaUrl(url) {
   let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
   return 'https://web.archive.org/web/'+dateStr+'/'+url;

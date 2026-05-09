@@ -17,8 +17,6 @@ chrome.storage.local.get('openIn', item => {
       title: 'With:',
     });
     for (let [name, id, icon] of [
-      ['Google', 'google', 'google'],
-      ['Google (text only)', 'googletext', 'google'],
       ['The Internet Archive', 'archive', 'waybackmachine'],
       ['The Internet Archive (list all)', 'archivelist', 'waybackmachine'],
       ['archive.is', 'archiveis', 'archiveis'],
@@ -75,11 +73,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     url = info.linkUrl;
   }
 
-  if (id.startsWith('resurrect-google-')) {
-    goToUrl(genGoogleUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-googletext-')) {
-    goToUrl(genGoogleTextUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-archive-')) {
+  if (id.startsWith('resurrect-archive-')) {
     goToUrl(genIaUrl(url), openIn, tab.id);
   } else if (id.startsWith('resurrect-archivelist-')) {
     goToUrl(genIaListUrl(url), openIn, tab.id);
