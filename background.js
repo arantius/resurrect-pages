@@ -21,7 +21,6 @@ chrome.storage.local.get('openIn', item => {
       ['The Internet Archive (list all)', 'archivelist', 'waybackmachine'],
       ['archive.is', 'archiveis', 'archiveis'],
       ['WebCite', 'webcitation', 'webcitation'],
-      ['Memento Timetravel', 'mementoweb', 'mementoweb'],
     ]) {
       chrome.contextMenus.create({
         contexts: [context],
@@ -81,8 +80,6 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     goToUrl(genArchiveIsUrl(url), openIn, tab.id);
   } else if (id.startsWith('resurrect-webcitation-')) {
     goToUrl(genWebCiteUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-mementoweb-')) {
-    goToUrl(genMementoUrl(url), openIn, tab.id);
   } else if (id.startsWith('resurrect-current-tab-')) {
     setOpenIn(openInEnum.CURRENT_TAB);
   } else if (id.startsWith('resurrect-new-tab-')) {

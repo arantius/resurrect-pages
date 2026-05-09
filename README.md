@@ -13,12 +13,10 @@ Or (the easier route) use this extension.
 
 ## Features
 
- * Searches through five page cache/mirrors:
-   * [Google Cache](http://www.google.com/) (plus text-only version)
+ * Exposes multiple page cache/mirrors:
    * [The Internet Archive](http://web.archive.org/)
    * [WebCite](http://www.webcitation.org/)
    * [archive.is](https://archive.is/)
-   * [Memento Time Travel](http://timetravel.mementoweb.org/)
 
 Of course, not every page can be in every cache.
 When a page is unavailable, you'll generally see that site's error page.
@@ -31,6 +29,10 @@ Hit back and try another one!
 
 # Changelog
 
+ * Version 9 (May 9, 2026)
+   * Remove broken providers (Google, MementoWeb).
+ * Version 8 (Sep 9, 2019)
+   * Improved behavior when opening new tabs.
  * Version 7 (Apr 16, 2018)
    * New high resolution icons.
  * Version 6 (Feb 25, 2018)
