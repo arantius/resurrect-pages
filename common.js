@@ -36,7 +36,11 @@ function genArchiveIsUrl(url) {
 }
 
 function genWebCiteUrl(url) {
-  return 'http://webcitation.org/query.php?url='+encodeURIComponent(url);
+  return 'https://www.webcitation.org/query.php?url='+encodeURIComponent(url);
+}
+
+function genGhostArchiveUrl(url) {
+  return 'https://ghostarchive.org/search?term='+encodeURIComponent(url);
 }
 
 
