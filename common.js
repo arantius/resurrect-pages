@@ -41,14 +41,12 @@ function genWebCiteUrl(url) {
 
 
 function processPageUrlEdgeCases(url) {
-  if (url.startsWith('file:') || url.startsWith('about:')) {
-    return null;
-  }
-
   if (url.startsWith('about:reader?url=')) {
     return decodeURIComponent(url.replace('about:reader?url=', ''));
   }
-
+  else if (url.startsWith('file:') || url.startsWith('about:')) {
+    return null
+  }
   return url;
 }
 
