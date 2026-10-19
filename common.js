@@ -21,14 +21,6 @@ function logLastError() {
 }
 
 
-function genGoogleUrl(url) {
-  return 'https://www.google.com/search?q=cache:' + encodeURIComponent(url);
-}
-
-function genGoogleTextUrl(url) {
-  return 'https://www.google.com/search?strip=1&q=cache:' + encodeURIComponent(url);
-}
-
 function genIaUrl(url) {
   let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
   return 'https://web.archive.org/web/'+dateStr+'/'+url;
@@ -44,13 +36,21 @@ function genArchiveIsUrl(url) {
 }
 
 function genWebCiteUrl(url) {
-  return 'http://webcitation.org/query.php?url='+encodeURIComponent(url);
+  return 'https://www.webcitation.org/query.php?url='+encodeURIComponent(url);
 }
 
-function genMementoUrl(url) {
-  let dateStr = (new Date()).toISOString().replace(/-|T|:|\..*/g, '');
-  return 'http://timetravel.mementoweb.org/list/'
-      + dateStr + '/' + encodeURIComponent(url);
+function genGhostArchiveUrl(url) {
+  return 'https://ghostarchive.org/search?term='+encodeURIComponent(url);
+}
+
+
+function processPageUrlEdgeCases(url) {
+  if (url.startsWith('about:reader?url=')) {
+    return decodeURIComponent(url.replace('about:reader?url=', ''));
+  } else if (url.startsWith('file:') || url.startsWith('about:')) {
+    return null;
+  }
+  return url;
 }
 
 

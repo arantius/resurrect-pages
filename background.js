@@ -17,15 +17,13 @@ chrome.storage.local.get('openIn', item => {
       title: 'With:',
     });
     for (let [name, id, icon] of [
-      ['Google', 'google', 'google'],
-      ['Google (text only)', 'googletext', 'google'],
       ['The Internet Archive', 'archive', 'waybackmachine'],
       ['The Internet Archive (list all)', 'archivelist', 'waybackmachine'],
       ['archive.is', 'archiveis', 'archiveis'],
       ['WebCite', 'webcitation', 'webcitation'],
-      ['Memento Timetravel', 'mementoweb', 'mementoweb'],
+      ['Ghost Archive', 'ghostarchive', 'ghostarchive'],
       ['Australian Web Archive', 'nla', 'nla'],
-      ['Australian Web Archive', 'nlalist', 'nla'],
+      ['Australian Web Archive (list all)', 'nlalist', 'nla'],
     ]) {
       chrome.contextMenus.create({
         contexts: [context],
@@ -72,16 +70,13 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
   let id = info.menuItemId;
   let url = null;
   if (id.endsWith('-page')) {
-    url = info.pageUrl;
+    url = processPageUrlEdgeCases(info.pageUrl);
+    if (!url) return;
   } else if (id.endsWith('-link')) {
     url = info.linkUrl;
   }
 
-  if (id.startsWith('resurrect-google-')) {
-    goToUrl(genGoogleUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-googletext-')) {
-    goToUrl(genGoogleTextUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-archive-')) {
+  if (id.startsWith('resurrect-archive-')) {
     goToUrl(genIaUrl(url), openIn, tab.id);
   } else if (id.startsWith('resurrect-archivelist-')) {
     goToUrl(genIaListUrl(url), openIn, tab.id);
@@ -89,8 +84,8 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     goToUrl(genArchiveIsUrl(url), openIn, tab.id);
   } else if (id.startsWith('resurrect-webcitation-')) {
     goToUrl(genWebCiteUrl(url), openIn, tab.id);
-  } else if (id.startsWith('resurrect-mementoweb-')) {
-    goToUrl(genMementoUrl(url), openIn, tab.id);
+  } else if (id.startsWith('resurrect-ghostarchive-')) {
+    goToUrl(genGhostArchiveUrl(url), openIn, tab.id);
   } else if (id.startsWith('resurrect-nla-')) {
     goToUrl(genNlaUrl(url), openIn, tab.id);
   } else if (id.startsWith('resurrect-nlalist-')) {

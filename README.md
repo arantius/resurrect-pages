@@ -6,19 +6,14 @@ What do we do when a page is dead but we still want to see it?
 Call in the clerics, and perform a resurrection ceremony!
 Or (the easier route) use this extension.
 
-## Screenshots
-
-![Context Menu](https://camo.githubusercontent.com/264d0c9221bd3b22a41b3848597eeedbd606a5fb/68747470733a2f2f692e696d6775722e636f6d2f48654d666f77792e706e67)
-![Toolbar Menu](https://camo.githubusercontent.com/973154dcbc6c17736b9b2d4e4a4a00959465ec6d/68747470733a2f2f692e696d6775722e636f6d2f6d4c554e52414c2e706e67)
-
 ## Features
 
- * Searches through five page cache/mirrors:
-   * [Google Cache](http://www.google.com/) (plus text-only version)
+ * Exposes multiple page cache/mirrors:
    * [The Internet Archive](http://web.archive.org/)
    * [WebCite](http://www.webcitation.org/)
    * [archive.is](https://archive.is/)
-   * [Memento Time Travel](http://timetravel.mementoweb.org/)
+   * [Ghost Archive](https://ghostarchive.org/)
+   * [Australian Web Archive](https://webarchive.nla.gov.au/)
 
 Of course, not every page can be in every cache.
 When a page is unavailable, you'll generally see that site's error page.
@@ -31,6 +26,11 @@ Hit back and try another one!
 
 # Changelog
 
+ * Version 9 (May 9, 2026)
+   * Remove broken providers (Google, MementoWeb).
+   * Handle `file://` and reader URLs. (#52)
+ * Version 8 (Sep 9, 2019)
+   * Improved behavior when opening new tabs.
  * Version 7 (Apr 16, 2018)
    * New high resolution icons.
  * Version 6 (Feb 25, 2018)
