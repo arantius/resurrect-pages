@@ -12,6 +12,7 @@ Or (the easier route) use this extension.
    * [The Internet Archive](http://web.archive.org/)
    * [WebCite](http://www.webcitation.org/)
    * [archive.is](https://archive.is/)
+   * [Ghost Archive](https://ghostarchive.org/)
 
 Of course, not every page can be in every cache.
 When a page is unavailable, you'll generally see that site's error page.
