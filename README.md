@@ -26,6 +26,10 @@ Hit back and try another one!
 
 # Changelog
 
+ * Version 10 (October 19, 2026)
+   * Add Ghost Archive
+   * Add Australian Web Archive
+   * Bug fix: detect/handle Reader mode
  * Version 9 (May 9, 2026)
    * Remove broken providers (Google, MementoWeb).
    * Handle `file://` and reader URLs. (#52)
